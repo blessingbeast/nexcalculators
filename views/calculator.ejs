@@ -1,0 +1,83 @@
+<%- include('partials/header') %>
+
+    <div class="container">
+        <div class="page-layout">
+            <main class="main-content">
+                <div class="calculator-box" data-type="<%= calculator.type %>">
+                    <h1>
+                        <%= calculator.title %>
+                    </h1>
+
+                    <div class="calculator-container">
+                        <div class="input-group-container">
+                            <% calculator.inputs.forEach(function(input) { %>
+                                <div class="input-group">
+                                    <label for="<%= input.name %>">
+                                        <%= input.label %>
+                                    </label>
+                                    <% if (input.type==='select' ) { %>
+                                        <select id="<%= input.name %>">
+                                            <% input.options.forEach(function(opt) { %>
+                                                <option value="<%= opt.value %>">
+                                                    <%= opt.text %>
+                                                </option>
+                                                <% }); %>
+                                        </select>
+                                        <% } else { %>
+                                            <input type="<%= input.type %>" id="<%= input.name %>"
+                                                placeholder="<%= input.placeholder %>">
+                                            <% } %>
+                                </div>
+                                <% }); %>
+                        </div>
+
+                        <div class="calc-actions">
+                            <button id="calculate-btn">Calculate</button>
+                            <button id="reset-btn">Reset</button>
+                        </div>
+
+                        <div id="result-area" class="result-area hidden">
+                            <h3>Result</h3>
+                            <div id="result-content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="seo-content">
+                    <% if (calculator.content) { %>
+                        <%- calculator.content %>
+                            <% } else { %>
+                                <p>Content coming soon...</p>
+                                <% } %>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+                <div class="sidebar-box">
+                    <h3>Related Calculators</h3>
+                    <ul class="sidebar-links">
+                        <% if (typeof relatedCalculators !=='undefined' && relatedCalculators.length> 0) { %>
+                            <% relatedCalculators.forEach(function(rel) { %>
+                                <li><a href="/calculator/<%= rel.slug %>">
+                                        <%= rel.title %>
+                                    </a></li>
+                                <% }); %>
+                                    <% } else { %>
+                                        <li>No related calculators found.</li>
+                                        <% } %>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>All Categories</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/#Financial">Financial Calculators</a></li>
+                        <li><a href="/#Health">Health & Fitness</a></li>
+                        <li><a href="/#Math">Math & Others</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>

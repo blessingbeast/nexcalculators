@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Free Online Calculators</h1>
+            <p>Quick, accurate, and easy-to-use calculators for finance, health, math, and more. Designed for
+                professionals and students alike.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <% const categories={}; calculators.forEach(calc=> {
+            const cat = calc.category || 'Other';
+            if (!categories[cat]) categories[cat] = [];
+            categories[cat].push(calc);
+            });
+            %>
+
+            <% for (const [category, calcs] of Object.entries(categories)) { %>
+                <h2 id="<%= category %>" class="category-title">
+                    <span class="category-icon">🔹</span>
+                    <%= category %> Calculators
+                </h2>
+                <div class="calculator-grid">
+                    <% calcs.forEach(function(calc) { %>
+                        <div class="card">
+                            <h2>
+                                <%= calc.title %>
+                            </h2>
+                            <p>
+                                <%= calc.metaDescription %>
+                            </p>
+                            <a href="/calculator/<%= calc.slug %>" class="btn">Use Calculator</a>
+                        </div>
+                        <% }); %>
+                </div>
+                <% } %>
+    </div>
+
+    <%- include('partials/footer') %>

@@ -1,0 +1,138 @@
+<div class="calculator-content-body">
+    <h1>CAGR Calculator: The Only Metric That Matters</h1>
+    <p class="intro-text">
+        In the world of finance, numbers lie. You will often hear schemes claiming "Absolute Returns of 50%!" or
+        "Average Returns of 15%!". But does that tell the full story? No. The only metric that strips away the marketing
+        noise and tells you the raw truth about your investment growth is <strong>CAGR (Compound Annual Growth
+            Rate)</strong>. It smoothes out the volatility of varying returns and gives you a single, comparable annual
+        growth number.
+    </p>
+
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#what-is-cagr">What is CAGR?</a></li>
+        <li><a href="#formula">The Formula Explained</a></li>
+        <li><a href="#cagr-vs-absolute">CAGR vs Absolute Return vs Average Return</a></li>
+        <li><a href="#real-life">Real Life Examples</a></li>
+        <li><a href="#limitations">Limitations of CAGR</a></li>
+        <li><a href="#faqs">Frequently Asked Questions</a></li>
+    </ul>
+
+    <h2 id="what-is-cagr">What is CAGR?</h2>
+    <p>
+        CAGR is the hypothetical constant interest rate at which an investment would have grown if it grew at a steady
+        rate each year.
+        <br>In reality, investments (especially stocks) go up and down.
+        <br>Year 1: +20%
+        <br>Year 2: -10%
+        <br>Year 3: +30%
+        <br>CAGR takes this bumpy ride and asks: "What is the equivalent steady FD rate that would give the same final
+        result?"
+    </p>
+
+    <h2 id="formula">The Formula Explained</h2>
+    <p>
+        <strong>CAGR = (Ending Value / Beginning Value) ^ (1 / Number of Years) - 1</strong>
+        <br><br>
+        Let's break it down:
+        <br>1. Divide Final Value by Initial Value to get the total multiple.
+        <br>2. Take the "nth root" of that multiple (where n is years).
+        <br>3. Subtract 1 to get the decimal percentage.
+    </p>
+
+    <h2 id="cagr-vs-absolute">CAGR vs Absolute Return vs Average Return</h2>
+    <p>Let's say you invested ₹1 Lakh. After 3 years, it became ₹1.5 Lakhs.</p>
+
+    <h3>Absolute Return</h3>
+    <p>
+        (Profit / Investment) * 100
+        <br>(50k / 1L) * 100 = <strong>50%</strong>.
+        <br><em>Problem:</em> It ignores time. earning 50% in 3 years is great. Maxing 50% in 20 years is terrible.
+        Absolute return doesn't tell you which is which.
+    </p>
+
+    <h3>Average Annual Return (Arithmetic Mean)</h3>
+    <p>
+        Let's say returns were: Year 1 (+50%), Year 2 (-50%).
+        <br>Average = (50 - 50) / 2 = 0%.
+        <br>But wait! 100 -> 150 -> 75. You started with 100 and ended with 75. You LOST money (-25%), but Average
+        Return says 0%.
+        <br><em>Problem:</em> Flawed math for geometric progressions.
+    </p>
+
+    <h3>CAGR (Geometric Mean)</h3>
+    <p>
+        CAGR factors in the compounding and the reality of losses. In the above example (100 to 75 in 2 years), CAGR
+        would correctly show a negative percentage (-13.4%).
+        <br>This matches reality.
+    </p>
+
+    <h2 id="real-life">Real Life Examples</h2>
+    <ul>
+        <li><strong>Mutual Funds:</strong> Funds always report 3-year and 5-year returns as CAGR. If a fund says "15%
+            Return over 5 years", it means money grew at 15% CAGR, not 15% absolute.</li>
+        <li><strong>Business Revenue:</strong> Startups track Revenue CAGR to show steady growth to investors.</li>
+        <li><strong>Inflation:</strong> If milk cost ₹20 in 2010 and ₹60 in 2024, calculating the CAGR tells us the rate
+            of inflation for milk.</li>
+    </ul>
+
+    <h2 id="limitations">Limitations of CAGR</h2>
+    <p>
+        While excellent, CAGR has one blind spot: <strong>Volatility</strong>.
+        <br>Investment A: 10%, 10%, 10%. (CAGR 10%)
+        <br>Investment B: 50%, -40%, 40%. (CAGR 10%)
+        <br>Both have same CAGR, but Investment B was a heart-attack inducing rollercoaster. CAGR doesn't capture risk.
+        You should check Standard Deviation for that.
+    </p>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+
+    <h2 id="faqs">Frequently Asked Questions (FAQs)</h2>
+    <div class="faq-section">
+        <div class="faq-item">
+            <h4>1. Can CAGR be negative?</h4>
+            <p>Yes. If the Ending Value is less than Beginning Value, CAGR will be negative, indicating an annualized
+                loss.</p>
+        </div>
+        <div class="faq-item">
+            <h4>2. How to calculate CAGR for SIP?</h4>
+            <p>CAGR works best for lump-sums. For SIPs (multiple cash flows at different times), you should use
+                <strong>XIRR</strong> (Extended Internal Rate of Return).</p>
+        </div>
+        <div class="faq-item">
+            <h4>3. What is a "Good" CAGR?</h4>
+            <p>Depends on asset class. FD: 6-7%. Gold: 8-9%. Nifty (Equity): 12-14%. Anything above 15% maintained over
+                10 years is exceptional.</p>
+        </div>
+        <div class="faq-item">
+            <h4>4. Does CAGR include dividends?</h4>
+            <p>Normally, price prices don't. But "Total Return Index" (TRI) includes dividends. Ideally, use Ending
+                Value including dividends for total accuracy.</p>
+        </div>
+        <div class="faq-item">
+            <h4>5. Why is CAGR lower than Average Return?</h4>
+            <p>Volatility drags down returns. The "Volatility Drag" means geometric mean (CAGR) is almost always lower
+                than arithmetic mean.</p>
+        </div>
+        <div class="faq-item">
+            <h4>6. Can I use CAGR for less than 1 year?</h4>
+            <p>No. By definition, it is "Annualized". For <1 year, use Absolute Return.</p>
+        </div>
+        <div class="faq-item">
+            <h4>7. How many years data should I use?</h4>
+            <p>Minimum 3, ideally 5+. 1-year CAGR is just absolute return and is too noisy.</p>
+        </div>
+        <div class="faq-item">
+            <h4>8. GDP Growth?</h4>
+            <p>Economists use CAGR to report GDP growth over decades.</p>
+        </div>
+        <div class="faq-item">
+            <h4>9. Does it account for inflation?</h4>
+            <p>No. It gives nominal growth. To get "Real CAGR", subtract inflation rate from CAGR.</p>
+        </div>
+        <div class="faq-item">
+            <h4>10. How to calculate manually?</h4>
+            <p>It's hard without a scientific calculator. (End/Start)^(1/n) - 1. Use our tool instead!</p>
+        </div>
+    </div>
+</div>

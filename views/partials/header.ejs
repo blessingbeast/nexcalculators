@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= typeof title !='undefined' ? title : 'NexCalculators.com - Free Online Calculators' %>
+    </title>
+    <meta name="description"
+        content="<%= typeof metaDescription != 'undefined' ? metaDescription : 'Free, accurate, and easy-to-use calculators for finance, health, math, and everyday life.' %>">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <img src="/images/logo.svg" alt="NexCalculators" class="logo-img"
+                    style="height: 50px; vertical-align: middle;">
+            </a>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" id="global-search" placeholder="Search calculators...">
+                <div class="search-results" id="search-results"></div>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact" class="btn-nav">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        const calculators = [
+            { name: "EMI Calculator", url: "/calculator/emi-calculator" },
+            { name: "BMI Calculator", url: "/calculator/bmi-calculator" },
+            { name: "SIP Calculator", url: "/calculator/sip-calculator" },
+            { name: "Age Calculator", url: "/calculator/age-calculator" },
+            { name: "FD Calculator", url: "/calculator/fd-calculator" },
+            { name: "RD Calculator", url: "/calculator/rd-calculator" },
+            { name: "PPF Calculator", url: "/calculator/ppf-calculator" },
+            { name: "NPS Calculator", url: "/calculator/nps-calculator" },
+            { name: "HRA Calculator", url: "/calculator/hra-calculator" },
+            { name: "Income Tax Calculator", url: "/calculator/income-tax-calculator" },
+            { name: "Compound Interest", url: "/calculator/compound-interest-calculator" },
+            { name: "Simple Interest", url: "/calculator/simple-interest-calculator" },
+            { name: "Percentage Calculator", url: "/calculator/percentage-calculator" },
+            { name: "Loan Calculator", url: "/calculator/loan-calculator" },
+            { name: "Salary Calculator", url: "/calculator/salary-calculator" },
+            { name: "GST Calculator", url: "/calculator/gst-calculator" },
+            { name: "Discount Calculator", url: "/calculator/discount-calculator" },
+            { name: "Fuel Cost Calculator", url: "/calculator/fuel-cost-calculator" },
+            { name: "Unit Converter", url: "/calculator/unit-converter" },
+            { name: "Electricity Bill", url: "/calculator/electricity-bill-calculator" },
+            { name: "Rent Affordability", url: "/calculator/rent-affordability-calculator" },
+            { name: "Inflation Calculator", url: "/calculator/inflation-calculator" },
+            { name: "Savings Goal", url: "/calculator/savings-goal-calculator" },
+            { name: "Retirement Calculator", url: "/calculator/retirement-calculator" },
+            { name: "Gratuity Calculator", url: "/calculator/gratuity-calculator" },
+            { name: "CAGR Calculator", url: "/calculator/cagr-calculator" },
+            { name: "ROI Calculator", url: "/calculator/roi-calculator" },
+            { name: "Margin Calculator", url: "/calculator/margin-calculator" },
+            { name: "Calorie Calculator", url: "/calculator/calorie-calculator" },
+            { name: "BMR Calculator", url: "/calculator/bmr-calculator" },
+            { name: "Body Fat Calculator", url: "/calculator/body-fat-calculator" },
+            { name: "Ideal Weight", url: "/calculator/ideal-weight-calculator" },
+            { name: "Pregnancy Calculator", url: "/calculator/pregnancy-calculator" },
+            { name: "Ovulation Calculator", url: "/calculator/ovulation-calculator" },
+            { name: "Area Calculator", url: "/calculator/area-calculator" },
+            { name: "Volume Calculator", url: "/calculator/volume-calculator" },
+            { name: "Speed Calculator", url: "/calculator/speed-calculator" },
+            { name: "GPA Calculator", url: "/calculator/gpa-calculator" },
+            { name: "Tip Calculator", url: "/calculator/tip-calculator" },
+            { name: "Binary Converter", url: "/calculator/binary-converter" }
+        ];
+
+        const searchInput = document.getElementById('global-search');
+        const resultsBox = document.getElementById('search-results');
+
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            if (term.length < 1) {
+                resultsBox.classList.remove('active');
+                return;
+            }
+
+            const matches = calculators.filter(c => c.name.toLowerCase().includes(term));
+
+            if (matches.length > 0) {
+                resultsBox.innerHTML = matches.map(c => `<a href="${c.url}" class="search-item">${c.name}</a>`).join('');
+            } else {
+                resultsBox.innerHTML = `<div class="no-results">No calculators found</div>`;
+            }
+            resultsBox.classList.add('active');
+        });
+
+        // Close search when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.search-container')) {
+                resultsBox.classList.remove('active');
+            }
+        });
+    </script>
+    <main>

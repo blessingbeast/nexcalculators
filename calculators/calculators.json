@@ -1,0 +1,1142 @@
+[
+    {
+        "id": "emi",
+        "slug": "emi-calculator",
+        "title": "EMI Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate your Equated Monthly Installment (EMI) for home loans, car loans, and personal loans.",
+        "inputs": [
+            {
+                "name": "loanAmount",
+                "label": "Loan Amount (₹)",
+                "type": "number",
+                "placeholder": "e.g. 500000"
+            },
+            {
+                "name": "interestRate",
+                "label": "Interest Rate (%)",
+                "type": "number",
+                "placeholder": "e.g. 8.5"
+            },
+            {
+                "name": "loanTenure",
+                "label": "Tenure (Years)",
+                "type": "number",
+                "placeholder": "e.g. 20"
+            }
+        ],
+        "type": "emi"
+    },
+    {
+        "id": "bmi",
+        "slug": "bmi-calculator",
+        "title": "BMI Calculator",
+        "category": "Health",
+        "metaDescription": "Check your Body Mass Index (BMI) to see if you are at a healthy weight.",
+        "inputs": [
+            {
+                "name": "weight",
+                "label": "Weight (kg)",
+                "type": "number",
+                "placeholder": "e.g. 70"
+            },
+            {
+                "name": "height",
+                "label": "Height (cm)",
+                "type": "number",
+                "placeholder": "e.g. 175"
+            }
+        ],
+        "type": "bmi"
+    },
+    {
+        "id": "age",
+        "slug": "age-calculator",
+        "title": "Age Calculator",
+        "category": "Health",
+        "metaDescription": "Calculate your exact age in years, months, and days.",
+        "inputs": [
+            {
+                "name": "birthDate",
+                "label": "Date of Birth",
+                "type": "date",
+                "placeholder": ""
+            }
+        ],
+        "type": "age"
+    },
+    {
+        "id": "percentage",
+        "slug": "percentage-calculator",
+        "title": "Percentage Calculator",
+        "category": "Math",
+        "metaDescription": "Quickly solve percentage problems like X% of Y.",
+        "inputs": [
+            {
+                "name": "value",
+                "label": "Total Value",
+                "type": "number",
+                "placeholder": "e.g. 500"
+            },
+            {
+                "name": "percentage",
+                "label": "Percentage (%)",
+                "type": "number",
+                "placeholder": "e.g. 20"
+            }
+        ],
+        "type": "percentage"
+    },
+    {
+        "id": "loan",
+        "slug": "loan-calculator",
+        "title": "Loan Calculator",
+        "category": "Financial",
+        "metaDescription": "Generic loan calculator for any type of amortization.",
+        "inputs": [
+            {
+                "name": "amount",
+                "label": "Loan Amount",
+                "type": "number",
+                "placeholder": "10000"
+            },
+            {
+                "name": "rate",
+                "label": "Annual Rate (%)",
+                "type": "number",
+                "placeholder": "10"
+            },
+            {
+                "name": "months",
+                "label": "Duration (Months)",
+                "type": "number",
+                "placeholder": "12"
+            }
+        ],
+        "type": "loan"
+    },
+    {
+        "id": "sip",
+        "slug": "sip-calculator",
+        "title": "SIP Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate returns on your Systematic Investment Plan.",
+        "inputs": [
+            {
+                "name": "monthlyInvestment",
+                "label": "Monthly Investment (₹)",
+                "type": "number",
+                "placeholder": "5000"
+            },
+            {
+                "name": "returnRate",
+                "label": "Expected Return Rate (%)",
+                "type": "number",
+                "placeholder": "12"
+            },
+            {
+                "name": "period",
+                "label": "Time Period (Years)",
+                "type": "number",
+                "placeholder": "10"
+            }
+        ],
+        "type": "sip"
+    },
+    {
+        "id": "compound",
+        "slug": "compound-interest-calculator",
+        "title": "Compound Interest Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate compound interest with varied frequencies.",
+        "inputs": [
+            {
+                "name": "principal",
+                "label": "Principal Amount",
+                "type": "number",
+                "placeholder": "10000"
+            },
+            {
+                "name": "rate",
+                "label": "Rate (%)",
+                "type": "number",
+                "placeholder": "5"
+            },
+            {
+                "name": "years",
+                "label": "Time (Years)",
+                "type": "number",
+                "placeholder": "5"
+            },
+            {
+                "name": "compoundingFrequency",
+                "label": "Compounding Frequency",
+                "type": "select",
+                "options": [
+                    {
+                        "value": 1,
+                        "text": "Annually"
+                    },
+                    {
+                        "value": 2,
+                        "text": "Semi-Annually"
+                    },
+                    {
+                        "value": 4,
+                        "text": "Quarterly"
+                    },
+                    {
+                        "value": 12,
+                        "text": "Monthly"
+                    }
+                ]
+            }
+        ],
+        "type": "compound"
+    },
+    {
+        "id": "simple",
+        "slug": "simple-interest-calculator",
+        "title": "Simple Interest Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate simple interest on loans or savings.",
+        "inputs": [
+            {
+                "name": "principal",
+                "label": "Principal Amount",
+                "type": "number",
+                "placeholder": "10000"
+            },
+            {
+                "name": "rate",
+                "label": "Rate (%)",
+                "type": "number",
+                "placeholder": "5"
+            },
+            {
+                "name": "years",
+                "label": "Time (Years)",
+                "type": "number",
+                "placeholder": "1"
+            }
+        ],
+        "type": "simple"
+    },
+    {
+        "id": "salary",
+        "slug": "salary-calculator",
+        "title": "Salary Calculator",
+        "category": "Financial",
+        "metaDescription": "Estimate in-hand salary from CTC.",
+        "inputs": [
+            {
+                "name": "ctc",
+                "label": "Annual CTC (₹)",
+                "type": "number",
+                "placeholder": "1200000"
+            },
+            {
+                "name": "deductions",
+                "label": "Total Annual Deductions (PF/PT/Tax)",
+                "type": "number",
+                "placeholder": "100000"
+            }
+        ],
+        "type": "salary"
+    },
+    {
+        "id": "gst",
+        "slug": "gst-calculator",
+        "title": "GST Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate GST inclusive and exclusive amounts.",
+        "inputs": [
+            {
+                "name": "amount",
+                "label": "Amount",
+                "type": "number",
+                "placeholder": "1000"
+            },
+            {
+                "name": "gstRate",
+                "label": "GST Rate (%)",
+                "type": "select",
+                "options": [
+                    {
+                        "value": 5,
+                        "text": "5%"
+                    },
+                    {
+                        "value": 12,
+                        "text": "12%"
+                    },
+                    {
+                        "value": 18,
+                        "text": "18%"
+                    },
+                    {
+                        "value": 28,
+                        "text": "28%"
+                    }
+                ]
+            },
+            {
+                "name": "type",
+                "label": "Calculation Type",
+                "type": "select",
+                "options": [
+                    {
+                        "value": 1,
+                        "text": "Inclusive (Keep Total)"
+                    },
+                    {
+                        "value": 0,
+                        "text": "Exclusive (Add Tax)"
+                    }
+                ]
+            }
+        ],
+        "type": "gst"
+    },
+    {
+        "id": "discount",
+        "slug": "discount-calculator",
+        "title": "Discount Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate final price after discount.",
+        "inputs": [
+            {
+                "name": "originalPrice",
+                "label": "Original Price",
+                "type": "number",
+                "placeholder": "1000"
+            },
+            {
+                "name": "discountPct",
+                "label": "Discount (%)",
+                "type": "number",
+                "placeholder": "20"
+            }
+        ],
+        "type": "discount"
+    },
+    {
+        "id": "fuel",
+        "slug": "fuel-cost-calculator",
+        "title": "Fuel Cost Calculator",
+        "category": "Math",
+        "metaDescription": "Estimate fuel cost for a trip.",
+        "inputs": [
+            {
+                "name": "distance",
+                "label": "Distance (km)",
+                "type": "number",
+                "placeholder": "100"
+            },
+            {
+                "name": "mileage",
+                "label": "Vehicle Mileage (km/l)",
+                "type": "number",
+                "placeholder": "15"
+            },
+            {
+                "name": "price",
+                "label": "Fuel Price",
+                "type": "number",
+                "placeholder": "100"
+            }
+        ],
+        "type": "fuel"
+    },
+    {
+        "id": "unit",
+        "slug": "unit-converter",
+        "title": "Unit Converter",
+        "category": "Math",
+        "metaDescription": "Convert common units like km to miles.",
+        "inputs": [
+            {
+                "name": "value",
+                "label": "Value",
+                "type": "number",
+                "placeholder": "1"
+            },
+            {
+                "name": "factor",
+                "label": "Conversion Type",
+                "type": "select",
+                "options": [
+                    {
+                        "value": 0.621371,
+                        "text": "Kilometers to Miles"
+                    },
+                    {
+                        "value": 1.60934,
+                        "text": "Miles to Kilometers"
+                    },
+                    {
+                        "value": 2.20462,
+                        "text": "Kilograms to Pounds"
+                    },
+                    {
+                        "value": 0.453592,
+                        "text": "Pounds to Kilograms"
+                    }
+                ]
+            }
+        ],
+        "type": "unit"
+    },
+    {
+        "id": "electricity",
+        "slug": "electricity-bill-calculator",
+        "title": "Electricity Bill Calculator",
+        "category": "Financial",
+        "metaDescription": "Estimate your monthly electricity bill.",
+        "inputs": [
+            {
+                "name": "units",
+                "label": "Units Consumed",
+                "type": "number",
+                "placeholder": "200"
+            },
+            {
+                "name": "rate",
+                "label": "Rate per Unit",
+                "type": "number",
+                "placeholder": "7"
+            }
+        ],
+        "type": "electricity"
+    },
+    {
+        "id": "rent",
+        "slug": "rent-affordability-calculator",
+        "title": "Rent Affordability Calculator",
+        "category": "Financial",
+        "metaDescription": "How much rent can you afford?",
+        "inputs": [
+            {
+                "name": "income",
+                "label": "Monthly Income",
+                "type": "number",
+                "placeholder": "50000"
+            }
+        ],
+        "type": "rent"
+    },
+    {
+        "id": "inflation",
+        "slug": "inflation-calculator",
+        "title": "Inflation Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate future value of money.",
+        "inputs": [
+            {
+                "name": "amount",
+                "label": "Current Amount",
+                "type": "number",
+                "placeholder": "100000"
+            },
+            {
+                "name": "rate",
+                "label": "Inflation Rate (%)",
+                "type": "number",
+                "placeholder": "6"
+            },
+            {
+                "name": "years",
+                "label": "Years",
+                "type": "number",
+                "placeholder": "10"
+            }
+        ],
+        "type": "inflation"
+    },
+    {
+        "id": "savings",
+        "slug": "savings-goal-calculator",
+        "title": "Savings Goal Calculator",
+        "category": "Financial",
+        "metaDescription": "How much to save monthly for a goal.",
+        "inputs": [
+            {
+                "name": "goal",
+                "label": "Target Amount",
+                "type": "number",
+                "placeholder": "500000"
+            },
+            {
+                "name": "months",
+                "label": "Time to Goal (Months)",
+                "type": "number",
+                "placeholder": "24"
+            }
+        ],
+        "type": "savings"
+    },
+    {
+        "id": "retirement",
+        "slug": "retirement-calculator",
+        "title": "Retirement Calculator",
+        "category": "Financial",
+        "metaDescription": "Estimate corpus needed for retirement.",
+        "inputs": [
+            {
+                "name": "currentAge",
+                "label": "Current Age",
+                "type": "number",
+                "placeholder": "30"
+            },
+            {
+                "name": "retirementAge",
+                "label": "Retirement Age",
+                "type": "number",
+                "placeholder": "60"
+            },
+            {
+                "name": "monthlyExpenses",
+                "label": "Monthly Expenses (Current)",
+                "type": "number",
+                "placeholder": "30000"
+            }
+        ],
+        "type": "retirement"
+    },
+    {
+        "id": "gratuity",
+        "slug": "gratuity-calculator",
+        "title": "Gratuity Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate your gratuity benefit.",
+        "inputs": [
+            {
+                "name": "salary",
+                "label": "Basic Salary + DA",
+                "type": "number",
+                "placeholder": "20000"
+            },
+            {
+                "name": "years",
+                "label": "Years of Service",
+                "type": "number",
+                "placeholder": "5"
+            }
+        ],
+        "type": "gratuity"
+    },
+    {
+        "id": "tax",
+        "slug": "income-tax-calculator",
+        "title": "Income Tax Calculator",
+        "category": "Financial",
+        "metaDescription": "Quick tax estimator (New Regime).",
+        "inputs": [
+            {
+                "name": "income",
+                "label": "Annual Income",
+                "type": "number",
+                "placeholder": "1200000"
+            }
+        ],
+        "type": "tax"
+    },
+    {
+        "id": "fd",
+        "slug": "fd-calculator",
+        "title": "FD Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate maturity amount for Fixed Deposits.",
+        "inputs": [
+            {
+                "name": "principal",
+                "label": "Total Investment",
+                "type": "number",
+                "placeholder": "100000"
+            },
+            {
+                "name": "rate",
+                "label": "Rate of Interest (%)",
+                "type": "number",
+                "placeholder": "6.5"
+            },
+            {
+                "name": "years",
+                "label": "Time Period (Years)",
+                "type": "number",
+                "placeholder": "5"
+            }
+        ],
+        "type": "fd"
+    },
+    {
+        "id": "rd",
+        "slug": "rd-calculator",
+        "title": "RD Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate maturity value for Recurring Deposits.",
+        "inputs": [
+            {
+                "name": "monthly",
+                "label": "Monthly Installment",
+                "type": "number",
+                "placeholder": "5000"
+            },
+            {
+                "name": "rate",
+                "label": "Rate of Interest (%)",
+                "type": "number",
+                "placeholder": "6.0"
+            },
+            {
+                "name": "years",
+                "label": "Time Period (Years)",
+                "type": "number",
+                "placeholder": "3"
+            }
+        ],
+        "type": "rd"
+    },
+    {
+        "id": "ppf",
+        "slug": "ppf-calculator",
+        "title": "PPF Calculator",
+        "category": "Financial",
+        "metaDescription": "Public Provident Fund returns calculator.",
+        "inputs": [
+            {
+                "name": "yearly",
+                "label": "Yearly Investment",
+                "type": "number",
+                "placeholder": "100000"
+            },
+            {
+                "name": "years",
+                "label": "Duration (Min 15 Years)",
+                "type": "number",
+                "placeholder": "15"
+            }
+        ],
+        "type": "ppf"
+    },
+    {
+        "id": "nps",
+        "slug": "nps-calculator",
+        "title": "NPS Calculator",
+        "category": "Financial",
+        "metaDescription": "National Pension System corpus estimator.",
+        "inputs": [
+            {
+                "name": "monthly",
+                "label": "Monthly Investment",
+                "type": "number",
+                "placeholder": "5000"
+            },
+            {
+                "name": "age",
+                "label": "Current Age",
+                "type": "number",
+                "placeholder": "25"
+            },
+            {
+                "name": "roi",
+                "label": "Expected ROI (%)",
+                "type": "number",
+                "placeholder": "10"
+            }
+        ],
+        "type": "nps"
+    },
+    {
+        "id": "cagr",
+        "slug": "cagr-calculator",
+        "title": "CAGR Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate Compound Annual Growth Rate.",
+        "inputs": [
+            {
+                "name": "startVal",
+                "label": "Initial Value",
+                "type": "number",
+                "placeholder": "10000"
+            },
+            {
+                "name": "endVal",
+                "label": "Final Value",
+                "type": "number",
+                "placeholder": "20000"
+            },
+            {
+                "name": "years",
+                "label": "Duration (Years)",
+                "type": "number",
+                "placeholder": "5"
+            }
+        ],
+        "type": "cagr"
+    },
+    {
+        "id": "hra",
+        "slug": "hra-calculator",
+        "title": "HRA Calculator",
+        "category": "Financial",
+        "metaDescription": "Determine HRA Tax Exemption.",
+        "inputs": [
+            {
+                "name": "basic",
+                "label": "Basic Salary (Yearly)",
+                "type": "number",
+                "placeholder": "500000"
+            },
+            {
+                "name": "hraReceived",
+                "label": "HRA Received (Yearly)",
+                "type": "number",
+                "placeholder": "200000"
+            },
+            {
+                "name": "rentPaid",
+                "label": "Rent Paid (Yearly)",
+                "type": "number",
+                "placeholder": "180000"
+            },
+            {
+                "name": "metro",
+                "label": "City Type",
+                "type": "select",
+                "options": [
+                    {
+                        "value": 1,
+                        "text": "Metro"
+                    },
+                    {
+                        "value": 0,
+                        "text": "Non-Metro"
+                    }
+                ]
+            }
+        ],
+        "type": "hra"
+    },
+    {
+        "id": "roi",
+        "slug": "roi-calculator",
+        "title": "ROI Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate Return on Investment percentage.",
+        "inputs": [
+            {
+                "name": "invested",
+                "label": "Amount Invested",
+                "type": "number",
+                "placeholder": "10000"
+            },
+            {
+                "name": "returned",
+                "label": "Amount Returned",
+                "type": "number",
+                "placeholder": "12000"
+            }
+        ],
+        "type": "roi"
+    },
+    {
+        "id": "margin",
+        "slug": "margin-calculator",
+        "title": "Margin Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate profit margin and markup.",
+        "inputs": [
+            {
+                "name": "cost",
+                "label": "Cost Price",
+                "type": "number",
+                "placeholder": "100"
+            },
+            {
+                "name": "revenue",
+                "label": "Selling Price",
+                "type": "number",
+                "placeholder": "150"
+            }
+        ],
+        "type": "margin"
+    },
+    {
+        "id": "calorie",
+        "slug": "calorie-calculator",
+        "title": "Calorie Calculator",
+        "category": "Health",
+        "metaDescription": "Calculate daily calorie needs (TDEE).",
+        "inputs": [
+            {
+                "name": "weight",
+                "label": "Weight (kg)",
+                "type": "number",
+                "placeholder": "70"
+            },
+            {
+                "name": "height",
+                "label": "Height (cm)",
+                "type": "number",
+                "placeholder": "175"
+            },
+            {
+                "name": "age",
+                "label": "Age",
+                "type": "number",
+                "placeholder": "25"
+            },
+            {
+                "name": "gender",
+                "label": "Gender",
+                "type": "select",
+                "options": [
+                    {
+                        "value": 5,
+                        "text": "Male"
+                    },
+                    {
+                        "value": -161,
+                        "text": "Female"
+                    }
+                ]
+            },
+            {
+                "name": "activity",
+                "label": "Activity Level",
+                "type": "select",
+                "options": [
+                    {
+                        "value": 1.2,
+                        "text": "Sedentary"
+                    },
+                    {
+                        "value": 1.375,
+                        "text": "Light Active"
+                    },
+                    {
+                        "value": 1.55,
+                        "text": "Moderately Active"
+                    },
+                    {
+                        "value": 1.725,
+                        "text": "Very Active"
+                    }
+                ]
+            }
+        ],
+        "type": "calorie"
+    },
+    {
+        "id": "bmr",
+        "slug": "bmr-calculator",
+        "title": "BMR Calculator",
+        "category": "Health",
+        "metaDescription": "Basal Metabolic Rate calculator.",
+        "inputs": [
+            {
+                "name": "weight",
+                "label": "Weight (kg)",
+                "type": "number",
+                "placeholder": "70"
+            },
+            {
+                "name": "height",
+                "label": "Height (cm)",
+                "type": "number",
+                "placeholder": "175"
+            },
+            {
+                "name": "age",
+                "label": "Age",
+                "type": "number",
+                "placeholder": "25"
+            },
+            {
+                "name": "gender",
+                "label": "Gender",
+                "type": "select",
+                "options": [
+                    {
+                        "value": 1,
+                        "text": "Male"
+                    },
+                    {
+                        "value": 0,
+                        "text": "Female"
+                    }
+                ]
+            }
+        ],
+        "type": "bmr"
+    },
+    {
+        "id": "bodyfat",
+        "slug": "body-fat-calculator",
+        "title": "Body Fat Calculator",
+        "category": "Health",
+        "metaDescription": "Estimate body fat percentage (Navy Method).",
+        "inputs": [
+            {
+                "name": "waist",
+                "label": "Waist (cm)",
+                "type": "number",
+                "placeholder": "85"
+            },
+            {
+                "name": "neck",
+                "label": "Neck (cm)",
+                "type": "number",
+                "placeholder": "40"
+            },
+            {
+                "name": "height",
+                "label": "Height (cm)",
+                "type": "number",
+                "placeholder": "175"
+            },
+            {
+                "name": "gender",
+                "label": "Gender",
+                "type": "select",
+                "options": [
+                    {
+                        "value": 1,
+                        "text": "Male"
+                    },
+                    {
+                        "value": 0,
+                        "text": "Female"
+                    }
+                ]
+            }
+        ],
+        "type": "bodyfat"
+    },
+    {
+        "id": "idealweight",
+        "slug": "ideal-weight-calculator",
+        "title": "Ideal Weight Calculator",
+        "category": "Health",
+        "metaDescription": "Find your ideal weight range.",
+        "inputs": [
+            {
+                "name": "height",
+                "label": "Height (cm)",
+                "type": "number",
+                "placeholder": "175"
+            },
+            {
+                "name": "gender",
+                "label": "Gender",
+                "type": "select",
+                "options": [
+                    {
+                        "value": 1,
+                        "text": "Male"
+                    },
+                    {
+                        "value": 0,
+                        "text": "Female"
+                    }
+                ]
+            }
+        ],
+        "type": "idealweight"
+    },
+    {
+        "id": "pregnancy",
+        "slug": "pregnancy-calculator",
+        "title": "Pregnancy Calculator",
+        "category": "Health",
+        "metaDescription": "Calculate due date.",
+        "inputs": [
+            {
+                "name": "lmp",
+                "label": "Last Period Date",
+                "type": "date",
+                "placeholder": ""
+            }
+        ],
+        "type": "pregnancy"
+    },
+    {
+        "id": "ovulation",
+        "slug": "ovulation-calculator",
+        "title": "Ovulation Calculator",
+        "category": "Health",
+        "metaDescription": "Track your fertile window.",
+        "inputs": [
+            {
+                "name": "lmp",
+                "label": "Last Period Date",
+                "type": "date",
+                "placeholder": ""
+            },
+            {
+                "name": "cycle",
+                "label": "Avg Cycle Length (Days)",
+                "type": "number",
+                "placeholder": "28"
+            }
+        ],
+        "type": "ovulation"
+    },
+    {
+        "id": "area",
+        "slug": "area-calculator",
+        "title": "Area Calculator",
+        "category": "Math",
+        "metaDescription": "Calculate area of shapes.",
+        "inputs": [
+            {
+                "name": "shape",
+                "label": "Shape",
+                "type": "select",
+                "options": [
+                    {
+                        "value": "rect",
+                        "text": "Rectangle"
+                    },
+                    {
+                        "value": "circle",
+                        "text": "Circle"
+                    }
+                ]
+            },
+            {
+                "name": "dim1",
+                "label": "Length / Radius",
+                "type": "number",
+                "placeholder": "10"
+            },
+            {
+                "name": "dim2",
+                "label": "Width (if Rectangle)",
+                "type": "number",
+                "placeholder": "5"
+            }
+        ],
+        "type": "area"
+    },
+    {
+        "id": "volume",
+        "slug": "volume-calculator",
+        "title": "Volume Calculator",
+        "category": "Math",
+        "metaDescription": "Calculate volume of 3D objects.",
+        "inputs": [
+            {
+                "name": "shape",
+                "label": "Object",
+                "type": "select",
+                "options": [
+                    {
+                        "value": "cube",
+                        "text": "Cube"
+                    },
+                    {
+                        "value": "sphere",
+                        "text": "Sphere"
+                    }
+                ]
+            },
+            {
+                "name": "dim1",
+                "label": "Side / Radius",
+                "type": "number",
+                "placeholder": "10"
+            }
+        ],
+        "type": "volume"
+    },
+    {
+        "id": "speed",
+        "slug": "speed-calculator",
+        "title": "Speed Calculator",
+        "category": "Math",
+        "metaDescription": "Calculate Speed, Distance or Time.",
+        "inputs": [
+            {
+                "name": "distance",
+                "label": "Distance (km)",
+                "type": "number",
+                "placeholder": "100"
+            },
+            {
+                "name": "time",
+                "label": "Time (hours)",
+                "type": "number",
+                "placeholder": "2"
+            }
+        ],
+        "type": "speed"
+    },
+    {
+        "id": "gpa",
+        "slug": "gpa-calculator",
+        "title": "GPA Calculator",
+        "category": "Math",
+        "metaDescription": "Simple GPA estimator.",
+        "inputs": [
+            {
+                "name": "points",
+                "label": "Total Grade Points",
+                "type": "number",
+                "placeholder": "350"
+            },
+            {
+                "name": "credits",
+                "label": "Total Credits",
+                "type": "number",
+                "placeholder": "100"
+            }
+        ],
+        "type": "gpa"
+    },
+    {
+        "id": "tip",
+        "slug": "tip-calculator",
+        "title": "Tip Calculator",
+        "category": "Math",
+        "metaDescription": "Calculate tip amount per person.",
+        "inputs": [
+            {
+                "name": "bill",
+                "label": "Bill Amount",
+                "type": "number",
+                "placeholder": "1000"
+            },
+            {
+                "name": "tipPct",
+                "label": "Tip %",
+                "type": "number",
+                "placeholder": "10"
+            },
+            {
+                "name": "people",
+                "label": "Split Between",
+                "type": "number",
+                "placeholder": "4"
+            }
+        ],
+        "type": "tip"
+    },
+    {
+        "id": "binary",
+        "slug": "binary-calculator",
+        "title": "Binary Converter",
+        "category": "Math",
+        "metaDescription": "Convert Decimal to Binary.",
+        "inputs": [
+            {
+                "name": "decimal",
+                "label": "Decimal Number",
+                "type": "number",
+                "placeholder": "10"
+            }
+        ],
+        "type": "binary"
+    }
+]

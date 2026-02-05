@@ -1,0 +1,156 @@
+<div class="calculator-content-body">
+    <h1>Age Calculator: The Science of Time Tracking</h1>
+    <p class="intro-text">
+        "How old are you?" is one of the most common questions we are asked. Usually, we answer with a simple number:
+        "I'm 25" or "I'm 40". But time is continuous and precise. You aren't just 25; you are 25 years, 3 months, 12
+        days, and some odd hours old. This <strong>Age Calculator</strong> is designed to bridge the gap between rough
+        estimates and chronological precision. It navigates the complexities of the Gregorian calendar—leap years,
+        varying month lengths, and date boundaries—to give you your exact age definition today.
+    </p>
+
+    <h2>The Complexity of Calculating Age</h2>
+    <p>
+        It might seem simple: Current Year minus Birth Year. <br>
+        <em>2024 - 1990 = 34.</em><br>
+        But this simple math fails because it ignores the specifics of months and days. If today is January 1st, 2024,
+        and you were born on December 31st, 1990, the simple math says 34, but you barely turned 33 yesterday.
+    </p>
+    <p>
+        True age calculation requires an algorithm that accounts for:
+    </p>
+    <ul>
+        <li><strong>Variable Month Lengths:</strong> January has 31 days, April has 30, and February changes.</li>
+        <li><strong>Leap Years:</strong> Every 4 years (mostly), an extra day is added. A person born on Feb 29th
+            technically has a birthday only once every 4 years!</li>
+        <li><strong>Time Zones:</strong> Being born in Tokyo vs New York can technically shift your birth "date"
+            relative to UTC.</li>
+    </ul>
+
+    <h2>Why Do We Need Exact Age Calculation?</h2>
+    <p>
+        Beyond curiosity, exact age is critical in legal and administrative contexts:
+    </p>
+    <h3>1. Job Eligibility</h3>
+    <p>Many government jobs and competitive exams have strict age limits (e.g., "Candidate must not be older than 28
+        years as of 1st Aug 2024"). A difference of one day can disqualify a candidate.</p>
+
+    <h3>2. School Admissions</h3>
+    <p>Primary school admissions often have strict cut-offs. A child needs to be exactly 5 or 6 years old by a specific
+        date to enter Grade 1.</p>
+
+    <h3>3. Retirement & Pension</h3>
+    <p>Vesting of pension benefits happens on specific dates. Knowing exactly when you cross the 60-year threshold helps
+        in financial planning.</p>
+
+    <h3>4. Astrological Precision</h3>
+    <p>Astrology and Kundali matching require age (and birth time) precision down to the minute to plot planetary
+        positions.</p>
+
+    <h2>Fun Facts About Age</h2>
+    <p>Did you know?</p>
+    <ul>
+        <li><strong>Korean Age:</strong> In South Korea, traditionally, a baby was considered 1 year old at birth
+            (counting time in the womb) and turned a year older every New Year's Day, not on their birthday. (Though
+            they recently switched to the international system).</li>
+        <li><strong>Feb 29 Babies:</strong> "Leaplings" often celebrate birthdays on Feb 28th or March 1st in non-leap
+            years. Legally, most countries recognize March 1st as the age advancement date.</li>
+        <li><strong>Seconds Alive:</strong> By the time you are 31 years and 7 months old, you have lived roughly 1
+            Billion seconds!</li>
+    </ul>
+
+    <h2>The Psychology of Age</h2>
+    <p>
+        Age is just a number, but it carries weight. We often mark life in "Decades"—turning 30, 40, or 50 are massive
+        psychological milestones.
+        <br><br>
+        <strong>The "9-enders":</strong> Research suggests that people who are 29, 39, 49, etc., are more likely to make
+        major life changes (like running a marathon or changing jobs) as they approach a new decade boundary. Using an
+        age calculator can sometimes trigger this reflection on "time remaining" vs "time lived".
+    </p>
+
+    <h2>Biological vs Chronological Age</h2>
+    <p>
+        This calculator measures your <strong>Chronological Age</strong>—the amount of time that has passed since your
+        birth.
+        However, scientists also study <strong>Biological Age</strong>, which refers to how fast your cells are aging.
+        Factors like stress, diet, and exercise can make your "body" younger or older than your calendar age. A fit
+        50-year-old might have the biological markers of a 35-year-old!
+    </p>
+
+    <h2>How Our Calculator Works</h2>
+    <p>
+        Our tool uses the standard Western Age System.
+    </p>
+    <ol>
+        <li>It takes your input date (DOB).</li>
+        <li>It gets the current system date.</li>
+        <li>It subtracts the years first.</li>
+        <li>It then checks if the current month/day is <em>before</em> the birth month/day. If so, it subtracts 1 from
+            the year count.</li>
+        <li>It then calculates the remaining months and days, dynamically adjusting for previous month lengths (e.g.
+            subtracting days from Feb vs March).</li>
+    </ol>
+
+    <h2>Conclusion</h2>
+    <p>
+        Time is our most valuable resource. Knowing exactly how much of it has passed helps us appreciate the journey.
+        Whether you are calculating your age for a form, checking if your child is ready for school, or just realized
+        you've been alive for 10,000 days, this tool provides the precision you need.
+    </p>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <div class="faq-section">
+        <div class="faq-item">
+            <h4>1. Does this calculator save my birth date?</h4>
+            <p>Absolutely not. The calculation happens locally in your browser using JavaScript. No data is sent to our
+                servers.</p>
+        </div>
+        <div class="faq-item">
+            <h4>2. How do you handle 29th February?</h4>
+            <p>If you were born on Feb 29, the calculator recognizes it as a valid date. In non-leap years, it
+                calculates your anniversary relative to March 1st usually.</p>
+        </div>
+        <div class="faq-item">
+            <h4>3. Why am I 0 years old?</h4>
+            <p>If the entered date is less than 12 months ago (e.g., for a baby), the calculator will show 0 Years and
+                the corresponding months/days.</p>
+        </div>
+        <div class="faq-item">
+            <h4>4. What is the maximum age it can calculate?</h4>
+            <p>It can calculate dates back to year 100 AD theoretically, but practically it is useful for dates from
+                1900 onwards.</p>
+        </div>
+        <div class="faq-item">
+            <h4>5. Can I calculate the age of my dog?</h4>
+            <p>This gives chronological years. For "Dog Years" (where 1 human year ≈ 7 dog years), you would need a
+                simplified multiplication of this result.</p>
+        </div>
+        <div class="faq-item">
+            <h4>6. Is the result accurate to the second?</h4>
+            <p>No, this tool calculates up to the Day. Calculating to the second requires knowing the exact Birth Time
+                (e.g., 4:35 PM), which most people don't recall.</p>
+        </div>
+        <div class="faq-item">
+            <h4>7. Can I use this for legal documents?</h4>
+            <p>While accurate, official age is usually determined by your birth certificate or passport. This tool is
+                for informational and verification purposes.</p>
+        </div>
+        <div class="faq-item">
+            <h4>8. Why does day count change?</h4>
+            <p>Because months have different days. Being 1 month old could mean 28, 30, or 31 days passed depending on
+                if you were born in Feb, April, or Jan.</p>
+        </div>
+        <div class="faq-item">
+            <h4>9. What if I enter a future date?</h4>
+            <p>The calculator will technically show results, but usually negative values or errors. It is designed for
+                past dates.</p>
+        </div>
+        <div class="faq-item">
+            <h4>10. How do I calculate "Age Next Birthday"?</h4>
+            <p>Simply take your current age in years, add 1, and the "months/days" field shows how far you are from that
+                integer.</p>
+        </div>
+    </div>
+</div>
