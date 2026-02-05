@@ -16,25 +16,23 @@
 
     <!-- Canonical URL -->
     <link rel="canonical"
-        href="<%= typeof canonicalUrl != 'undefined' ? canonicalUrl : 'https://nexcalculators.vercel.app' + (typeof req != 'undefined' ? req.originalUrl : '') %>">
+        href="<%= typeof canonicalUrl != 'undefined' ? canonicalUrl : baseUrl + (typeof req != 'undefined' ? req.originalUrl : '') %>">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url"
-        content="<%= typeof canonicalUrl != 'undefined' ? canonicalUrl : 'https://nexcalculators.vercel.app/' %>">
+    <meta property="og:url" content="<%= typeof canonicalUrl != 'undefined' ? canonicalUrl : baseUrl + '/' %>">
     <meta property="og:title" content="<%= typeof title !='undefined' ? title : 'NexCalculators.com' %>">
     <meta property="og:description"
         content="<%= typeof metaDescription != 'undefined' ? metaDescription : 'Free, accurate, and easy-to-use calculators.' %>">
-    <meta property="og:image" content="https://nexcalculators.vercel.app/images/logo.png">
+    <meta property="og:image" content="<%= baseUrl %>/images/logo.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url"
-        content="<%= typeof canonicalUrl != 'undefined' ? canonicalUrl : 'https://nexcalculators.vercel.app/' %>">
+    <meta property="twitter:url" content="<%= typeof canonicalUrl != 'undefined' ? canonicalUrl : baseUrl + '/' %>">
     <meta property="twitter:title" content="<%= typeof title !='undefined' ? title : 'NexCalculators.com' %>">
     <meta property="twitter:description"
         content="<%= typeof metaDescription != 'undefined' ? metaDescription : 'Free, accurate, and easy-to-use calculators.' %>">
-    <meta property="twitter:image" content="https://nexcalculators.vercel.app/images/logo.png">
+    <meta property="twitter:image" content="<%= baseUrl %>/images/logo.png">
 
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
@@ -50,17 +48,17 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://nexcalculators.vercel.app/"
+            "item": "<%= baseUrl %>/"
           },{
             "@type": "ListItem",
             "position": 2,
             "name": "<%= calculator.category %>",
-            "item": "https://nexcalculators.vercel.app/#<%= calculator.category %>"
+            "item": "<%= baseUrl %>/#<%= calculator.category %>"
           },{
             "@type": "ListItem",
             "position": 3,
             "name": "<%= calculator.title %>",
-            "item": "https://nexcalculators.vercel.app/calculator/<%= calculator.slug %>"
+            "item": "<%= baseUrl %>/calculator/<%= calculator.slug %>"
           }]
         }
         </script>
@@ -71,7 +69,7 @@
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "<%= calculator.title %>",
-          "url": "https://nexcalculators.vercel.app/calculator/<%= calculator.slug %>",
+          "url": "<%= baseUrl %>/calculator/<%= calculator.slug %>",
           "description": "<%= calculator.metaDescription %>",
           "applicationCategory": "Calculator",
           "operatingSystem": "Web",

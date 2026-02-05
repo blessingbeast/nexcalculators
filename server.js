@@ -14,6 +14,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Global Variables Middleware
+app.use((req, res, next) => {
+    // Set Base URL (fallback to localhost if undefined)
+    const baseUrl = process.env.BASE_URL || `http://localhost:${PORT}`;
+    res.locals.baseUrl = baseUrl;
+    res.locals.currentUrl = `${baseUrl}${req.originalUrl}`;
+    next();
+});
+
 // Routes
 const indexRouter = require('./routes/index');
 const calculatorRouter = require('./routes/calculators');

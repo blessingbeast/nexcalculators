@@ -52,7 +52,8 @@ exports.getCalculator = (req, res) => {
                 }
 
                 // 2. Prepare Canonical URL
-                const fullUrl = `https://nexcalculators.vercel.app/calculator/${slug}`;
+                const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
+                const fullUrl = `${baseUrl}/calculator/${slug}`;
 
                 res.render('calculator', {
                     title: calculator.metaTitle || `${calculator.title} - Free Online Calculator`,
