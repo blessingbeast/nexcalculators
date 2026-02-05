@@ -1,9 +1,14 @@
-{
-    "version": 2,
-    "rewrites": [
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/server.js"
+            "src": "/(google.*\\.html)",
+            "dest": "/static/$1"
+        },
+        {
+            "src": "/.well-known/(google.*\\.html)",
+            "dest": "/static/.well-known/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "server.js"
         }
     ]
-}
