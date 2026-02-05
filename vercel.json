@@ -8,6 +8,10 @@
     ],
     "routes": [
         {
+            "src": "/google0572cb8c76265bca.html",
+            "dest": "/public/google0572cb8c76265bca.html"
+        },
+        {
             "src": "/(.*)",
             "dest": "server.js"
         }
