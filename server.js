@@ -7,14 +7,15 @@ const PORT = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// Google Verification File (Direct Route)
+app.get('/google0572cb8c76265bca.html', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.send('google-site-verification: google0572cb8c76265bca.html');
+});
+
 // Static Files
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-// Google Verification File (Direct Route)
-app.get('/google0572cb8c76265bca.html', (req, res) => {
-    res.send('google-site-verification: google0572cb8c76265bca.html');
-});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
