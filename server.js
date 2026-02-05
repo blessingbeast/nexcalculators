@@ -8,11 +8,15 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // Static Files
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+// Google Verification File (Direct Route)
+app.get('/google0572cb8c76265bca.html', (req, res) => {
+    res.send('google-site-verification: google0572cb8c76265bca.html');
+});
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Global Variables Middleware
 app.use((req, res, next) => {
