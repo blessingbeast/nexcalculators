@@ -1,0 +1,33 @@
+<%- include('../partials/header') %>
+
+    <div class="container" style="padding: 60px 20px; max-width: 800px;">
+        <h1>Google Search Console / SEO Helper</h1>
+        <p>Use this page to verify that your SEO files are live and correct.</p>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin-top: 20px; border: 1px solid #e2e8f0;">
+            <h3>✅ Sitemap</h3>
+            <p>Your sitemap should be available here:</p>
+            <a href="/sitemap.xml" target="_blank" style="color: #2563eb; font-weight: bold;">/sitemap.xml</a>
+            <p style="font-size: 0.9em; color: #666;">Submit this URL to Google Search Console.</p>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin-top: 20px; border: 1px solid #e2e8f0;">
+            <h3>✅ Robots.txt</h3>
+            <p>Your robot rules should be available here:</p>
+            <a href="/robots.txt" target="_blank" style="color: #2563eb; font-weight: bold;">/robots.txt</a>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin-top: 20px; border: 1px solid #e2e8f0;">
+            <h3>✅ Structured Data Check</h3>
+            <p>To verify the JSON-LD Schema (Breadcrumbs, FAQ, Application):</p>
+            <ol style="margin-left: 20px; color: #444;">
+                <li>Open any calculator page (e.g., <a href="/calculator/bmi-calculator">BMI Calculator</a>).</li>
+                <li>Right-click and "View Page Source".</li>
+                <li>Look for scripts with type <code>application/ld+json</code>.</li>
+                <li>Or use <a href="https://search.google.com/test/rich-results" target="_blank">Google Rich Results
+                        Test</a>.</li>
+            </ol>
+        </div>
+    </div>
+
+    <%- include('../partials/footer') %>

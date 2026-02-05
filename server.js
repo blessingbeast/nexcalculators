@@ -18,7 +18,10 @@ app.use(express.json());
 const indexRouter = require('./routes/index');
 const calculatorRouter = require('./routes/calculators');
 
+const sitemapRouter = require('./routes/sitemap');
+
 app.use('/', indexRouter);
+app.use('/', sitemapRouter); // Handle /sitemap.xml and /robots.txt at root
 app.use('/calculator', calculatorRouter);
 
 // 404 Handler

@@ -36,12 +36,34 @@ exports.getCalculator = (req, res) => {
                     calculator.content = '<p>Description coming soon.</p>';
                 }
 
+                // --- SEO LOGIC START ---
+                // 1. Extract FAQs from HTML content
+                // Looking for <h3>Question</h3><p>Answer</p> pattern common in our content
+                const faqs = [];
+                const faqRegex = /<h3>(.*?)<\/h3>\s*<p>(.*?)<\/p>/g;
+                let match;
+
+                // We limit to first 6 matched FAQs for Schema to avoid noise
+                while ((match = faqRegex.exec(calculator.content)) !== null && faqs.length < 6) {
+                    faqs.push({
+                        question: match[1].replace(/<[^>]*>?/gm, '').trim(), // Strip tags
+                        answer: match[2].replace(/<[^>]*>?/gm, '').trim()
+                    });
+                }
+
+                // 2. Prepare Canonical URL
+                const fullUrl = `https://nexcalculators.vercel.app/calculator/${slug}`;
+
                 res.render('calculator', {
-                    title: calculator.metaTitle,
-                    metaDescription: calculator.metaDescription,
+                    title: calculator.metaTitle || `${calculator.title} - Free Online Calculator`,
+                    metaDescription: calculator.metaDescription || `Calculate ${calculator.title} instantly online. Free, accurate and fast.`,
                     calculator: calculator,
                     relatedCalculators: relatedCalculators,
-                    calculators: calculators
+                    calculators: calculators,
+                    // SEO Props
+                    canonicalUrl: fullUrl,
+                    faqs: faqs,
+                    isCalculatorPage: true
                 });
             });
 
