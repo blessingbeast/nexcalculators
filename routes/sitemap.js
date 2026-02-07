@@ -6,7 +6,11 @@ const path = require('path');
 const calculatorsPath = path.join(__dirname, '../calculators/calculators.json');
 
 // Helper to get Base URL
-const getBaseUrl = () => process.env.BASE_URL || 'http://localhost:3000';
+const getBaseUrl = () => {
+    if (process.env.BASE_URL) return process.env.BASE_URL;
+    if (process.env.NODE_ENV === 'production') return 'https://nexcalculators.com';
+    return 'http://localhost:3000';
+};
 
 // Sitemap Route
 router.get('/sitemap.xml', (req, res) => {

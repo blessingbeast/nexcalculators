@@ -22,7 +22,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Global Variables Middleware
 app.use((req, res, next) => {
     // Set Base URL (fallback to localhost if undefined)
-    const baseUrl = process.env.BASE_URL || `http://localhost:${PORT}`;
+    let baseUrl = process.env.BASE_URL;
+    if (!baseUrl) {
+        if (process.env.NODE_ENV === 'production') {
+            baseUrl = 'https://nexcalculators.com';
+        } else {
+            baseUrl = `http://localhost:${PORT}`;
+        }
+    }
     res.locals.baseUrl = baseUrl;
     res.locals.currentUrl = `${baseUrl}${req.originalUrl}`;
     next();
