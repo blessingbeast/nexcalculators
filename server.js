@@ -13,6 +13,14 @@ app.get('/google0572cb8c76265bca.html', (req, res) => {
     res.send('google-site-verification: google0572cb8c76265bca.html');
 });
 
+// WWW Redirect Middleware (Production Only)
+app.use((req, res, next) => {
+    if (process.env.NODE_ENV === 'production' && req.headers.host === 'nexcalculators.com') {
+        return res.redirect(301, `https://www.nexcalculators.com${req.originalUrl}`);
+    }
+    next();
+});
+
 // Static Files
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -25,7 +33,7 @@ app.use((req, res, next) => {
     let baseUrl = process.env.BASE_URL;
     if (!baseUrl) {
         if (process.env.NODE_ENV === 'production') {
-            baseUrl = 'https://nexcalculators.com';
+            baseUrl = 'https://www.nexcalculators.com';
         } else {
             baseUrl = `http://localhost:${PORT}`;
         }

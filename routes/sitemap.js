@@ -8,7 +8,7 @@ const calculatorsPath = path.join(__dirname, '../calculators/calculators.json');
 // Helper to get Base URL
 const getBaseUrl = () => {
     if (process.env.BASE_URL) return process.env.BASE_URL;
-    if (process.env.NODE_ENV === 'production') return 'https://nexcalculators.com';
+    if (process.env.NODE_ENV === 'production') return 'https://www.nexcalculators.com';
     return 'http://localhost:3000';
 };
 

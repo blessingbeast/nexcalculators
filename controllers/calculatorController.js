@@ -52,7 +52,7 @@ exports.getCalculator = (req, res) => {
                 }
 
                 // 2. Prepare Canonical URL
-                const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
+                const baseUrl = process.env.BASE_URL || (process.env.NODE_ENV === 'production' ? 'https://www.nexcalculators.com' : 'http://localhost:3000');
                 const fullUrl = `${baseUrl}/calculator/${slug}`;
 
                 res.render('calculator', {
