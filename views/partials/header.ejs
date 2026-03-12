@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="/favicon-192x192.png">
+
     <!-- Primary Meta Tags -->
     <title>
-        <%= typeof title !='undefined' ? title : 'NexCalculators.com - Free Online Calculators' %>
+        <%= typeof title !='undefined' ? title : 'NexCalculators – Free Online Calculators for Finance, Health & Math' %>
     </title>
     <meta name="description"
         content="<%= typeof metaDescription != 'undefined' ? metaDescription : 'Free, accurate, and easy-to-use calculators for finance, health, math, and everyday life.' %>">
@@ -82,7 +89,7 @@
         </script>
 
         <!-- 3. FAQ Schema (if FAQs exist) -->
-        <% if (typeof faqs !='undefined' && faqs.length> 0) { %>
+        <% if (typeof faqs !='undefined' && faqs.length > 0) { %>
             <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -91,10 +98,10 @@
             <% faqs.forEach(function(faq, index) { %>
             {
               "@type": "Question",
-              "name": "<%= faq.question %>",
+              "name": "<%- faq.question.replace(/"/g, '&quot;').replace(/'/g, '&#39;') %>",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "<%= faq.answer %>"
+                "text": "<%- faq.answer.replace(/"/g, '&quot;').replace(/'/g, '&#39;') %>"
               }
             }<%= index < faqs.length - 1 ? ',' : '' %>
             <% }); %>

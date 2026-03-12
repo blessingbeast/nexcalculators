@@ -56,6 +56,12 @@ router.get('/sitemap.xml', (req, res) => {
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>${getBaseUrl()}/calculators</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
         `;
 
         // Calculator Pages
@@ -80,6 +86,8 @@ router.get('/sitemap.xml', (req, res) => {
 router.get('/robots.txt', (req, res) => {
     const robots = `User-agent: *
 Allow: /
+Disallow: /api
+Disallow: /admin
 
 Sitemap: ${getBaseUrl()}/sitemap.xml`;
 

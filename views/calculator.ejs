@@ -3,6 +3,17 @@
     <div class="container">
         <div class="page-layout">
             <main class="main-content">
+                <!-- Breadcrumb Navigation -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/">Home</a>
+                    <span class="breadcrumb-sep">›</span>
+                    <a href="/calculators">Calculators</a>
+                    <span class="breadcrumb-sep">›</span>
+                    <a href="/calculators#<%= calculator.category %>"><%= calculator.category %></a>
+                    <span class="breadcrumb-sep">›</span>
+                    <span class="breadcrumb-current"><%= calculator.title %></span>
+                </nav>
+
                 <div class="calculator-box" data-type="<%= calculator.type %>">
                     <h1>
                         <%= calculator.title %>

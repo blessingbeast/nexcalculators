@@ -1,0 +1,63 @@
+<%- include('partials/header') %>
+
+    <div class="container" style="padding-top: 30px; padding-bottom: 60px;">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">All Calculators</span>
+        </nav>
+
+        <h1 style="margin-bottom: 8px;">All Free Online Calculators</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 40px; font-size: 1.1rem;">
+            Browse our complete collection of free calculators for finance, health, math, and more.
+        </p>
+
+        <% 
+            const grouped = {};
+            calculators.forEach(calc => {
+                if (!grouped[calc.category]) grouped[calc.category] = [];
+                grouped[calc.category].push(calc);
+            });
+            const categoryOrder = ['Financial', 'Health', 'Math'];
+            const categoryIcons = { Financial: '💰', Health: '🏥', Math: '🔢' };
+        %>
+
+        <% categoryOrder.forEach(function(cat) { %>
+            <% if (grouped[cat]) { %>
+            <section class="calc-dir-section" id="<%= cat %>">
+                <h2 class="calc-dir-heading">
+                    <%= categoryIcons[cat] || '📊' %> <%= cat %> Calculators
+                </h2>
+                <div class="calc-dir-grid">
+                    <% grouped[cat].forEach(function(calc) { %>
+                    <a href="/calculator/<%= calc.slug %>" class="calc-dir-card">
+                        <span class="calc-dir-name"><%= calc.title %></span>
+                        <span class="calc-dir-desc"><%= calc.metaDescription ? calc.metaDescription.substring(0, 80) + '...' : 'Free online calculator.' %></span>
+                    </a>
+                    <% }); %>
+                </div>
+            </section>
+            <% } %>
+        <% }); %>
+
+        <!-- Other categories not in order -->
+        <% Object.keys(grouped).forEach(function(cat) { %>
+            <% if (!categoryOrder.includes(cat)) { %>
+            <section class="calc-dir-section" id="<%= cat %>">
+                <h2 class="calc-dir-heading">📊 <%= cat %> Calculators</h2>
+                <div class="calc-dir-grid">
+                    <% grouped[cat].forEach(function(calc) { %>
+                    <a href="/calculator/<%= calc.slug %>" class="calc-dir-card">
+                        <span class="calc-dir-name"><%= calc.title %></span>
+                        <span class="calc-dir-desc"><%= calc.metaDescription ? calc.metaDescription.substring(0, 80) + '...' : 'Free online calculator.' %></span>
+                    </a>
+                    <% }); %>
+                </div>
+            </section>
+            <% } %>
+        <% }); %>
+    </div>
+
+<%- include('partials/footer') %>

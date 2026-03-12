@@ -37,18 +37,21 @@ exports.getCalculator = (req, res) => {
                 }
 
                 // --- SEO LOGIC START ---
-                // 1. Extract FAQs from HTML content
-                // Looking for <h3>Question</h3><p>Answer</p> pattern common in our content
-                const faqs = [];
-                const faqRegex = /<h3>(.*?)<\/h3>\s*<p>(.*?)<\/p>/g;
-                let match;
-
-                // We limit to first 6 matched FAQs for Schema to avoid noise
-                while ((match = faqRegex.exec(calculator.content)) !== null && faqs.length < 6) {
-                    faqs.push({
-                        question: match[1].replace(/<[^>]*>?/gm, '').trim(), // Strip tags
-                        answer: match[2].replace(/<[^>]*>?/gm, '').trim()
-                    });
+                // 1. Prefer JSON-defined FAQs, fallback to content-extracted FAQs
+                let faqs = [];
+                if (calculator.faqs && calculator.faqs.length > 0) {
+                    // Use pre-defined FAQs from calculators.json
+                    faqs = calculator.faqs.map(f => ({ question: f.q, answer: f.a }));
+                } else {
+                    // Fallback: extract from HTML content
+                    const faqRegex = /<h3>(.*?)<\/h3>\s*<p>(.*?)<\/p>/g;
+                    let match;
+                    while ((match = faqRegex.exec(calculator.content)) !== null && faqs.length < 6) {
+                        faqs.push({
+                            question: match[1].replace(/<[^>]*>?/gm, '').trim(),
+                            answer: match[2].replace(/<[^>]*>?/gm, '').trim()
+                        });
+                    }
                 }
 
                 // 2. Prepare Canonical URL
@@ -56,7 +59,7 @@ exports.getCalculator = (req, res) => {
                 const fullUrl = `${baseUrl}/calculator/${slug}`;
 
                 res.render('calculator', {
-                    title: calculator.metaTitle || `${calculator.title} - Free Online Calculator`,
+                    title: calculator.metaTitle || `${calculator.title} – Free Online Calculator | NexCalculators`,
                     metaDescription: calculator.metaDescription || `Calculate ${calculator.title} instantly online. Free, accurate and fast.`,
                     calculator: calculator,
                     relatedCalculators: relatedCalculators,
