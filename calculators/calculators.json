@@ -1898,5 +1898,204 @@
                 "a": "Yes, completely free."
             }
         ]
+    },
+    {
+        "id": "profit-margin",
+        "slug": "profit-margin-calculator",
+        "title": "Profit Margin Calculator",
+        "category": "Financial",
+        "metaDescription": "Calculate profit margin, gross profit, and markup percentage instantly. Free profit margin calculator for businesses, sellers, and freelancers.",
+        "inputs": [
+            {
+                "name": "revenue",
+                "label": "Revenue / Selling Price",
+                "type": "number",
+                "placeholder": "e.g. 10000"
+            },
+            {
+                "name": "cost",
+                "label": "Cost of Goods / Expenses",
+                "type": "number",
+                "placeholder": "e.g. 7000"
+            }
+        ],
+        "type": "profit-margin",
+        "metaTitle": "Profit Margin Calculator – Calculate Gross Profit & Markup (Free 2026)",
+        "faqs": [
+            {
+                "q": "What is profit margin?",
+                "a": "Profit margin = (Revenue - Cost) / Revenue × 100. It shows what percentage of revenue is profit."
+            },
+            {
+                "q": "What is markup vs margin?",
+                "a": "Markup is profit as a % of cost. Margin is profit as a % of revenue. E.g., 43% markup = 30% margin."
+            },
+            {
+                "q": "What is a good profit margin?",
+                "a": "Varies by industry. Retail: 2-10%. SaaS: 60-80%. Services: 30-50%. Compare with industry benchmarks."
+            },
+            {
+                "q": "Is this profit margin calculator free?",
+                "a": "Yes, completely free."
+            }
+        ]
+    },
+    {
+        "id": "average",
+        "slug": "average-calculator",
+        "title": "Average Calculator",
+        "category": "Math",
+        "metaDescription": "Calculate the average (mean) of any set of numbers instantly. Free online average calculator — enter numbers separated by commas for instant results.",
+        "inputs": [
+            {
+                "name": "numbers",
+                "label": "Enter Numbers (comma separated)",
+                "type": "text",
+                "placeholder": "e.g. 10, 20, 30, 40"
+            }
+        ],
+        "type": "average",
+        "metaTitle": "Average Calculator – Find Mean of Numbers Instantly (Free 2026)",
+        "faqs": [
+            {
+                "q": "What is average (mean)?",
+                "a": "Average = Sum of all numbers ÷ Count of numbers. E.g., average of 10, 20, 30 = 60/3 = 20."
+            },
+            {
+                "q": "What is the difference between mean, median, and mode?",
+                "a": "Mean is the average. Median is the middle value when sorted. Mode is the most frequent value."
+            },
+            {
+                "q": "When is average misleading?",
+                "a": "When data has extreme outliers. E.g., 5 people earning ₹1L and 1 billionaire — average salary is misleading."
+            },
+            {
+                "q": "Is this average calculator free?",
+                "a": "Yes, completely free."
+            }
+        ]
+    },
+    {
+        "id": "ratio",
+        "slug": "ratio-calculator",
+        "title": "Ratio Calculator",
+        "category": "Math",
+        "metaDescription": "Simplify ratios, find equivalent ratios, and solve ratio problems instantly. Free online ratio calculator for students, teachers, and professionals.",
+        "inputs": [
+            {
+                "name": "valueA",
+                "label": "Value A",
+                "type": "number",
+                "placeholder": "e.g. 4"
+            },
+            {
+                "name": "valueB",
+                "label": "Value B",
+                "type": "number",
+                "placeholder": "e.g. 6"
+            }
+        ],
+        "type": "ratio",
+        "metaTitle": "Ratio Calculator – Simplify & Solve Ratios Instantly (Free 2026)",
+        "faqs": [
+            {
+                "q": "How do you simplify a ratio?",
+                "a": "Divide both values by their Greatest Common Divisor (GCD). E.g., 4:6 → GCD is 2 → simplified to 2:3."
+            },
+            {
+                "q": "What is a ratio?",
+                "a": "A ratio compares two quantities showing how many times one contains the other. E.g., 3:1 means 3 times as much."
+            },
+            {
+                "q": "How is ratio used in real life?",
+                "a": "Recipes, map scales, financial analysis (debt-to-equity), screen aspect ratios, and mixing solutions."
+            },
+            {
+                "q": "Is this ratio calculator free?",
+                "a": "Yes, completely free."
+            }
+        ]
+    },
+    {
+        "id": "date-difference",
+        "slug": "date-difference-calculator",
+        "title": "Date Difference Calculator",
+        "category": "Math",
+        "metaDescription": "Find the exact number of days, weeks, and months between two dates. Free date difference calculator — perfect for deadlines, countdowns, and planning.",
+        "inputs": [
+            {
+                "name": "startDate",
+                "label": "Start Date",
+                "type": "date",
+                "placeholder": ""
+            },
+            {
+                "name": "endDate",
+                "label": "End Date",
+                "type": "date",
+                "placeholder": ""
+            }
+        ],
+        "type": "date-difference",
+        "metaTitle": "Date Difference Calculator – Find Days Between Two Dates (Free 2026)",
+        "faqs": [
+            {
+                "q": "How do I calculate days between two dates?",
+                "a": "Subtract the start date from the end date. This calculator does it instantly, accounting for leap years."
+            },
+            {
+                "q": "Does this include the start and end dates?",
+                "a": "The total shows calendar days between dates. To include both endpoints, add 1 to the result."
+            },
+            {
+                "q": "Can I calculate business days?",
+                "a": "This calculator shows calendar days. For business days, subtract the weekends from the result."
+            },
+            {
+                "q": "Is this date calculator free?",
+                "a": "Yes, completely free."
+            }
+        ]
+    },
+    {
+        "id": "time-duration",
+        "slug": "time-duration-calculator",
+        "title": "Time Duration Calculator",
+        "category": "Math",
+        "metaDescription": "Calculate the total duration between two times in hours, minutes, and seconds. Free time duration calculator — perfect for work hours, events, and shifts.",
+        "inputs": [
+            {
+                "name": "startTime",
+                "label": "Start Time",
+                "type": "time",
+                "placeholder": ""
+            },
+            {
+                "name": "endTime",
+                "label": "End Time",
+                "type": "time",
+                "placeholder": ""
+            }
+        ],
+        "type": "time-duration",
+        "metaTitle": "Time Duration Calculator – Calculate Hours & Minutes Between Times (Free 2026)",
+        "faqs": [
+            {
+                "q": "How do I calculate hours between two times?",
+                "a": "Subtract the start time from the end time. If the result crosses midnight, add 24 hours to the end time."
+            },
+            {
+                "q": "Can I calculate overnight shifts?",
+                "a": "Yes. If end time is earlier than start time, the calculator automatically handles the overnight (next-day) scenario."
+            },
+            {
+                "q": "Is this useful for billing work hours?",
+                "a": "Yes. Enter your clock-in and clock-out times to instantly calculate billable hours for freelance or contract work."
+            },
+            {
+                "q": "Is this time duration calculator free?",
+                "a": "Yes, completely free."
+            }
+        ]
     }
 ]

@@ -98,10 +98,10 @@
             <% faqs.forEach(function(faq, index) { %>
             {
               "@type": "Question",
-              "name": "<%- faq.question.replace(/"/g, '&quot;').replace(/'/g, '&#39;') %>",
+              "name": <%- JSON.stringify(faq.question) %>,
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "<%- faq.answer.replace(/"/g, '&quot;').replace(/'/g, '&#39;') %>"
+                "text": <%- JSON.stringify(faq.answer) %>
               }
             }<%= index < faqs.length - 1 ? ',' : '' %>
             <% }); %>
@@ -130,6 +130,7 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
+                    <li><a href="/calculators">Calculators</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/contact" class="btn-nav">Contact</a></li>
                 </ul>

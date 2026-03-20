@@ -1,27 +1,62 @@
 <div class="calculator-content-body">
-    <h1>Income Tax Calculator: Decoding the New Regime</h1>
     <p class="intro-text">
-        Income Tax is the price we pay for civilization. But calculating it can be a headache. With the introduction of
-        the <strong>New Tax Regime (default from FY 2023-24)</strong>, the calculations have changed significantly. This
-        calculator focuses on the New Regime, providing a quick estimate of your liability.
+        Income tax calculation in India changed significantly with the introduction of the <strong>New Tax Regime</strong>,
+        which became the default from FY 2023-24. This <strong>Income Tax Calculator</strong> helps you estimate your
+        tax liability under the New Regime for FY 2025-26, so you can plan your salary, investments, and deductions smartly.
     </p>
 
-    <h2>Old vs New Regime</h2>
+    <h2>What Is Income Tax?</h2>
     <p>
-        <strong>Old Regime:</strong> High tax rates, but allows many exemptions (HRA, 80C, 80D, Home Loan Interest).
-        Good for people with heavy investments/loans.
-        <br><strong>New Regime:</strong> Lower tax rates, but NO exemptions (except Standard Deduction ₹50k/₹75k). Good
-        for people who want cash in hand and simpler filing.
+        Income tax is a direct tax levied by the Government of India on the income earned by individuals, HUFs, and corporations.
+        For salaried individuals, tax is deducted at source (TDS) by the employer every month and deposited with the government.
+        The annual Income Tax Return (ITR) reconciles your total tax liability with what was already deducted.
     </p>
 
-    <h2>Slabs (New Regime FY 24-25)</h2>
+    <h2>New Tax Regime Slabs (FY 2025-26)</h2>
+    <div class="formula-box" style="background: #f4f6f8; padding: 20px; border-left: 5px solid var(--primary-color); margin: 20px 0;">
+        <table style="width:100%; border-collapse:collapse;">
+            <thead>
+                <tr style="background:#e8edf2;">
+                    <th style="padding:8px; text-align:left; border:1px solid #ddd;">Income Slab</th>
+                    <th style="padding:8px; text-align:left; border:1px solid #ddd;">Tax Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td style="padding:8px; border:1px solid #ddd;">₹0 – ₹3,00,000</td><td style="padding:8px; border:1px solid #ddd;">Nil</td></tr>
+                <tr><td style="padding:8px; border:1px solid #ddd;">₹3,00,001 – ₹7,00,000</td><td style="padding:8px; border:1px solid #ddd;">5% (Nil with Rebate u/s 87A)</td></tr>
+                <tr><td style="padding:8px; border:1px solid #ddd;">₹7,00,001 – ₹10,00,000</td><td style="padding:8px; border:1px solid #ddd;">10%</td></tr>
+                <tr><td style="padding:8px; border:1px solid #ddd;">₹10,00,001 – ₹12,00,000</td><td style="padding:8px; border:1px solid #ddd;">15%</td></tr>
+                <tr><td style="padding:8px; border:1px solid #ddd;">₹12,00,001 – ₹15,00,000</td><td style="padding:8px; border:1px solid #ddd;">20%</td></tr>
+                <tr><td style="padding:8px; border:1px solid #ddd;">Above ₹15,00,000</td><td style="padding:8px; border:1px solid #ddd;">30%</td></tr>
+            </tbody>
+        </table>
+        <p style="margin-top:10px;"><em>Plus: 4% Health & Education Cess on total tax. Standard Deduction of ₹75,000 applies for salaried employees.</em></p>
+    </div>
+
+    <h2>Example Calculation</h2>
+    <p><strong>Scenario:</strong> Annual salary of ₹12,00,000. New Tax Regime.</p>
     <ul>
-        <li>0 - 3L: Nil</li>
-        <li>3 - 7L: 5% (Rebate available up to 7L, so Nil tax)</li>
-        <li>7 - 10L: 10%</li>
-        <li>10 - 12L: 15%</li>
-        <li>12 - 15L: 20%</li>
-        <li>Above 15L: 30%</li>
+        <li>Gross Taxable Income = ₹12,00,000 − ₹75,000 (Standard Deduction) = ₹11,25,000</li>
+        <li>Tax on ₹3–7L = ₹20,000 (5% of ₹4L)</li>
+        <li>Tax on ₹7–10L = ₹30,000 (10% of ₹3L)</li>
+        <li>Tax on ₹10–11.25L = ₹18,750 (15% of ₹1.25L)</li>
+        <li>Total Tax = ₹68,750</li>
+        <li>Add 4% Cess = ₹2,750</li>
+        <li><strong>Total Tax Payable = ₹71,500</strong></li>
+    </ul>
+
+    <h2>How to Use This Income Tax Calculator</h2>
+    <ol>
+        <li><strong>Enter Annual Income:</strong> Your total gross annual income (salary, business income, etc.).</li>
+        <li><strong>Click Calculate:</strong> Get an instant, slab-wise tax breakdown under the New Regime.</li>
+        <li><strong>Compare Regimes:</strong> If you have heavy deductions (80C, HRA, home loan), compare with old regime.</li>
+    </ol>
+
+    <h2>Old vs New Tax Regime — Which Is Better?</h2>
+    <ul>
+        <li><strong>New Regime:</strong> Lower rates, simpler filing, no investment proof needed. Best for: income up to ₹10L with fewer deductions.</li>
+        <li><strong>Old Regime:</strong> Higher rates but allows HRA, 80C (₹1.5L), 80D, home loan interest. Best for: people with high deductions exceeding ₹3-4L.</li>
+        <li><strong>Break-Even Point:</strong> If your total deductions exceed ~₹3.75 lakh, old regime saves more tax.</li>
     </ul>
 
     <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
@@ -29,44 +64,24 @@
     <h2>Frequently Asked Questions (FAQs)</h2>
     <div class="faq-section">
         <div class="faq-item">
-            <h4>1. Zero tax till 7 Lakhs?</h4>
-            <p>Yes, due to Rebate u/s 87A. If income is ₹7,00,010, you pay tax on amounts above 3L.</p>
+            <h4>1. Is income up to ₹7 lakh really tax-free?</h4>
+            <p>Yes, under the New Regime, Rebate u/s 87A makes effective tax Nil for income up to ₹7 lakhs (after standard deduction).</p>
         </div>
         <div class="faq-item">
-            <h4>2. Standard Deduction?</h4>
-            <p>Increased to ₹75,000 for New Regime in latest budget proposals (check current FY).</p>
+            <h4>2. What is the standard deduction in New Regime?</h4>
+            <p>₹75,000 for salaried employees and pensioners from FY 2024-25 onwards.</p>
         </div>
         <div class="faq-item">
-            <h4>3. Surcharge?</h4>
-            <p>Extra tax on the rich. 10% if > 50L. 15% if > 1Cr. Capped at 25% for New Regime.</p>
+            <h4>3. Can I switch between old and new tax regime every year?</h4>
+            <p>Yes, salaried individuals can switch every year while filing ITR. Business income earners can switch only once.</p>
         </div>
         <div class="faq-item">
-            <h4>4. Cess?</h4>
-            <p>4% Health & Education Cess is added to the Tax Payable.</p>
+            <h4>4. Is this calculator for FY 2025-26?</h4>
+            <p>Yes. It uses FY 2025-26 (AY 2026-27) New Tax Regime slabs as updated in the Union Budget.</p>
         </div>
         <div class="faq-item">
-            <h4>5. Can I switch?</h4>
-            <p>Salaried can switch every year. Business professionals can switch only once in lifetime.</p>
-        </div>
-        <div class="faq-item">
-            <h4>6. PPF/LIC Benefits?</h4>
-            <p>Only in Old Regime. In New Regime, they are just savings, no tax break.</p>
-        </div>
-        <div class="faq-item">
-            <h4>7. Home Loan?</h4>
-            <p>Interest deduction (₹2L) is only in Old Regime. (Unless it's a rented out property).</p>
-        </div>
-        <div class="faq-item">
-            <h4>8. TDS vs Tax?</h4>
-            <p>TDS is tax paid in advance. Final Tax is calculated during ITR. Refund happens if TDS > Final Tax.</p>
-        </div>
-        <div class="faq-item">
-            <h4>9. ITR forms?</h4>
-            <p>ITR-1 (Sahaj) for salary < 50L. ITR-2 for capital gains. ITR-3/4 for business.</p>
-        </div>
-        <div class="faq-item">
-            <h4>10. Penalty?</h4>
-            <p>Late filing attracts ₹5000 fine. Evasion attracts 50-200% penalty.</p>
+            <h4>5. Is this income tax calculator free?</h4>
+            <p>Yes, completely free. No personal data is stored or transmitted.</p>
         </div>
     </div>
 </div>

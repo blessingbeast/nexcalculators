@@ -9,10 +9,10 @@ const calculatorsPath = path.join(__dirname, '../calculators/calculators.json');
 router.get('/', homeController.getHomePage);
 
 // Static Pages
-router.get('/about', (req, res) => res.render('pages/about', { title: 'About Us', metaDescription: 'About NexCalculators' }));
-router.get('/contact', (req, res) => res.render('pages/contact', { title: 'Contact Us', metaDescription: 'Contact NexCalculators' }));
-router.get('/privacy', (req, res) => res.render('pages/privacy', { title: 'Privacy Policy', metaDescription: 'Privacy Policy of NexCalculators' }));
-router.get('/terms', (req, res) => res.render('pages/terms', { title: 'Terms of Service', metaDescription: 'Terms of Service of NexCalculators' }));
+router.get('/about', (req, res) => res.render('pages/about', { title: 'About NexCalculators – Free Online Calculator Tools for Finance & Health (2026)', metaDescription: 'Learn about NexCalculators — your trusted source for 40+ free, accurate online calculators for finance, health, math, and everyday life.' }));
+router.get('/contact', (req, res) => res.render('pages/contact', { title: 'Contact NexCalculators – Get Help with Our Free Online Calculators', metaDescription: 'Have a question or suggestion? Contact the NexCalculators team. We are happy to help with any of our free online calculator tools.' }));
+router.get('/privacy', (req, res) => res.render('pages/privacy', { title: 'Privacy Policy – NexCalculators.com', metaDescription: 'Read the NexCalculators privacy policy. We do not store personal data. All calculations happen in your browser.' }));
+router.get('/terms', (req, res) => res.render('pages/terms', { title: 'Terms of Service – NexCalculators.com', metaDescription: 'Read the NexCalculators terms of service and usage policy.' }));
 router.get('/google-search-console', (req, res) => res.render('pages/seo-helper', { title: 'SEO Verification', metaDescription: 'SEO Helper' }));
 
 // Calculator Directory

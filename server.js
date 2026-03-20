@@ -1,7 +1,11 @@
 const express = require('express');
 const path = require('path');
+const compression = require('compression');
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Gzip Compression (Performance + PageSpeed)
+app.use(compression());
 
 // View Engine Setup
 app.set('view engine', 'ejs');

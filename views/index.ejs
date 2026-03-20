@@ -8,6 +8,46 @@
         </div>
     </section>
 
+    <!-- Popular Calculators Section -->
+    <div class="container">
+        <h2 class="category-title">
+            <span class="category-icon">⭐</span> Popular Calculators
+        </h2>
+        <div class="calculator-grid popular-grid">
+            <a href="/calculator/emi-calculator" class="popular-card">
+                <span class="popular-icon">💳</span>
+                <strong>EMI Calculator</strong>
+                <span>Calculate loan EMI instantly</span>
+            </a>
+            <a href="/calculator/bmi-calculator" class="popular-card">
+                <span class="popular-icon">⚖️</span>
+                <strong>BMI Calculator</strong>
+                <span>Check your Body Mass Index</span>
+            </a>
+            <a href="/calculator/age-calculator" class="popular-card">
+                <span class="popular-icon">🎂</span>
+                <strong>Age Calculator</strong>
+                <span>Find exact age in years, months & days</span>
+            </a>
+            <a href="/calculator/sip-calculator" class="popular-card">
+                <span class="popular-icon">📈</span>
+                <strong>SIP Calculator</strong>
+                <span>Project your mutual fund returns</span>
+            </a>
+            <a href="/calculator/gst-calculator" class="popular-card">
+                <span class="popular-icon">🧾</span>
+                <strong>GST Calculator</strong>
+                <span>Find GST inclusive & exclusive prices</span>
+            </a>
+            <a href="/calculator/percentage-calculator" class="popular-card">
+                <span class="popular-icon">%</span>
+                <strong>Percentage Calculator</strong>
+                <span>Fast percentage finder tool</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- All Calculators by Category -->
     <div class="container">
         <% const categories={}; calculators.forEach(calc=> {
             const cat = calc.category || 'Other';
@@ -24,17 +64,17 @@
                 <div class="calculator-grid">
                     <% calcs.forEach(function(calc) { %>
                         <div class="card">
-                            <h2>
+                            <h3>
                                 <%= calc.title %>
-                            </h2>
+                            </h3>
                             <p>
                                 <%= calc.metaDescription %>
                             </p>
-                            <a href="/calculator/<%= calc.slug %>" class="btn">Use Calculator</a>
+                            <a href="/calculator/<%= calc.slug %>" class="btn">Use Calculator →</a>
                         </div>
                         <% }); %>
                 </div>
                 <% } %>
     </div>
 
-    <%- include('partials/footer') %>
+<%- include('partials/footer') %>

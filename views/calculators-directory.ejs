@@ -11,8 +11,30 @@
 
         <h1 style="margin-bottom: 8px;">All Free Online Calculators</h1>
         <p style="color: var(--text-secondary); margin-bottom: 40px; font-size: 1.1rem;">
-            Browse our complete collection of free calculators for finance, health, math, and more.
+            Browse our complete collection of <%= calculators.length %>+ free calculators for finance, health, math, and more.
         </p>
+
+        <!-- ItemList Structured Data -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": "Free Online Calculators – NexCalculators",
+          "description": "Browse 40+ free online calculators for finance, health, math, and more.",
+          "url": "<%= (typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com') %>/calculators",
+          "numberOfItems": <%= calculators.length %>,
+          "itemListElement": [
+            <% calculators.forEach(function(calc, index) { %>
+            {
+              "@type": "ListItem",
+              "position": <%= index + 1 %>,
+              "name": <%- JSON.stringify(calc.title) %>,
+              "url": "<%= (typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com') %>/calculator/<%= calc.slug %>"
+            }<%= index < calculators.length - 1 ? ',' : '' %>
+            <% }); %>
+          ]
+        }
+        </script>
 
         <% 
             const grouped = {};
@@ -29,6 +51,7 @@
             <section class="calc-dir-section" id="<%= cat %>">
                 <h2 class="calc-dir-heading">
                     <%= categoryIcons[cat] || '📊' %> <%= cat %> Calculators
+                    <span class="category-count">(<%= grouped[cat].length %>)</span>
                 </h2>
                 <div class="calc-dir-grid">
                     <% grouped[cat].forEach(function(calc) { %>
@@ -46,7 +69,9 @@
         <% Object.keys(grouped).forEach(function(cat) { %>
             <% if (!categoryOrder.includes(cat)) { %>
             <section class="calc-dir-section" id="<%= cat %>">
-                <h2 class="calc-dir-heading">📊 <%= cat %> Calculators</h2>
+                <h2 class="calc-dir-heading">📊 <%= cat %> Calculators
+                    <span class="category-count">(<%= grouped[cat].length %>)</span>
+                </h2>
                 <div class="calc-dir-grid">
                     <% grouped[cat].forEach(function(calc) { %>
                     <a href="/calculator/<%= calc.slug %>" class="calc-dir-card">

@@ -59,7 +59,7 @@ exports.getCalculator = (req, res) => {
                 const fullUrl = `${baseUrl}/calculator/${slug}`;
 
                 res.render('calculator', {
-                    title: calculator.metaTitle || `${calculator.title} – Free Online Calculator | NexCalculators`,
+                    title: calculator.metaTitle || `${calculator.title} – Free Online Tool with Formula & Examples (2026)`,
                     metaDescription: calculator.metaDescription || `Calculate ${calculator.title} instantly online. Free, accurate and fast.`,
                     calculator: calculator,
                     relatedCalculators: relatedCalculators,

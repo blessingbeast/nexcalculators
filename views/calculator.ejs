@@ -15,9 +15,8 @@
                 </nav>
 
                 <div class="calculator-box" data-type="<%= calculator.type %>">
-                    <h1>
-                        <%= calculator.title %>
-                    </h1>
+                    <h1><%= calculator.metaTitle ? calculator.metaTitle.split('–')[0].trim() : calculator.title %></h1>
+                    <p class="updated">⏱ Last updated: March 2026 &nbsp;|&nbsp; ✅ Free &nbsp;|&nbsp; 🔒 No data stored</p>
 
                     <div class="calculator-container">
                         <div class="input-group-container">
@@ -26,20 +25,20 @@
                                     <label for="<%= input.name %>">
                                         <%= input.label %>
                                     </label>
-                                    <% if (input.type==='select' ) { %>
+                                    <% if (input.type==='select') { %>
                                         <select id="<%= input.name %>">
                                             <% input.options.forEach(function(opt) { %>
                                                 <option value="<%= opt.value %>">
                                                     <%= opt.text %>
                                                 </option>
-                                                <% }); %>
+                                            <% }); %>
                                         </select>
-                                        <% } else { %>
-                                            <input type="<%= input.type %>" id="<%= input.name %>"
-                                                placeholder="<%= input.placeholder %>">
-                                            <% } %>
+                                    <% } else { %>
+                                        <input type="<%= input.type %>" id="<%= input.name %>"
+                                            placeholder="<%= input.placeholder %>">
+                                    <% } %>
                                 </div>
-                                <% }); %>
+                            <% }); %>
                         </div>
 
                         <div class="calc-actions">
@@ -52,14 +51,35 @@
                             <div id="result-content"></div>
                         </div>
                     </div>
+
+                    <!-- How to Use (Step-by-step below calculator UI) -->
+                    <div class="how-to-use">
+                        <h3>How to Use</h3>
+                        <ol class="how-to-steps">
+                            <li><strong>Step 1:</strong> Enter your values in the input fields above</li>
+                            <li><strong>Step 2:</strong> Click the <em>Calculate</em> button</li>
+                            <li><strong>Step 3:</strong> View your instant, accurate result below</li>
+                        </ol>
+                    </div>
                 </div>
 
                 <article class="seo-content">
                     <% if (calculator.content) { %>
                         <%- calculator.content %>
-                            <% } else { %>
-                                <p>Content coming soon...</p>
-                                <% } %>
+                    <% } else { %>
+                        <p>Description coming soon...</p>
+                    <% } %>
+
+                    <!-- Use Cases Section (long-tail SEO) -->
+                    <section class="use-cases-section">
+                        <h2>Common Use Cases for <%= calculator.title %></h2>
+                        <ul class="use-cases-list">
+                            <li>Use this <%= calculator.title %> for quick, accurate online calculations — no app needed</li>
+                            <li>Ideal for students, professionals, and anyone planning finances or health goals</li>
+                            <li>Get instant results right in your browser — 100% private, no data stored</li>
+                            <li>Bookmark this page to use the <%= calculator.title %> anytime, on any device</li>
+                        </ul>
+                    </section>
                 </article>
             </main>
 
@@ -67,28 +87,38 @@
                 <div class="sidebar-box">
                     <h3>Related Calculators</h3>
                     <ul class="sidebar-links">
-                        <% if (typeof relatedCalculators !=='undefined' && relatedCalculators.length> 0) { %>
-                            <% relatedCalculators.forEach(function(rel) { %>
-                                <li><a href="/calculator/<%= rel.slug %>">
-                                        <%= rel.title %>
-                                    </a></li>
-                                <% }); %>
-                                    <% } else { %>
-                                        <li>No related calculators found.</li>
-                                        <% } %>
+                        <% if (typeof relatedCalculators !=='undefined' && relatedCalculators.length > 0) { %>
+                            <% relatedCalculators.slice(0, 6).forEach(function(rel) { %>
+                                <li><a href="/calculator/<%= rel.slug %>"><%= rel.title %></a></li>
+                            <% }); %>
+                        <% } else { %>
+                            <li>No related calculators found.</li>
+                        <% } %>
                     </ul>
                 </div>
 
                 <div class="sidebar-box">
-                    <h3>All Categories</h3>
+                    <h3>Browse Categories</h3>
                     <ul class="sidebar-links">
-                        <li><a href="/#Financial">Financial Calculators</a></li>
-                        <li><a href="/#Health">Health & Fitness</a></li>
-                        <li><a href="/#Math">Math & Others</a></li>
+                        <li><a href="/calculators#Financial">💰 Financial Calculators</a></li>
+                        <li><a href="/calculators#Health">🏥 Health & Fitness</a></li>
+                        <li><a href="/calculators#Math">🔢 Math & Others</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Popular Calculators</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/calculator/emi-calculator">EMI Calculator</a></li>
+                        <li><a href="/calculator/bmi-calculator">BMI Calculator</a></li>
+                        <li><a href="/calculator/sip-calculator">SIP Calculator</a></li>
+                        <li><a href="/calculator/age-calculator">Age Calculator</a></li>
+                        <li><a href="/calculator/gst-calculator">GST Calculator</a></li>
+                        <li><a href="/calculator/percentage-calculator">Percentage Calculator</a></li>
                     </ul>
                 </div>
             </aside>
         </div>
     </div>
 
-    <%- include('partials/footer') %>
+<%- include('partials/footer') %>
