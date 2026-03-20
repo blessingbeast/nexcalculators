@@ -139,48 +139,7 @@
     </header>
 
     <script>
-        const calculators = [
-            { name: "EMI Calculator", url: "/calculator/emi-calculator" },
-            { name: "BMI Calculator", url: "/calculator/bmi-calculator" },
-            { name: "SIP Calculator", url: "/calculator/sip-calculator" },
-            { name: "Age Calculator", url: "/calculator/age-calculator" },
-            { name: "FD Calculator", url: "/calculator/fd-calculator" },
-            { name: "RD Calculator", url: "/calculator/rd-calculator" },
-            { name: "PPF Calculator", url: "/calculator/ppf-calculator" },
-            { name: "NPS Calculator", url: "/calculator/nps-calculator" },
-            { name: "HRA Calculator", url: "/calculator/hra-calculator" },
-            { name: "Income Tax Calculator", url: "/calculator/income-tax-calculator" },
-            { name: "Compound Interest", url: "/calculator/compound-interest-calculator" },
-            { name: "Simple Interest", url: "/calculator/simple-interest-calculator" },
-            { name: "Percentage Calculator", url: "/calculator/percentage-calculator" },
-            { name: "Loan Calculator", url: "/calculator/loan-calculator" },
-            { name: "Salary Calculator", url: "/calculator/salary-calculator" },
-            { name: "GST Calculator", url: "/calculator/gst-calculator" },
-            { name: "Discount Calculator", url: "/calculator/discount-calculator" },
-            { name: "Fuel Cost Calculator", url: "/calculator/fuel-cost-calculator" },
-            { name: "Unit Converter", url: "/calculator/unit-converter" },
-            { name: "Electricity Bill", url: "/calculator/electricity-bill-calculator" },
-            { name: "Rent Affordability", url: "/calculator/rent-affordability-calculator" },
-            { name: "Inflation Calculator", url: "/calculator/inflation-calculator" },
-            { name: "Savings Goal", url: "/calculator/savings-goal-calculator" },
-            { name: "Retirement Calculator", url: "/calculator/retirement-calculator" },
-            { name: "Gratuity Calculator", url: "/calculator/gratuity-calculator" },
-            { name: "CAGR Calculator", url: "/calculator/cagr-calculator" },
-            { name: "ROI Calculator", url: "/calculator/roi-calculator" },
-            { name: "Margin Calculator", url: "/calculator/margin-calculator" },
-            { name: "Calorie Calculator", url: "/calculator/calorie-calculator" },
-            { name: "BMR Calculator", url: "/calculator/bmr-calculator" },
-            { name: "Body Fat Calculator", url: "/calculator/body-fat-calculator" },
-            { name: "Ideal Weight", url: "/calculator/ideal-weight-calculator" },
-            { name: "Pregnancy Calculator", url: "/calculator/pregnancy-calculator" },
-            { name: "Ovulation Calculator", url: "/calculator/ovulation-calculator" },
-            { name: "Area Calculator", url: "/calculator/area-calculator" },
-            { name: "Volume Calculator", url: "/calculator/volume-calculator" },
-            { name: "Speed Calculator", url: "/calculator/speed-calculator" },
-            { name: "GPA Calculator", url: "/calculator/gpa-calculator" },
-            { name: "Tip Calculator", url: "/calculator/tip-calculator" },
-            { name: "Binary Converter", url: "/calculator/binary-converter" }
-        ];
+        const calculators = <%- typeof calculators !== 'undefined' ? JSON.stringify(calculators.map(c => ({ name: c.title, url: '/calculator/' + c.slug }))) : '[]' %>;
 
         const searchInput = document.getElementById('global-search');
         const resultsBox = document.getElementById('search-results');

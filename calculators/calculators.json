@@ -534,7 +534,7 @@
         "slug": "fuel-cost-calculator",
         "title": "Fuel Cost Calculator",
         "category": "Math",
-        "metaDescription": "Estimate fuel cost for any trip in seconds. Enter distance, mileage, and fuel price to calculate total petrol or diesel expense. Fast and free.",
+        "metaDescription": "Calculate fuel cost for any trip in seconds. Free fuel cost calculator — enter distance, mileage, and fuel price for accurate results. Fast and free.",
         "inputs": [
             {
                 "name": "distance",
@@ -556,7 +556,7 @@
             }
         ],
         "type": "fuel",
-        "metaTitle": "Fuel Cost Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Fuel Cost Calculator – Calculate Trip Expenses Instantly (Free 2026)",
         "faqs": [
             {
                 "q": "How is fuel cost calculated?",
@@ -581,7 +581,7 @@
         "slug": "unit-converter",
         "title": "Unit Converter",
         "category": "Math",
-        "metaDescription": "Convert units instantly — km to miles, kg to lbs, and more. Free online unit converter for distance, weight, and other common measurements.",
+        "metaDescription": "Convert between metric and imperial units instantly. Free online unit converter — for length, weight, area, and volume. Fast, accurate, and free.",
         "inputs": [
             {
                 "name": "value",
@@ -614,7 +614,7 @@
             }
         ],
         "type": "unit",
-        "metaTitle": "Unit Converter – Free Online Metric & Imperial Unit Tool (2026)",
+        "metaTitle": "Unit Converter – Free Online Tool for All Measurements (2026)",
         "faqs": [
             {
                 "q": "How many km = 1 mile?",
@@ -680,7 +680,7 @@
         "slug": "rent-affordability-calculator",
         "title": "Rent Affordability Calculator",
         "category": "Financial",
-        "metaDescription": "Find out how much rent you can afford based on your monthly income. Free rent affordability calculator based on the popular 30% income rule.",
+        "metaDescription": "Calculate how much rent you can safely afford based on your income. Free rent affordability calculator — using the 30% rule for financial stability. Fast and free.",
         "inputs": [
             {
                 "name": "income",
@@ -715,7 +715,7 @@
         "slug": "inflation-calculator",
         "title": "Inflation Calculator",
         "category": "Financial",
-        "metaDescription": "Calculate the future value of money accounting for inflation. See how ₹1 lakh today compares to future value. Free inflation impact calculator.",
+        "metaDescription": "Calculate the impact of inflation on your money. Free inflation calculator — find future and past purchasing power with accurate economic data. Fast and free.",
         "inputs": [
             {
                 "name": "amount",
@@ -737,7 +737,7 @@
             }
         ],
         "type": "inflation",
-        "metaTitle": "Inflation Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Inflation Calculator – Calculate Money Value Over Time (Free 2026)",
         "faqs": [
             {
                 "q": "What is inflation?",

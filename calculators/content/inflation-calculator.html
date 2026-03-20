@@ -1,69 +1,79 @@
 <div class="calculator-content-body">
-<p class="intro-text">
-        You've heard your grandparents say, "In my time, a movie ticket cost ₹2!". Today it costs ₹300. That is
-        <strong>Inflation</strong>. It is the rate at which the general level of prices for goods and services is
-        rising, and consequently, the purchasing power of currency is falling. This calculator helps you travel through
-        time to see what money was worth then, and what it will be worth in the future.
+    <p class="intro-text">
+        You've likely heard your grandparents reminisce about a time when a movie ticket cost just a few coins. Today, that same ticket costs hundreds. This phenomenon is known as <strong>Inflation</strong>. It is the steady increase in the general price level of goods and services in an economy over time. When prices rise, every unit of currency buys fewer goods and services; consequently, inflation reflects a reduction in the purchasing power per unit of money. Our <strong>Inflation Calculator</strong> helps you visualize this impact, allowing you to calculate the future value of your money or understand how much today's prices would have been in the past.
     </p>
 
-    <h2>Why Does Money Lose Value?</h2>
+    <h2>What is an Inflation Calculator?</h2>
     <p>
-        Economies grow, money supply increases, and demand rises. A small, steady inflation (2-4%) is actually consider
-        good for the economy as it encourages spending.
-        <br>However, for a saver, it is an enemy. If you hide ₹1 Lakh under your mattress today, in 10 years it will
-        still be ₹1 Lakh, but it will buy only half the things it buys today.
+        An Inflation Calculator is a powerful economic tool that measures how the purchasing power of money changes over a specific period. By applying historical or projected inflation rates, the tool can tell you what a certain amount of money from the past is worth in today's terms, or what today's money will be worth years from now. This is essential for long-term financial planning, as it helps individuals understand that a static savings balance is actually losing value every year due to the rising cost of living.
     </p>
 
-    <h2>The Rule of 72 (Inflation Edition)</h2>
+    <h2>The Inflation Formula</h2>
     <p>
-        Divide 72 by the inflation rate to see when your prices double.
-        <br>At 6% inflation, prices double every 12 years (72/6 = 12).
-        <br>So if you need ₹50,000/month today, you will need ₹1,00,000/month in 12 years just to survive.
+        To calculate the future value of an amount adjusted for inflation, we use the compound interest formula, where the interest rate is the annual inflation rate.
+    </p>
+    <div class="formula-box" style="background: #f8fafc; padding: 20px; border-radius: 10px; border-left: 5px solid #ef4444; margin: 20px 0;">
+        <strong>Future Value = Current Amount × (1 + r)^n</strong>
+        <br><small>Where: <strong>r</strong> = annual inflation rate (as a decimal), <strong>n</strong> = number of years.</small>
+    </div>
+    <p>
+        For past value (purchasing power), the formula is reversed: 
+        <br><strong>Past Value = Current Amount / (1 + r)^n</strong>.
     </p>
 
-    <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+    <h2>Example of Inflation Calculation</h2>
+    <p>
+        Imagine you have <strong>₹1,00,000</strong> today and you want to know what it will be worth in <strong>10 years</strong> if the average inflation rate is <strong>6%</strong>.
+    </p>
+    <ol>
+        <li><strong>Step 1: Identify variables:</strong> Amount = 1,00,000, r = 0.06, n = 10.</li>
+        <li><strong>Step 2: Apply the formula:</strong> 1,00,000 × (1 + 0.06)^10.</li>
+        <li><strong>Step 3: Calculate the growth factor:</strong> (1.06)^10 ≈ 1.79.</li>
+        <li><strong>Result:</strong> ₹1,00,000 × 1.79 = <strong>₹1,79,000</strong>.</li>
+    </ol>
+    <p>
+        This means that in 10 years, you would need ₹1,79,000 to buy the same "basket of goods" that ₹1,00,000 buys today. Your purchasing power has effectively dropped if your income doesn't rise at the same rate.
+    </p>
+
+    <h2>How to Use the Inflation Calculator</h2>
+    <p>
+        Using our inflation tool is simple and provides instant clarity for your financial future:
+    </p>
+    <ol>
+        <li><strong>Enter the Amount:</strong> Input the current sum of money you wish to analyze.</li>
+        <li><strong>Select the Inflation Rate:</strong> Enter the expected annual inflation percentage (e.g., 5% or 6% is common for long-term planning in many regions).</li>
+        <li><strong>Set the Timeframe:</strong> Enter the number of years you want to project into the past or future.</li>
+        <li><strong>View the Impact:</strong> The calculator will instantly display the adjusted value and show you the "real" purchasing power of your money.</li>
+    </ol>
 
     <h2>Frequently Asked Questions (FAQs)</h2>
     <div class="faq-section">
         <div class="faq-item">
-            <h4>1. What is CPI?</h4>
-            <p>Consumer Price Index. Basket of common goods used to measure specific inflation.</p>
+            <h3>What is the average inflation rate?</h3>
+            <p>While it varies by country, many central banks aim for a target inflation rate of <strong>2-3%</strong> in developed economies. In developing economies, rates of <strong>5-8%</strong> are more common over the long term.</p>
         </div>
         <div class="faq-item">
-            <h4>2. Is gold inflation-proof?</h4>
-            <p>Historically, gold has been a good hedge against inflation.</p>
+            <h3>How does inflation affect my savings?</h3>
+            <p>If your savings account interest rate is lower than the inflation rate, your money is losing "real" value. For example, if you earn 4% interest but inflation is 6%, your purchasing power is shrinking by 2% each year.</p>
         </div>
         <div class="faq-item">
-            <h4>3. Hyperinflation?</h4>
-            <p>When inflation hits 50%+ per month. (e.g., Zimbabwe, Venezuela). Money becomes worthless.</p>
+            <h3>What is the CPI?</h3>
+            <p>The <strong>Consumer Price Index (CPI)</strong> is the most common measure of inflation. It tracks the price changes of a representative "basket" of goods and services consumed by households.</p>
         </div>
         <div class="faq-item">
-            <h4>4. Deflation?</h4>
-            <p>Prices going down. Rare and bad for economy (leads to recession).</p>
-        </div>
-        <div class="faq-item">
-            <h4>5. Lifestyle Inflation?</h4>
-            <p>Spending more as you earn more. This is personal, not economic.</p>
-        </div>
-        <div class="faq-item">
-            <h4>6. Real Returns?</h4>
-            <p>Return = Interest Rate - Inflation Rate.</p>
-        </div>
-        <div class="faq-item">
-            <h4>7. Education Inflation?</h4>
-            <p>Higher than general inflation. usually 10-12%.</p>
-        </div>
-        <div class="faq-item">
-            <h4>8. Medical Inflation?</h4>
-            <p>Highest in India, around 14%.</p>
-        </div>
-        <div class="faq-item">
-            <h4>9. Who controls it?</h4>
-            <p>Central Banks (RBI) use Repo Rates to control money supply and inflation.</p>
-        </div>
-        <div class="faq-item">
-            <h4>10. Best hedge?</h4>
-            <p>Equities (Stocks) and Real Estate generally beat inflation over long term.</p>
+            <h3>Can inflation be negative?</h3>
+            <p>Yes, this is called <strong>Deflation</strong>. While it sounds good for consumers (lower prices), it is often bad for the economy as it can lead to reduced spending and high unemployment.</p>
         </div>
     </div>
+
+    <h2>Modern Use Cases</h2>
+    <p>
+        Understanding inflation is critical for several real-world applications:
+    </p>
+    <ul>
+        <li><strong>Retirement Planning:</strong> Calculate how much your desired retirement lifestyle will actually cost 20 or 30 years from now.</li>
+        <li><strong>Salary Negotiations:</strong> Ensure that your annual raise is higher than the inflation rate so that you are actually getting a "real" increase in pay.</li>
+        <li><strong>Investment Strategy:</strong> Choose assets (like equities or real estate) that historically outpace inflation to grow your wealth over time.</li>
+        <li><strong>Business Pricing:</strong> Companies use inflation projections to adjust their service fees and product prices to maintain profit margins.</li>
+    </ul>
 </div>
