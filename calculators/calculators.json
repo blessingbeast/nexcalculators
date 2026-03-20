@@ -4,7 +4,7 @@
         "slug": "emi-calculator",
         "title": "EMI Calculator",
         "category": "Financial",
-        "metaDescription": "Calculate your monthly loan EMI instantly. Free EMI calculator for home loan, car loan & personal loan with amortization schedule. Fast and accurate.",
+        "metaDescription": "Calculate your exact monthly loan EMI with formula breakdown. Free online EMI calculator for home, car, and personal loans in India. Includes amortization.",
         "inputs": [
             {
                 "name": "loanAmount",
@@ -26,7 +26,7 @@
             }
         ],
         "type": "emi",
-        "metaTitle": "EMI Calculator – Free Online Loan EMI Calculator (2026)",
+        "metaTitle": "EMI Calculator with Formula – Monthly Loan Repayment (2026)",
         "faqs": [
             {
                 "q": "What is EMI?",
@@ -51,7 +51,7 @@
         "slug": "bmi-calculator",
         "title": "BMI Calculator",
         "category": "Health",
-        "metaDescription": "Calculate your Body Mass Index (BMI) instantly. Find out if you are underweight, normal, overweight or obese. Free & accurate BMI checker with chart.",
+        "metaDescription": "Calculate your Body Mass Index instantly with our free BMI calculator. Includes a visual chart and healthy weight ranges for men and women. Quick and accurate.",
         "inputs": [
             {
                 "name": "weight",
@@ -67,7 +67,7 @@
             }
         ],
         "type": "bmi",
-        "metaTitle": "BMI Calculator – Free Online BMI Checker with Healthy Ranges (2026)",
+        "metaTitle": "BMI Calculator with Chart – Check Healthy Weight Range (2026)",
         "faqs": [
             {
                 "q": "What is BMI?",
@@ -92,7 +92,7 @@
         "slug": "age-calculator",
         "title": "Age Calculator",
         "category": "Health",
-        "metaDescription": "Find your exact age in years, months, and days instantly. Free online age calculator — perfect for forms, legal documents, and birthday countdowns.",
+        "metaDescription": "Calculate your exact age as of today with our date of birth calculator. Perfect for school admissions and government jobs in India. Fast, free, and accurate.",
         "inputs": [
             {
                 "name": "birthDate",
@@ -102,7 +102,7 @@
             }
         ],
         "type": "age",
-        "metaTitle": "Age Calculator – Find Your Exact Age in Years, Months & Days (2026)",
+        "metaTitle": "Age Calculator Exact Date of Birth India – Free Online Tool (2026)",
         "faqs": [
             {
                 "q": "How does the age calculator work?",
@@ -420,7 +420,7 @@
         "slug": "gst-calculator",
         "title": "GST Calculator",
         "category": "Financial",
-        "metaDescription": "Calculate GST amount instantly. Find GST inclusive and exclusive prices for 5%, 12%, 18%, and 28% slabs. Free GST calculator for India.",
+        "metaDescription": "Add or subtract GST on any amount with our free India GST calculator. Supports all slab rates (5%, 12%, 18%, 28%). Fast and accurate. No login required.",
         "inputs": [
             {
                 "name": "amount",
@@ -468,7 +468,7 @@
             }
         ],
         "type": "gst",
-        "metaTitle": "GST Calculator – Free Online GST Inclusive & Exclusive Tool (2026)",
+        "metaTitle": "GST Calculator India Online – Add or Remove GST Instantly (2026)",
         "faqs": [
             {
                 "q": "What is GST?",
@@ -493,7 +493,7 @@
         "slug": "discount-calculator",
         "title": "Discount Calculator",
         "category": "Financial",
-        "metaDescription": "Find the final price after discount instantly. Free discount calculator — enter original price and discount % to see sale price and amount saved.",
+        "metaDescription": "Find your sale price after discount and GST instantly. Free online discount calculator for smart shopping. Accurate bill calculation in seconds.",
         "inputs": [
             {
                 "name": "originalPrice",
@@ -509,7 +509,7 @@
             }
         ],
         "type": "discount",
-        "metaTitle": "Discount Calculator – Calculate Sale Price Instantly (Free 2026)",
+        "metaTitle": "Discount Calculator with GST Included – Free Price Tool (2026)",
         "faqs": [
             {
                 "q": "How to calculate discount?",
@@ -534,7 +534,7 @@
         "slug": "fuel-cost-calculator",
         "title": "Fuel Cost Calculator",
         "category": "Math",
-        "metaDescription": "Calculate fuel cost for any trip in seconds. Free fuel cost calculator — enter distance, mileage, and fuel price for accurate results. Fast and free.",
+        "metaDescription": "Find your exact travel cost per kilometer based on fuel price and mileage. Free online fuel calculator for road trips and commuting in India. Fast results.",
         "inputs": [
             {
                 "name": "distance",
@@ -556,7 +556,7 @@
             }
         ],
         "type": "fuel",
-        "metaTitle": "Fuel Cost Calculator – Calculate Trip Expenses Instantly (Free 2026)",
+        "metaTitle": "Fuel Cost Calculator per KM India – Estimate Travel Fees (2026)",
         "faqs": [
             {
                 "q": "How is fuel cost calculated?",
@@ -1108,7 +1108,7 @@
         "slug": "cagr-calculator",
         "title": "CAGR Calculator",
         "category": "Financial",
-        "metaDescription": "Calculate CAGR (Compound Annual Growth Rate) of any investment instantly. Free CAGR calculator — enter start value, end value, and number of years.",
+        "metaDescription": "Calculate the Compound Annual Growth Rate (CAGR) of your investment. Free CAGR calculator for stocks, mutual funds, and business growth analysis. Instant results.",
         "inputs": [
             {
                 "name": "startVal",
@@ -1130,7 +1130,7 @@
             }
         ],
         "type": "cagr",
-        "metaTitle": "CAGR Calculator – Compound Annual Growth Rate Tool (Free 2026)",
+        "metaTitle": "CAGR Calculator Investment Growth – Compound Annual Return (2026)",
         "faqs": [
             {
                 "q": "What is CAGR?",
@@ -1904,7 +1904,7 @@
         "slug": "profit-margin-calculator",
         "title": "Profit Margin Calculator",
         "category": "Financial",
-        "metaDescription": "Calculate profit margin, gross profit, and markup percentage instantly. Free profit margin calculator for businesses, sellers, and freelancers.",
+        "metaDescription": "Calculate gross profit margin instantly for your small business. Free online tool designed for Indian entrepreneurs. Accurate and easy to use.",
         "inputs": [
             {
                 "name": "revenue",
@@ -1920,7 +1920,7 @@
             }
         ],
         "type": "profit-margin",
-        "metaTitle": "Profit Margin Calculator – Calculate Gross Profit & Markup (Free 2026)",
+        "metaTitle": "Profit Margin Calculator Small Business India – Free Tool (2026)",
         "faqs": [
             {
                 "q": "What is profit margin?",
@@ -1945,7 +1945,7 @@
         "slug": "average-calculator",
         "title": "Average Calculator",
         "category": "Math",
-        "metaDescription": "Calculate the average (mean) of any set of numbers instantly. Free online average calculator — enter numbers separated by commas for instant results.",
+        "metaDescription": "Find the mean of any number set instantly. Our free average calculator handles both numbers and percentages with ease. Simple, fast, and accurate.",
         "inputs": [
             {
                 "name": "numbers",
@@ -1955,7 +1955,7 @@
             }
         ],
         "type": "average",
-        "metaTitle": "Average Calculator – Find Mean of Numbers Instantly (Free 2026)",
+        "metaTitle": "Average Calculator with Numbers and Percentages – Free Online Tool (2026)",
         "faqs": [
             {
                 "q": "What is average (mean)?",
@@ -1980,7 +1980,7 @@
         "slug": "ratio-calculator",
         "title": "Ratio Calculator",
         "category": "Math",
-        "metaDescription": "Simplify ratios, find equivalent ratios, and solve ratio problems instantly. Free online ratio calculator for students, teachers, and professionals.",
+        "metaDescription": "Simplify and solve ratios instantly with our free online tool. Get step-by-step instructions and formula examples. Perfect for school and work.",
         "inputs": [
             {
                 "name": "valueA",
@@ -1996,7 +1996,7 @@
             }
         ],
         "type": "ratio",
-        "metaTitle": "Ratio Calculator – Simplify & Solve Ratios Instantly (Free 2026)",
+        "metaTitle": "Ratio Calculator with Steps – Free Online Ratio Solver (2026)",
         "faqs": [
             {
                 "q": "How do you simplify a ratio?",
@@ -2021,7 +2021,7 @@
         "slug": "date-difference-calculator",
         "title": "Date Difference Calculator",
         "category": "Math",
-        "metaDescription": "Find the exact number of days, weeks, and months between two dates. Free date difference calculator — perfect for deadlines, countdowns, and planning.",
+        "metaDescription": "Find the exact difference between two dates in years, months, and days. Free online date duration calculator for planning and deadlines. Quick and accurate.",
         "inputs": [
             {
                 "name": "startDate",
@@ -2037,7 +2037,7 @@
             }
         ],
         "type": "date-difference",
-        "metaTitle": "Date Difference Calculator – Find Days Between Two Dates (Free 2026)",
+        "metaTitle": "Date Difference Calculator in Days Months Years – Free Tool (2026)",
         "faqs": [
             {
                 "q": "How do I calculate days between two dates?",
@@ -2062,7 +2062,7 @@
         "slug": "time-duration-calculator",
         "title": "Time Duration Calculator",
         "category": "Math",
-        "metaDescription": "Calculate the total duration between two times in hours, minutes, and seconds. Free time duration calculator — perfect for work hours, events, and shifts.",
+        "metaDescription": "Calculate the total hours and minutes between two times instantly. Free online time duration calculator for shifts, events, and billing. Simple and fast.",
         "inputs": [
             {
                 "name": "startTime",
@@ -2078,7 +2078,7 @@
             }
         ],
         "type": "time-duration",
-        "metaTitle": "Time Duration Calculator – Calculate Hours & Minutes Between Times (Free 2026)",
+        "metaTitle": "Time Duration Calculator Hours and Minutes – Free Online Tool (2026)",
         "faqs": [
             {
                 "q": "How do I calculate hours between two times?",
@@ -2103,7 +2103,7 @@
         "slug": "percentage-increase-calculator",
         "title": "Percentage Increase Calculator",
         "category": "Math",
-        "metaDescription": "Calculate percentage increase instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Calculate percentage increase instantly with our free online tool. Get step-by-step results with formula and real examples. Fast, accurate, and easy.",
         "inputs": [
             {
                 "name": "initialValue",
@@ -2119,7 +2119,7 @@
             }
         ],
         "type": "percentage-increase",
-        "metaTitle": "Percentage Increase Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Percentage Increase Calculator with Steps – Free Online Tool (2026)",
         "faqs": [
             {
                 "q": "What is percentage increase?",
@@ -2144,7 +2144,7 @@
         "slug": "percentage-decrease-calculator",
         "title": "Percentage Decrease Calculator",
         "category": "Math",
-        "metaDescription": "Calculate percentage decrease instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Use our percentage decrease calculator to find the reduction between values. Includes simple formula, examples, and step-by-step math. Free and accurate.",
         "inputs": [
             {
                 "name": "initialValue",
@@ -2160,7 +2160,7 @@
             }
         ],
         "type": "percentage-decrease",
-        "metaTitle": "Percentage Decrease Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Percentage Decrease Calculator Formula Example – Free Online Tool (2026)",
         "faqs": [
             {
                 "q": "What is percentage decrease?",
@@ -2185,7 +2185,7 @@
         "slug": "markup-calculator",
         "title": "Markup Calculator",
         "category": "Financial",
-        "metaDescription": "Calculate product markup instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Calculate profit percentage and markup amount instantly. Free online markup calculator for businesses and sellers. Fast results with simple formula.",
         "inputs": [
             {
                 "name": "cost",
@@ -2201,7 +2201,7 @@
             }
         ],
         "type": "markup",
-        "metaTitle": "Markup Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Markup Calculator Profit Percentage – Free Business Pricing Tool (2026)",
         "faqs": [
             {
                 "q": "What is markup?",
@@ -2226,7 +2226,7 @@
         "slug": "break-even-calculator",
         "title": "Break Even Calculator",
         "category": "Financial",
-        "metaDescription": "Calculate your break-even point instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Find your break-even point instantly with our simple online calculator. Essential for business planning and feasibility. Free, fast, and accurate.",
         "inputs": [
             {
                 "name": "fixedCosts",
@@ -2248,7 +2248,7 @@
             }
         ],
         "type": "break-even",
-        "metaTitle": "Break Even Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Break Even Point Calculator Simple – Free Business Planning Tool (2026)",
         "faqs": [
             {
                 "q": "What is a break-even point?",
@@ -2314,7 +2314,7 @@
         "slug": "hourly-to-salary-calculator",
         "title": "Hourly to Salary Calculator",
         "category": "Financial",
-        "metaDescription": "Convert hourly pay to annual salary instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Convert your hourly pay into a full annual salary instantly. Free online calculator tailored for Indian compensation models. Accurate payroll planning tool.",
         "inputs": [
             {
                 "name": "hourlyRate",
@@ -2330,7 +2330,7 @@
             }
         ],
         "type": "hourly-salary",
-        "metaTitle": "Hourly to Salary Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Hourly to Salary Calculator India – Convert Wage to Annual (2026)",
         "faqs": [
             {
                 "q": "What is an hourly to salary conversion?",
@@ -2355,7 +2355,7 @@
         "slug": "salary-to-hourly-calculator",
         "title": "Salary to Hourly Calculator",
         "category": "Financial",
-        "metaDescription": "Convert annual salary to hourly pay instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Translate your monthly or annual salary into an hourly wage. Free online tool for Indian professionals. Understand your real earning potential instantly.",
         "inputs": [
             {
                 "name": "annualSalary",
@@ -2371,7 +2371,7 @@
             }
         ],
         "type": "salary-hourly",
-        "metaTitle": "Salary to Hourly Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Salary to Hourly Calculator India – Find Your Hourly Rate (2026)",
         "faqs": [
             {
                 "q": "What is salary to hourly conversion?",
@@ -2396,7 +2396,7 @@
         "slug": "compound-growth-calculator",
         "title": "Compound Growth Calculator",
         "category": "Financial",
-        "metaDescription": "Calculate compound growth instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Calculate compound interest with step-by-step breakdown. Free online compound growth calculator for investments, FDs, and SIPs. Understand the power of compounding.",
         "inputs": [
             {
                 "name": "initialValue",
@@ -2418,7 +2418,7 @@
             }
         ],
         "type": "compound-growth",
-        "metaTitle": "Compound Growth Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Compound Growth Calculator with Steps – Investments & Savings (2026)",
         "faqs": [
             {
                 "q": "What is compound growth?",
@@ -2443,7 +2443,7 @@
         "slug": "savings-interest-calculator",
         "title": "Savings Interest Calculator",
         "category": "Financial",
-        "metaDescription": "Calculate interest on your savings instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Calculate interest on your savings account, FD, or RD online. Free savings interest calculator for all Indian banks. Get instant results to plan your wealth.",
         "inputs": [
             {
                 "name": "principal",
@@ -2484,7 +2484,7 @@
             }
         ],
         "type": "savings-interest",
-        "metaTitle": "Savings Interest Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Savings Interest Calculator Online Free – Bank FD & RD Tool (2026)",
         "faqs": [
             {
                 "q": "What is savings interest?",
@@ -2509,7 +2509,7 @@
         "slug": "unit-price-calculator",
         "title": "Unit Price Calculator",
         "category": "Utility",
-        "metaDescription": "Calculate the price per unit instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Compare product prices per unit to find the best deal. Free unit price calculator for shopping and bulk purchasing decisions. Instant accurate comparisons.",
         "inputs": [
             {
                 "name": "totalPrice",
@@ -2525,7 +2525,7 @@
             }
         ],
         "type": "unit-price",
-        "metaTitle": "Unit Price Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Unit Price Calculator – Find Best Deal Per Unit (2026)",
         "faqs": [
             {
                 "q": "What is unit price?",
@@ -2550,7 +2550,7 @@
         "slug": "cost-per-mile-calculator",
         "title": "Cost Per Mile Calculator",
         "category": "Utility",
-        "metaDescription": "Calculate travel cost per mile instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Calculate fuel cost per mile for your car or fleet. Free online tool for accurate travel expense tracking. Optimal for personal and business planning.",
         "inputs": [
             {
                 "name": "totalDistance",
@@ -2566,7 +2566,7 @@
             }
         ],
         "type": "cost-per-mile",
-        "metaTitle": "Cost Per Mile Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Cost Per Mile Calculator Car Fuel – Precise Travel Analytics (2026)",
         "faqs": [
             {
                 "q": "What is cost per mile?",
@@ -2591,7 +2591,7 @@
         "slug": "time-zone-converter",
         "title": "Time Zone Converter",
         "category": "Utility",
-        "metaDescription": "Convert time zones instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Convert time between IST and USA time zones (EST, PST, CST) instantly. Accurate time zone converter for global meetings and travel. Free and easy.",
         "inputs": [
             {
                 "name": "time",
@@ -2647,7 +2647,7 @@
             }
         ],
         "type": "time-zone",
-        "metaTitle": "Time Zone Converter – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Time Zone Converter India to USA Exact Time – Free Global Tool (2026)",
         "faqs": [
             {
                 "q": "What is time zone conversion?",
@@ -2672,7 +2672,7 @@
         "slug": "work-hours-calculator",
         "title": "Work Hours Calculator",
         "category": "Utility",
-        "metaDescription": "Calculate total work hours instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Track and calculate your weekly work hours instantly. Free online tool with break subtraction for accurate payroll. Essential for freelancers and staff.",
         "inputs": [
             {
                 "name": "start",
@@ -2694,7 +2694,7 @@
             }
         ],
         "type": "work-hours",
-        "metaTitle": "Work Hours Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Work Hours Calculator Weekly Total – Free Employee Timesheet (2026)",
         "faqs": [
             {
                 "q": "What is a work hours calculator?",
@@ -2719,7 +2719,7 @@
         "slug": "overtime-calculator",
         "title": "Overtime Calculator",
         "category": "Financial",
-        "metaDescription": "Calculate overtime pay instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Find your overtime earnings based on hourly rate and multiplier. Specialized overtime calculator for Indian salary structures. Free, fast, and accurate.",
         "inputs": [
             {
                 "name": "hourlyRate",
@@ -2741,7 +2741,7 @@
             }
         ],
         "type": "overtime",
-        "metaTitle": "Overtime Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Overtime Calculator India Salary – Calculate Extra Pay Instantly (2026)",
         "faqs": [
             {
                 "q": "What is overtime pay?",
@@ -2766,7 +2766,7 @@
         "slug": "grade-percentage-calculator",
         "title": "Grade Percentage Calculator",
         "category": "Math",
-        "metaDescription": "Calculate your grade percentage instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Learn how to calculate percentage of marks instantly with our free online tool. Perfect for students and teachers. Accurate results with simple formula.",
         "inputs": [
             {
                 "name": "score",
@@ -2782,7 +2782,7 @@
             }
         ],
         "type": "grade-pct",
-        "metaTitle": "Grade Percentage Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "How to Calculate Percentage of Marks – Free Grade Percentage Tool (2026)",
         "faqs": [
             {
                 "q": "What is a grade percentage?",
@@ -2807,7 +2807,7 @@
         "slug": "weighted-average-calculator",
         "title": "Weighted Average Calculator",
         "category": "Math",
-        "metaDescription": "Calculate weighted averages instantly with our free online tool. Get accurate results with formula and step-by-step explanation. Fast and easy.",
+        "metaDescription": "Calculate weighted averages instantly with our free online tool. Get accurate results with simple formula and step-by-step explanation. Fast and easy.",
         "inputs": [
             {
                 "name": "data",
@@ -2817,7 +2817,7 @@
             }
         ],
         "type": "weighted-avg",
-        "metaTitle": "Weighted Average Calculator – Free Online Tool with Formula & Examples (2026)",
+        "metaTitle": "Weighted Average Calculator Online Free – Accurate Math Tool (2026)",
         "faqs": [
             {
                 "q": "What is a weighted average?",
