@@ -50,12 +50,13 @@ app.use((req, res, next) => {
 // Routes
 const indexRouter = require('./routes/index');
 const calculatorRouter = require('./routes/calculators');
-
+const blogRouter = require('./routes/blog');
 const sitemapRouter = require('./routes/sitemap');
 
 app.use('/', indexRouter);
 app.use('/', sitemapRouter); // Handle /sitemap.xml and /robots.txt at root
 app.use('/calculator', calculatorRouter);
+app.use('/blog', blogRouter);
 
 // 404 Handler
 app.use((req, res) => {

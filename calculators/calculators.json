@@ -2836,5 +2836,1726 @@
                 "a": "Yes, it accurately computes the relative mean based on your input pairs."
             }
         ]
+    },
+    {
+        "id": "loan-interest",
+        "slug": "loan-interest-calculator",
+        "title": "Loan Interest Calculator",
+        "category": "Financial",
+        "metaTitle": "Loan Interest Calculator – Calculate Total Interest Paid Online (2026)",
+        "metaDescription": "Calculate total interest on any loan instantly. Free online loan interest calculator with formula. Accurate results for personal, car, and home loans.",
+        "inputs": [
+            {
+                "name": "principal",
+                "label": "Loan Amount (₹)",
+                "type": "number",
+                "placeholder": "e.g. 500000"
+            },
+            {
+                "name": "rate",
+                "label": "Annual Interest Rate (%)",
+                "type": "number",
+                "placeholder": "e.g. 9.5"
+            },
+            {
+                "name": "tenure",
+                "label": "Tenure (Years)",
+                "type": "number",
+                "placeholder": "e.g. 5"
+            }
+        ],
+        "type": "loan-interest",
+        "faqs": [
+            {
+                "q": "How is loan interest calculated?",
+                "a": "Simple Interest = P × R × T / 100. For EMI-based loans, interest is front-loaded using the reducing balance method."
+            },
+            {
+                "q": "What is the difference between flat rate and reducing balance?",
+                "a": "Flat rate interest is calculated on the full principal throughout the tenure. Reducing balance calculates interest only on the outstanding principal."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "mortgage-payment",
+        "slug": "mortgage-payment-calculator",
+        "title": "Mortgage Payment Calculator",
+        "category": "Financial",
+        "metaTitle": "Mortgage Payment Calculator – Monthly Home Loan EMI (2026)",
+        "metaDescription": "Calculate your monthly mortgage payment instantly. Free online mortgage calculator with amortization breakdown. Accurate results for home buyers.",
+        "inputs": [
+            {
+                "name": "homePrice",
+                "label": "Home Price (₹)",
+                "type": "number",
+                "placeholder": "e.g. 5000000"
+            },
+            {
+                "name": "downPayment",
+                "label": "Down Payment (₹)",
+                "type": "number",
+                "placeholder": "e.g. 1000000"
+            },
+            {
+                "name": "interestRate",
+                "label": "Annual Interest Rate (%)",
+                "type": "number",
+                "placeholder": "e.g. 8.5"
+            },
+            {
+                "name": "loanTerm",
+                "label": "Loan Term (Years)",
+                "type": "number",
+                "placeholder": "e.g. 20"
+            }
+        ],
+        "type": "mortgage-payment",
+        "faqs": [
+            {
+                "q": "What is a mortgage payment?",
+                "a": "A mortgage payment is a monthly installment paid to repay a home loan, comprising both principal repayment and interest."
+            },
+            {
+                "q": "How much down payment is required in India?",
+                "a": "Banks typically fund 75–90% of the property value. You must pay the remaining 10–25% as a down payment."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "business-profit",
+        "slug": "business-profit-calculator",
+        "title": "Business Profit Calculator",
+        "category": "Financial",
+        "metaTitle": "Business Profit Calculator – Calculate Net Profit & Margin (2026)",
+        "metaDescription": "Calculate your business net profit, gross margin, and markup instantly. Free online profit calculator for entrepreneurs and small business owners.",
+        "inputs": [
+            {
+                "name": "revenue",
+                "label": "Total Revenue (₹)",
+                "type": "number",
+                "placeholder": "e.g. 1000000"
+            },
+            {
+                "name": "cogs",
+                "label": "Cost of Goods Sold (₹)",
+                "type": "number",
+                "placeholder": "e.g. 600000"
+            },
+            {
+                "name": "expenses",
+                "label": "Operating Expenses (₹)",
+                "type": "number",
+                "placeholder": "e.g. 200000"
+            }
+        ],
+        "type": "business-profit",
+        "faqs": [
+            {
+                "q": "What is the difference between gross and net profit?",
+                "a": "Gross profit = Revenue - COGS. Net profit = Gross profit - Operating expenses. Net profit is the actual take-home profit."
+            },
+            {
+                "q": "How do I increase my profit margin?",
+                "a": "Increase your selling price, reduce COGS through better suppliers, or cut operating expenses."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "gst-inclusive",
+        "slug": "gst-inclusive-calculator",
+        "title": "GST Inclusive Calculator",
+        "category": "Financial",
+        "metaTitle": "GST Inclusive Calculator – Find Base Price from GST Included Amount (2026)",
+        "metaDescription": "Find the original base price from a GST-inclusive amount instantly. Free GST inclusive calculator for India. Supports 5%, 12%, 18% and 28% GST slabs.",
+        "inputs": [
+            {
+                "name": "totalAmount",
+                "label": "GST Inclusive Amount (₹)",
+                "type": "number",
+                "placeholder": "e.g. 1180"
+            },
+            {
+                "name": "gstRate",
+                "label": "GST Rate (%)",
+                "type": "select",
+                "options": [
+                    {
+                        "value": "5",
+                        "text": "5%"
+                    },
+                    {
+                        "value": "12",
+                        "text": "12%"
+                    },
+                    {
+                        "value": "18",
+                        "text": "18%"
+                    },
+                    {
+                        "value": "28",
+                        "text": "28%"
+                    }
+                ]
+            }
+        ],
+        "type": "gst-inclusive",
+        "faqs": [
+            {
+                "q": "What does GST inclusive mean?",
+                "a": "GST inclusive means the displayed price already includes the GST amount. The actual product price is lower."
+            },
+            {
+                "q": "How do I find the base price from a GST-inclusive amount?",
+                "a": "Base Price = GST Inclusive Amount / (1 + GST Rate / 100)."
+            },
+            {
+                "q": "Which GST slab applies to my product?",
+                "a": "GST slabs in India are 5%, 12%, 18%, and 28%. The applicable rate depends on the product or service category."
+            }
+        ]
+    },
+    {
+        "id": "gst-exclusive",
+        "slug": "gst-exclusive-calculator",
+        "title": "GST Exclusive Calculator",
+        "category": "Financial",
+        "metaTitle": "GST Exclusive Calculator – Add GST to Base Price Online (2026)",
+        "metaDescription": "Add GST to any base price instantly. Free online GST exclusive calculator for India with all slab rates. Get accurate tax-inclusive totals in seconds.",
+        "inputs": [
+            {
+                "name": "basePrice",
+                "label": "Base Price (₹)",
+                "type": "number",
+                "placeholder": "e.g. 1000"
+            },
+            {
+                "name": "gstRate",
+                "label": "GST Rate (%)",
+                "type": "select",
+                "options": [
+                    {
+                        "value": "5",
+                        "text": "5%"
+                    },
+                    {
+                        "value": "12",
+                        "text": "12%"
+                    },
+                    {
+                        "value": "18",
+                        "text": "18%"
+                    },
+                    {
+                        "value": "28",
+                        "text": "28%"
+                    }
+                ]
+            }
+        ],
+        "type": "gst-exclusive",
+        "faqs": [
+            {
+                "q": "What is GST exclusive pricing?",
+                "a": "GST exclusive means the listed price does not include GST. The customer pays the base price plus the applicable GST amount separately."
+            },
+            {
+                "q": "How do I calculate the total from a GST-exclusive price?",
+                "a": "Total = Base Price + (Base Price × GST Rate / 100)."
+            },
+            {
+                "q": "Is this calculator applicable for all Indian states?",
+                "a": "Yes. GST is a unified national tax across all Indian states. CGST + SGST together equal the total GST rate."
+            }
+        ]
+    },
+    {
+        "id": "investment-return",
+        "slug": "investment-return-calculator",
+        "title": "Investment Return Calculator",
+        "category": "Financial",
+        "metaTitle": "Investment Return Calculator – Calculate ROI & Profit Online (2026)",
+        "metaDescription": "Calculate your investment return, ROI percentage, and profit instantly. Free online investment return calculator for stocks, FD, and mutual funds.",
+        "inputs": [
+            {
+                "name": "initialInvestment",
+                "label": "Initial Investment (₹)",
+                "type": "number",
+                "placeholder": "e.g. 100000"
+            },
+            {
+                "name": "finalValue",
+                "label": "Final Value (₹)",
+                "type": "number",
+                "placeholder": "e.g. 150000"
+            },
+            {
+                "name": "years",
+                "label": "Investment Duration (Years)",
+                "type": "number",
+                "placeholder": "e.g. 3"
+            }
+        ],
+        "type": "investment-return",
+        "faqs": [
+            {
+                "q": "How is investment return calculated?",
+                "a": "ROI = ((Final Value - Initial Investment) / Initial Investment) × 100. CAGR considers the time period for annualized returns."
+            },
+            {
+                "q": "What is a good ROI in India?",
+                "a": "A return above 12% CAGR is generally considered excellent in India. Index funds historically return 12-15% CAGR over long periods."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "monthly-budget",
+        "slug": "monthly-budget-calculator",
+        "title": "Monthly Budget Calculator",
+        "category": "Financial",
+        "metaTitle": "Monthly Budget Calculator – Track Income & Expenses Online (2026)",
+        "metaDescription": "Plan your monthly budget by tracking income vs expenses. Free online budget calculator with savings analysis. Get instant financial clarity today.",
+        "inputs": [
+            {
+                "name": "monthlyIncome",
+                "label": "Monthly Income (₹)",
+                "type": "number",
+                "placeholder": "e.g. 50000"
+            },
+            {
+                "name": "housing",
+                "label": "Housing / Rent (₹)",
+                "type": "number",
+                "placeholder": "e.g. 12000"
+            },
+            {
+                "name": "food",
+                "label": "Food & Groceries (₹)",
+                "type": "number",
+                "placeholder": "e.g. 8000"
+            },
+            {
+                "name": "transport",
+                "label": "Transport (₹)",
+                "type": "number",
+                "placeholder": "e.g. 3000"
+            },
+            {
+                "name": "utilities",
+                "label": "Utilities & Bills (₹)",
+                "type": "number",
+                "placeholder": "e.g. 2000"
+            },
+            {
+                "name": "misc",
+                "label": "Miscellaneous (₹)",
+                "type": "number",
+                "placeholder": "e.g. 5000"
+            }
+        ],
+        "type": "monthly-budget",
+        "faqs": [
+            {
+                "q": "What is the 50/30/20 rule?",
+                "a": "50% of income for needs, 30% for wants, and 20% for savings and debt repayment. This is a popular budgeting framework."
+            },
+            {
+                "q": "How much should I save from my salary?",
+                "a": "Financial experts recommend saving at least 20% of your monthly income. Automate savings before spending."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "inflation-adjusted-value",
+        "slug": "inflation-adjusted-value-calculator",
+        "title": "Inflation Adjusted Value Calculator",
+        "category": "Financial",
+        "metaTitle": "Inflation Adjusted Value Calculator – Find Real Value of Money (2026)",
+        "metaDescription": "Find the real value of money after inflation. Free online inflation adjusted value calculator. Understand purchasing power erosion instantly and accurately.",
+        "inputs": [
+            {
+                "name": "presentValue",
+                "label": "Present Value (₹)",
+                "type": "number",
+                "placeholder": "e.g. 100000"
+            },
+            {
+                "name": "inflationRate",
+                "label": "Annual Inflation Rate (%)",
+                "type": "number",
+                "placeholder": "e.g. 6"
+            },
+            {
+                "name": "years",
+                "label": "Number of Years",
+                "type": "number",
+                "placeholder": "e.g. 10"
+            }
+        ],
+        "type": "inflation-adjusted",
+        "faqs": [
+            {
+                "q": "How does inflation affect my money?",
+                "a": "Inflation reduces purchasing power. ₹1,00,000 today at 6% inflation will be worth only ₹55,839 in 10 years in real terms."
+            },
+            {
+                "q": "What is India's average inflation rate?",
+                "a": "India's CPI inflation has averaged around 5-7% annually over the past decade."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "loan-affordability",
+        "slug": "loan-affordability-calculator",
+        "title": "Loan Affordability Calculator",
+        "category": "Financial",
+        "metaTitle": "Loan Affordability Calculator – How Much Loan Can I Get? (2026)",
+        "metaDescription": "Find out how much loan you can afford based on your income and expenses. Free online loan affordability calculator. Accurate and instant results.",
+        "inputs": [
+            {
+                "name": "monthlyIncome",
+                "label": "Monthly Income (₹)",
+                "type": "number",
+                "placeholder": "e.g. 60000"
+            },
+            {
+                "name": "monthlyExpenses",
+                "label": "Monthly Expenses (₹)",
+                "type": "number",
+                "placeholder": "e.g. 20000"
+            },
+            {
+                "name": "interestRate",
+                "label": "Loan Interest Rate (%)",
+                "type": "number",
+                "placeholder": "e.g. 10"
+            },
+            {
+                "name": "tenure",
+                "label": "Loan Tenure (Years)",
+                "type": "number",
+                "placeholder": "e.g. 10"
+            }
+        ],
+        "type": "loan-affordability",
+        "faqs": [
+            {
+                "q": "How much loan can I get on my salary?",
+                "a": "Banks typically allow EMI up to 40-50% of your net monthly income. Use this calculator to find your maximum eligible loan amount."
+            },
+            {
+                "q": "What factors affect loan eligibility?",
+                "a": "Credit score, monthly income, existing EMIs, age, employment type, and job stability all affect loan eligibility."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "percentage-of-number",
+        "slug": "percentage-of-number-calculator",
+        "title": "Percentage of Number Calculator",
+        "category": "Math",
+        "metaTitle": "Percentage of Number Calculator – Find X% of Any Number (2026)",
+        "metaDescription": "Calculate X% of any number instantly. Free online percentage of number calculator. Get accurate results for discounts, tax, and exam marks instantly.",
+        "inputs": [
+            {
+                "name": "percentage",
+                "label": "Percentage (%)",
+                "type": "number",
+                "placeholder": "e.g. 25"
+            },
+            {
+                "name": "number",
+                "label": "Number",
+                "type": "number",
+                "placeholder": "e.g. 500"
+            }
+        ],
+        "type": "percentage-of-number",
+        "faqs": [
+            {
+                "q": "How to calculate 20% of 500?",
+                "a": "20% of 500 = (20 / 100) × 500 = 100. Simply multiply the number by the percentage divided by 100."
+            },
+            {
+                "q": "What is the formula for percentage of a number?",
+                "a": "Result = (Percentage / 100) × Number."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "percentage-change",
+        "slug": "percentage-change-calculator",
+        "title": "Percentage Change Calculator",
+        "category": "Math",
+        "metaTitle": "Percentage Change Calculator – Calculate % Increase or Decrease (2026)",
+        "metaDescription": "Calculate percentage change between two values instantly. Free online percentage change calculator. Find increase or decrease accurately for any numbers.",
+        "inputs": [
+            {
+                "name": "oldValue",
+                "label": "Original Value",
+                "type": "number",
+                "placeholder": "e.g. 200"
+            },
+            {
+                "name": "newValue",
+                "label": "New Value",
+                "type": "number",
+                "placeholder": "e.g. 250"
+            }
+        ],
+        "type": "percentage-change",
+        "faqs": [
+            {
+                "q": "How is percentage change calculated?",
+                "a": "% Change = ((New Value - Old Value) / Old Value) × 100. A positive result means increase; negative means decrease."
+            },
+            {
+                "q": "What is the difference between percentage change and percentage difference?",
+                "a": "Percentage change tracks movement from a specific starting point. Percentage difference compares two values without a defined start/end."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "fraction-to-percentage",
+        "slug": "fraction-to-percentage-calculator",
+        "title": "Fraction to Percentage Calculator",
+        "category": "Math",
+        "metaTitle": "Fraction to Percentage Calculator – Convert Fractions Online (2026)",
+        "metaDescription": "Convert any fraction to a percentage instantly. Free online fraction to percentage calculator. Accurate results for students, teachers, and everyday math.",
+        "inputs": [
+            {
+                "name": "numerator",
+                "label": "Numerator",
+                "type": "number",
+                "placeholder": "e.g. 3"
+            },
+            {
+                "name": "denominator",
+                "label": "Denominator",
+                "type": "number",
+                "placeholder": "e.g. 4"
+            }
+        ],
+        "type": "fraction-to-percentage",
+        "faqs": [
+            {
+                "q": "How do I convert a fraction to a percentage?",
+                "a": "Divide the numerator by the denominator, then multiply by 100. Example: 3/4 = 0.75 × 100 = 75%."
+            },
+            {
+                "q": "What is 5/8 as a percentage?",
+                "a": "5 ÷ 8 = 0.625 × 100 = 62.5%."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "ratio-simplifier",
+        "slug": "ratio-simplifier-calculator",
+        "title": "Ratio Simplifier Calculator",
+        "category": "Math",
+        "metaTitle": "Ratio Simplifier Calculator – Simplify Any Ratio Online (2026)",
+        "metaDescription": "Simplify any ratio to its lowest terms instantly. Free online ratio simplifier calculator. Accurate GCD-based results for students and professionals.",
+        "inputs": [
+            {
+                "name": "valueA",
+                "label": "Value A",
+                "type": "number",
+                "placeholder": "e.g. 24"
+            },
+            {
+                "name": "valueB",
+                "label": "Value B",
+                "type": "number",
+                "placeholder": "e.g. 36"
+            }
+        ],
+        "type": "ratio-simplifier",
+        "faqs": [
+            {
+                "q": "How do you simplify a ratio?",
+                "a": "Find the GCD (Greatest Common Divisor) of both numbers and divide each by the GCD. Example: 24:36, GCD=12, Result=2:3."
+            },
+            {
+                "q": "What is an equivalent ratio?",
+                "a": "Equivalent ratios represent the same relationship. 2:3 is equivalent to 4:6, 6:9, and 20:30."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "weighted-score",
+        "slug": "weighted-score-calculator",
+        "title": "Weighted Score Calculator",
+        "category": "Math",
+        "metaTitle": "Weighted Score Calculator – Calculate Weighted Average Grade (2026)",
+        "metaDescription": "Calculate weighted scores and grades for exams, assignments, and projects. Free online weighted score calculator. Instant accurate results for students.",
+        "inputs": [
+            {
+                "name": "score1",
+                "label": "Score 1",
+                "type": "number",
+                "placeholder": "e.g. 85"
+            },
+            {
+                "name": "weight1",
+                "label": "Weight 1 (%)",
+                "type": "number",
+                "placeholder": "e.g. 40"
+            },
+            {
+                "name": "score2",
+                "label": "Score 2",
+                "type": "number",
+                "placeholder": "e.g. 70"
+            },
+            {
+                "name": "weight2",
+                "label": "Weight 2 (%)",
+                "type": "number",
+                "placeholder": "e.g. 60"
+            }
+        ],
+        "type": "weighted-score",
+        "faqs": [
+            {
+                "q": "How is a weighted score calculated?",
+                "a": "Weighted Score = Σ (Score × Weight) / Σ Weights. Each score is multiplied by its weight, then divided by the total weight."
+            },
+            {
+                "q": "Why is weighted scoring used?",
+                "a": "Weighted scoring ensures that more important components (like final exams) have a greater influence on the final grade."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "median",
+        "slug": "median-calculator",
+        "title": "Median Calculator",
+        "category": "Math",
+        "metaTitle": "Median Calculator – Find the Middle Value of a Dataset (2026)",
+        "metaDescription": "Find the median of any dataset instantly. Free online median calculator with step-by-step explanation. Accurate and instant results for statistics.",
+        "inputs": [
+            {
+                "name": "numbers",
+                "label": "Enter Numbers (comma-separated)",
+                "type": "text",
+                "placeholder": "e.g. 5, 2, 8, 1, 9"
+            }
+        ],
+        "type": "median",
+        "faqs": [
+            {
+                "q": "What is the median?",
+                "a": "The median is the middle value of a sorted dataset. For an even count, it is the average of the two middle values."
+            },
+            {
+                "q": "When should I use median instead of mean?",
+                "a": "Use median when data has extreme outliers. Median is resistant to outliers, making it better for income statistics or property prices."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "mode",
+        "slug": "mode-calculator",
+        "title": "Mode Calculator",
+        "category": "Math",
+        "metaTitle": "Mode Calculator – Find the Most Frequent Value Online (2026)",
+        "metaDescription": "Find the mode of any dataset instantly. Free online mode calculator showing the most frequent values. Accurate results for statistics and data analysis.",
+        "inputs": [
+            {
+                "name": "numbers",
+                "label": "Enter Numbers (comma-separated)",
+                "type": "text",
+                "placeholder": "e.g. 4, 7, 2, 7, 9, 4, 7"
+            }
+        ],
+        "type": "mode",
+        "faqs": [
+            {
+                "q": "What is the mode in statistics?",
+                "a": "The mode is the value that appears most frequently in a dataset. A dataset can have no mode, one mode (unimodal), or multiple modes (multimodal)."
+            },
+            {
+                "q": "What if all values appear equally?",
+                "a": "If all values appear the same number of times, the dataset has no mode."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "variance",
+        "slug": "variance-calculator",
+        "title": "Variance Calculator",
+        "category": "Math",
+        "metaTitle": "Variance Calculator – Calculate Data Variance Online (2026)",
+        "metaDescription": "Calculate variance for any dataset instantly. Free online variance calculator with population and sample variance. Accurate statistical results.",
+        "inputs": [
+            {
+                "name": "numbers",
+                "label": "Enter Numbers (comma-separated)",
+                "type": "text",
+                "placeholder": "e.g. 2, 4, 6, 8, 10"
+            }
+        ],
+        "type": "variance",
+        "faqs": [
+            {
+                "q": "What is variance?",
+                "a": "Variance measures how spread out numbers are from the mean. High variance = more spread out data. Low variance = data clustered near the mean."
+            },
+            {
+                "q": "What is the difference between population and sample variance?",
+                "a": "Population variance divides by N (total count). Sample variance divides by N-1 for unbiased estimation."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "standard-deviation",
+        "slug": "standard-deviation-calculator",
+        "title": "Standard Deviation Calculator",
+        "category": "Math",
+        "metaTitle": "Standard Deviation Calculator – Calculate SD Online (2026)",
+        "metaDescription": "Calculate standard deviation for any dataset instantly. Free online standard deviation calculator with full formula breakdown. Accurate statistical results.",
+        "inputs": [
+            {
+                "name": "numbers",
+                "label": "Enter Numbers (comma-separated)",
+                "type": "text",
+                "placeholder": "e.g. 10, 20, 30, 40, 50"
+            }
+        ],
+        "type": "standard-deviation",
+        "faqs": [
+            {
+                "q": "What does standard deviation tell you?",
+                "a": "Standard deviation measures the average distance of data points from the mean. It quantifies variability in the dataset."
+            },
+            {
+                "q": "What is a good standard deviation?",
+                "a": "It depends on context. In quality control, lower SD means more consistent output. In finance, lower SD means less risk."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "probability",
+        "slug": "probability-calculator",
+        "title": "Probability Calculator",
+        "category": "Math",
+        "metaTitle": "Probability Calculator – Calculate Event Probability Online (2026)",
+        "metaDescription": "Calculate the probability of events instantly. Free online probability calculator with formulas for single and multiple events. Accurate results.",
+        "inputs": [
+            {
+                "name": "favorable",
+                "label": "Favorable Outcomes",
+                "type": "number",
+                "placeholder": "e.g. 3"
+            },
+            {
+                "name": "total",
+                "label": "Total Outcomes",
+                "type": "number",
+                "placeholder": "e.g. 6"
+            }
+        ],
+        "type": "probability",
+        "faqs": [
+            {
+                "q": "What is probability?",
+                "a": "Probability is the measure of how likely an event is to occur. It ranges from 0 (impossible) to 1 (certain)."
+            },
+            {
+                "q": "How is probability calculated?",
+                "a": "P(Event) = Favorable Outcomes / Total Possible Outcomes."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "fuel-consumption",
+        "slug": "fuel-consumption-calculator",
+        "title": "Fuel Consumption Calculator",
+        "category": "Daily Utilities",
+        "metaTitle": "Fuel Consumption Calculator – Find Vehicle Mileage Online (2026)",
+        "metaDescription": "Calculate your vehicle's fuel consumption and mileage instantly. Free online fuel consumption calculator. Accurate km/l results for cars and bikes.",
+        "inputs": [
+            {
+                "name": "distance",
+                "label": "Distance Travelled (km)",
+                "type": "number",
+                "placeholder": "e.g. 300"
+            },
+            {
+                "name": "fuelUsed",
+                "label": "Fuel Used (Litres)",
+                "type": "number",
+                "placeholder": "e.g. 20"
+            }
+        ],
+        "type": "fuel-consumption",
+        "faqs": [
+            {
+                "q": "How is fuel consumption calculated?",
+                "a": "Fuel Efficiency (km/l) = Distance / Fuel Used. Fuel Consumption = Fuel Used / Distance × 100 (litres per 100km)."
+            },
+            {
+                "q": "What is a good fuel efficiency for a car in India?",
+                "a": "A fuel efficiency above 15 km/l is considered good for petrol cars. Diesel cars often achieve 17-21 km/l."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "fuel-cost-per-trip",
+        "slug": "fuel-cost-per-trip-calculator",
+        "title": "Fuel Cost Per Trip Calculator",
+        "category": "Daily Utilities",
+        "metaTitle": "Fuel Cost Per Trip Calculator – Estimate Travel Fuel Expense (2026)",
+        "metaDescription": "Calculate exact fuel cost for any trip. Free online fuel cost per trip calculator. Enter distance, mileage, fuel price for instant accurate estimates.",
+        "inputs": [
+            {
+                "name": "tripDistance",
+                "label": "Trip Distance (km)",
+                "type": "number",
+                "placeholder": "e.g. 500"
+            },
+            {
+                "name": "mileage",
+                "label": "Vehicle Mileage (km/l)",
+                "type": "number",
+                "placeholder": "e.g. 15"
+            },
+            {
+                "name": "fuelPrice",
+                "label": "Fuel Price (₹/litre)",
+                "type": "number",
+                "placeholder": "e.g. 102"
+            }
+        ],
+        "type": "fuel-cost-per-trip",
+        "faqs": [
+            {
+                "q": "How do I calculate fuel cost for a road trip?",
+                "a": "Fuel Cost = (Trip Distance / Mileage) × Fuel Price per Litre."
+            },
+            {
+                "q": "How can I reduce my trip fuel cost?",
+                "a": "Maintain steady speeds (70-90 km/h), ensure proper tyre pressure, reduce AC usage, and avoid excessive idling."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "travel-time",
+        "slug": "travel-time-calculator",
+        "title": "Travel Time Calculator",
+        "category": "Daily Utilities",
+        "metaTitle": "Travel Time Calculator – Calculate Journey Time Online (2026)",
+        "metaDescription": "Calculate travel time for any journey instantly. Free online travel time calculator based on distance and speed. Accurate estimates for road trips.",
+        "inputs": [
+            {
+                "name": "distance",
+                "label": "Distance (km)",
+                "type": "number",
+                "placeholder": "e.g. 400"
+            },
+            {
+                "name": "speed",
+                "label": "Average Speed (km/h)",
+                "type": "number",
+                "placeholder": "e.g. 60"
+            }
+        ],
+        "type": "travel-time",
+        "faqs": [
+            {
+                "q": "How is travel time calculated?",
+                "a": "Time = Distance / Speed. Example: 400 km at 80 km/h = 5 hours."
+            },
+            {
+                "q": "What is a realistic average speed for Indian highways?",
+                "a": "On national highways, a realistic average speed is 60-80 km/h considering tolls and traffic."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "trip-cost",
+        "slug": "trip-cost-calculator",
+        "title": "Trip Cost Calculator",
+        "category": "Daily Utilities",
+        "metaTitle": "Trip Cost Calculator – Total Travel Expense Estimator (2026)",
+        "metaDescription": "Calculate total trip cost including fuel, food, and accommodation. Free online trip cost calculator. Plan your travel budget accurately and instantly.",
+        "inputs": [
+            {
+                "name": "fuelCost",
+                "label": "Fuel Cost (₹)",
+                "type": "number",
+                "placeholder": "e.g. 2500"
+            },
+            {
+                "name": "foodCost",
+                "label": "Food & Drinks (₹)",
+                "type": "number",
+                "placeholder": "e.g. 3000"
+            },
+            {
+                "name": "accommodation",
+                "label": "Accommodation (₹)",
+                "type": "number",
+                "placeholder": "e.g. 5000"
+            },
+            {
+                "name": "entertainment",
+                "label": "Entertainment / Entry Fees (₹)",
+                "type": "number",
+                "placeholder": "e.g. 1000"
+            },
+            {
+                "name": "misc",
+                "label": "Miscellaneous (₹)",
+                "type": "number",
+                "placeholder": "e.g. 1000"
+            }
+        ],
+        "type": "trip-cost",
+        "faqs": [
+            {
+                "q": "What costs should I include in a trip budget?",
+                "a": "Include fuel, food, accommodation, entertainment, tolls, parking, and a 10-15% buffer for unexpected expenses."
+            },
+            {
+                "q": "How can I reduce trip costs?",
+                "a": "Book accommodation in advance, use price comparison apps, carpool, and plan meals at local restaurants instead of tourist spots."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "distance-speed-time",
+        "slug": "distance-speed-time-calculator",
+        "title": "Distance Speed Time Calculator",
+        "category": "Daily Utilities",
+        "metaTitle": "Distance Speed Time Calculator – Solve DST Problems Online (2026)",
+        "metaDescription": "Solve distance, speed, and time problems instantly. Free online DST calculator. Find any variable when two are known. Accurate formula-based results.",
+        "inputs": [
+            {
+                "name": "known1Type",
+                "label": "Calculate",
+                "type": "select",
+                "options": [
+                    {
+                        "value": "distance",
+                        "text": "Distance"
+                    },
+                    {
+                        "value": "speed",
+                        "text": "Speed"
+                    },
+                    {
+                        "value": "time",
+                        "text": "Time"
+                    }
+                ]
+            },
+            {
+                "name": "value1",
+                "label": "Value 1",
+                "type": "number",
+                "placeholder": "e.g. 100"
+            },
+            {
+                "name": "value2",
+                "label": "Value 2",
+                "type": "number",
+                "placeholder": "e.g. 50"
+            }
+        ],
+        "type": "distance-speed-time",
+        "faqs": [
+            {
+                "q": "What is the DST formula?",
+                "a": "Distance = Speed × Time. Speed = Distance / Time. Time = Distance / Speed."
+            },
+            {
+                "q": "What are the units for distance, speed, and time?",
+                "a": "Common units: Distance in km/miles, Speed in km/h or mph, Time in hours."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "calorie-burn",
+        "slug": "calorie-burn-calculator",
+        "title": "Calorie Burn Calculator",
+        "category": "Health",
+        "metaTitle": "Calorie Burn Calculator – Calories Burned During Exercise (2026)",
+        "metaDescription": "Calculate calories burned during any exercise. Free online calorie burn calculator based on activity, weight, and duration. Accurate fitness tracking.",
+        "inputs": [
+            {
+                "name": "weight",
+                "label": "Your Weight (kg)",
+                "type": "number",
+                "placeholder": "e.g. 70"
+            },
+            {
+                "name": "duration",
+                "label": "Duration (minutes)",
+                "type": "number",
+                "placeholder": "e.g. 45"
+            },
+            {
+                "name": "activity",
+                "label": "Activity Type",
+                "type": "select",
+                "options": [
+                    {
+                        "value": "8",
+                        "text": "Running (8 MET)"
+                    },
+                    {
+                        "value": "4",
+                        "text": "Brisk Walking (4 MET)"
+                    },
+                    {
+                        "value": "6",
+                        "text": "Cycling (6 MET)"
+                    },
+                    {
+                        "value": "5",
+                        "text": "Swimming (5 MET)"
+                    },
+                    {
+                        "value": "3",
+                        "text": "Yoga (3 MET)"
+                    },
+                    {
+                        "value": "7",
+                        "text": "HIIT (7 MET)"
+                    }
+                ]
+            }
+        ],
+        "type": "calorie-burn",
+        "faqs": [
+            {
+                "q": "How are calories burned calculated?",
+                "a": "Calories = MET × Weight (kg) × Duration (hours). MET (Metabolic Equivalent of Task) represents activity intensity."
+            },
+            {
+                "q": "Does weight affect calories burned?",
+                "a": "Yes. Heavier individuals burn more calories for the same activity because more energy is needed to move a larger body mass."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "body-mass-index",
+        "slug": "body-mass-index-calculator",
+        "title": "Body Mass Index Calculator",
+        "category": "Health",
+        "metaTitle": "Body Mass Index Calculator – BMI with Healthy Weight Ranges (2026)",
+        "metaDescription": "Calculate your BMI and check if you are underweight, normal, overweight, or obese. Free online body mass index calculator. Accurate instant results.",
+        "inputs": [
+            {
+                "name": "weight",
+                "label": "Weight (kg)",
+                "type": "number",
+                "placeholder": "e.g. 70"
+            },
+            {
+                "name": "height",
+                "label": "Height (cm)",
+                "type": "number",
+                "placeholder": "e.g. 170"
+            }
+        ],
+        "type": "bmi",
+        "faqs": [
+            {
+                "q": "What is BMI?",
+                "a": "BMI (Body Mass Index) = Weight (kg) / Height² (m). It is a screening tool for weight status."
+            },
+            {
+                "q": "What are the BMI categories?",
+                "a": "Underweight: <18.5, Normal: 18.5-24.9, Overweight: 25-29.9, Obese: ≥30."
+            },
+            {
+                "q": "Is BMI accurate for everyone?",
+                "a": "BMI is a useful screening tool but does not account for muscle mass, age, or ethnicity. Athletes may have a high BMI without excess fat."
+            }
+        ]
+    },
+    {
+        "id": "daily-water-intake",
+        "slug": "daily-water-intake-calculator",
+        "title": "Daily Water Intake Calculator",
+        "category": "Health",
+        "metaTitle": "Daily Water Intake Calculator – How Much Water Should You Drink (2026)",
+        "metaDescription": "Calculate how much water you should drink daily based on weight and activity. Free online daily water intake calculator. Stay hydrated accurately.",
+        "inputs": [
+            {
+                "name": "weight",
+                "label": "Body Weight (kg)",
+                "type": "number",
+                "placeholder": "e.g. 70"
+            },
+            {
+                "name": "activityLevel",
+                "label": "Activity Level",
+                "type": "select",
+                "options": [
+                    {
+                        "value": "sedentary",
+                        "text": "Sedentary (Office Work)"
+                    },
+                    {
+                        "value": "moderate",
+                        "text": "Moderate (Light Exercise)"
+                    },
+                    {
+                        "value": "active",
+                        "text": "Active (Daily Exercise)"
+                    },
+                    {
+                        "value": "very-active",
+                        "text": "Very Active (Athlete)"
+                    }
+                ]
+            }
+        ],
+        "type": "daily-water-intake",
+        "faqs": [
+            {
+                "q": "How much water should I drink daily?",
+                "a": "General guideline is 35 ml per kg of body weight. Active individuals and those in hot climates need more."
+            },
+            {
+                "q": "Does coffee/tea count towards daily water intake?",
+                "a": "Caffeinated drinks have mild diuretic effects and should not be counted as the full equivalent of water."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "step-to-calorie",
+        "slug": "step-to-calorie-calculator",
+        "title": "Step to Calorie Calculator",
+        "category": "Health",
+        "metaTitle": "Step to Calorie Calculator – Convert Steps to Calories (2026)",
+        "metaDescription": "Convert your daily step count to calories burned. Free online step to calorie calculator. Accurate fitness tracking based on weight and steps walked.",
+        "inputs": [
+            {
+                "name": "steps",
+                "label": "Number of Steps",
+                "type": "number",
+                "placeholder": "e.g. 10000"
+            },
+            {
+                "name": "weight",
+                "label": "Your Weight (kg)",
+                "type": "number",
+                "placeholder": "e.g. 65"
+            }
+        ],
+        "type": "step-to-calorie",
+        "faqs": [
+            {
+                "q": "How many calories does 10,000 steps burn?",
+                "a": "On average, 10,000 steps burns approximately 400-500 calories depending on body weight and walking pace."
+            },
+            {
+                "q": "How many steps equal 1 km?",
+                "a": "Approximately 1,250-1,500 steps equal 1 kilometre, depending on your stride length."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "sleep-cycle",
+        "slug": "sleep-cycle-calculator",
+        "title": "Sleep Cycle Calculator",
+        "category": "Health",
+        "metaTitle": "Sleep Cycle Calculator – Best Wake Up Time for Good Sleep (2026)",
+        "metaDescription": "Find the best time to wake up based on your sleep cycles. Free online sleep cycle calculator. Get the right amount of sleep for maximum energy.",
+        "inputs": [
+            {
+                "name": "bedtime",
+                "label": "Bedtime (HH:MM)",
+                "type": "text",
+                "placeholder": "e.g. 23:00"
+            },
+            {
+                "name": "fallAsleepTime",
+                "label": "Time to Fall Asleep (mins)",
+                "type": "number",
+                "placeholder": "e.g. 15"
+            }
+        ],
+        "type": "sleep-cycle",
+        "faqs": [
+            {
+                "q": "How long is one sleep cycle?",
+                "a": "One complete sleep cycle lasts approximately 90 minutes, including both REM and non-REM stages."
+            },
+            {
+                "q": "How many sleep cycles do I need?",
+                "a": "Adults need 5-6 complete sleep cycles (7.5-9 hours) for optimal health and cognitive function."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "take-home-salary",
+        "slug": "take-home-salary-calculator",
+        "title": "Take Home Salary Calculator",
+        "category": "Work & Salary",
+        "metaTitle": "Take Home Salary Calculator India – Calculate In-Hand Salary (2026)",
+        "metaDescription": "Calculate your take-home salary after all deductions in India. Free in-hand salary calculator including PF, tax, and HRA. Accurate instant results.",
+        "inputs": [
+            {
+                "name": "grossSalary",
+                "label": "Gross Monthly Salary (₹)",
+                "type": "number",
+                "placeholder": "e.g. 60000"
+            },
+            {
+                "name": "pf",
+                "label": "Employee PF Deduction (%)",
+                "type": "number",
+                "placeholder": "e.g. 12"
+            },
+            {
+                "name": "incomeTax",
+                "label": "Income Tax TDS (₹/month)",
+                "type": "number",
+                "placeholder": "e.g. 3000"
+            },
+            {
+                "name": "otherDeductions",
+                "label": "Other Deductions (₹)",
+                "type": "number",
+                "placeholder": "e.g. 1000"
+            }
+        ],
+        "type": "take-home-salary",
+        "faqs": [
+            {
+                "q": "What deductions are made from gross salary in India?",
+                "a": "Employee PF (12%), Income Tax (TDS), Professional Tax (₹200/month in most states), and any voluntary deductions like insurance or loans."
+            },
+            {
+                "q": "What is the difference between CTC and take-home salary?",
+                "a": "CTC (Cost to Company) includes employer PF, gratuity, and other benefits. Take-home is the actual amount credited to your bank after all deductions."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "salary-increment",
+        "slug": "salary-increment-calculator",
+        "title": "Salary Increment Calculator",
+        "category": "Work & Salary",
+        "metaTitle": "Salary Increment Calculator – Calculate Hike Amount Online (2026)",
+        "metaDescription": "Calculate your salary after increment instantly. Free online salary hike calculator. Find new CTC and monthly in-hand after any percentage increase.",
+        "inputs": [
+            {
+                "name": "currentSalary",
+                "label": "Current Monthly Salary (₹)",
+                "type": "number",
+                "placeholder": "e.g. 50000"
+            },
+            {
+                "name": "increment",
+                "label": "Increment Percentage (%)",
+                "type": "number",
+                "placeholder": "e.g. 15"
+            }
+        ],
+        "type": "salary-increment",
+        "faqs": [
+            {
+                "q": "How is salary increment calculated?",
+                "a": "New Salary = Current Salary × (1 + Increment % / 100). Increment Amount = New Salary - Current Salary."
+            },
+            {
+                "q": "What is a good salary hike in India?",
+                "a": "Industry average hike in India is 8-12% for annual appraisals. 15%+ is considered excellent. Job changers typically see 20-40% hikes."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "freelance-hourly-rate",
+        "slug": "freelance-hourly-rate-calculator",
+        "title": "Freelance Hourly Rate Calculator",
+        "category": "Work & Salary",
+        "metaTitle": "Freelance Hourly Rate Calculator – Set Your Rate Online (2026)",
+        "metaDescription": "Calculate the right freelance hourly rate based on your income goals. Free online freelance rate calculator for Indian freelancers. Accurate instant results.",
+        "inputs": [
+            {
+                "name": "desiredIncome",
+                "label": "Desired Annual Income (₹)",
+                "type": "number",
+                "placeholder": "e.g. 1200000"
+            },
+            {
+                "name": "workWeeks",
+                "label": "Billable Weeks Per Year",
+                "type": "number",
+                "placeholder": "e.g. 48"
+            },
+            {
+                "name": "hoursPerWeek",
+                "label": "Billable Hours Per Week",
+                "type": "number",
+                "placeholder": "e.g. 30"
+            },
+            {
+                "name": "expenses",
+                "label": "Annual Business Expenses (₹)",
+                "type": "number",
+                "placeholder": "e.g. 100000"
+            }
+        ],
+        "type": "freelance-hourly-rate",
+        "faqs": [
+            {
+                "q": "How do I set my freelance rate?",
+                "a": "Desired Rate = (Target Income + Expenses) / Total Billable Hours. Add 20-30% buffer for taxes and non-billable time."
+            },
+            {
+                "q": "What is the average freelance hourly rate in India?",
+                "a": "Freelance rates in India vary widely: content writers earn ₹300-1,500/hr, developers ₹1,000-5,000/hr, designers ₹500-2,000/hr."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "contractor-rate",
+        "slug": "contractor-rate-calculator",
+        "title": "Contractor Rate Calculator",
+        "category": "Work & Salary",
+        "metaTitle": "Contractor Rate Calculator – Convert Salary to Contract Rate (2026)",
+        "metaDescription": "Calculate your contractor day rate from a permanent salary. Free online contractor rate calculator. Accurate results including tax and benefit costs.",
+        "inputs": [
+            {
+                "name": "annualSalary",
+                "label": "Equivalent Annual Salary (₹)",
+                "type": "number",
+                "placeholder": "e.g. 1200000"
+            },
+            {
+                "name": "taxRatePercent",
+                "label": "Tax & Benefits Overhead (%)",
+                "type": "number",
+                "placeholder": "e.g. 30"
+            },
+            {
+                "name": "offDays",
+                "label": "Non-Billable Days per Year",
+                "type": "number",
+                "placeholder": "e.g. 30"
+            }
+        ],
+        "type": "contractor-rate",
+        "faqs": [
+            {
+                "q": "How do I calculate a contractor rate from a salary?",
+                "a": "Day Rate = (Annual Salary + Benefits & Tax Overhead) / (Working Days - Non-Billable Days)."
+            },
+            {
+                "q": "Why do contractors charge more than employees?",
+                "a": "Contractors don't receive benefits (PF, gratuity, insurance), must handle their own taxes, have no paid leave, and bear business risk."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "annual-income",
+        "slug": "annual-income-calculator",
+        "title": "Annual Income Calculator",
+        "category": "Work & Salary",
+        "metaTitle": "Annual Income Calculator – Calculate Yearly Earnings Online (2026)",
+        "metaDescription": "Calculate your total annual income from multiple sources. Free online annual income calculator. Combine salary, freelance, rental, and business income.",
+        "inputs": [
+            {
+                "name": "monthlySalary",
+                "label": "Monthly Salary (₹)",
+                "type": "number",
+                "placeholder": "e.g. 50000"
+            },
+            {
+                "name": "bonus",
+                "label": "Annual Bonus (₹)",
+                "type": "number",
+                "placeholder": "e.g. 100000"
+            },
+            {
+                "name": "freelanceAnnual",
+                "label": "Freelance / Side Income Annual (₹)",
+                "type": "number",
+                "placeholder": "e.g. 200000"
+            },
+            {
+                "name": "rentalIncome",
+                "label": "Annual Rental Income (₹)",
+                "type": "number",
+                "placeholder": "e.g. 120000"
+            }
+        ],
+        "type": "annual-income",
+        "faqs": [
+            {
+                "q": "What counts as annual income in India?",
+                "a": "Annual income includes salary, business income, freelance earnings, rental income, capital gains, and interest from deposits."
+            },
+            {
+                "q": "Is annual income the same as CTC?",
+                "a": "No. CTC includes employer contributions. Annual income typically refers to what you receive and declare in your income tax return."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "net-income",
+        "slug": "net-income-calculator",
+        "title": "Net Income Calculator",
+        "category": "Work & Salary",
+        "metaTitle": "Net Income Calculator – Calculate Take Home Pay After Tax (2026)",
+        "metaDescription": "Calculate your net income after all taxes and deductions. Free online net income calculator for India. Accurate in-hand salary estimation instantly.",
+        "inputs": [
+            {
+                "name": "grossAnnual",
+                "label": "Gross Annual Income (₹)",
+                "type": "number",
+                "placeholder": "e.g. 800000"
+            },
+            {
+                "name": "pf",
+                "label": "Annual PF Deduction (₹)",
+                "type": "number",
+                "placeholder": "e.g. 57600"
+            },
+            {
+                "name": "incomeTax",
+                "label": "Annual Income Tax (₹)",
+                "type": "number",
+                "placeholder": "e.g. 52500"
+            },
+            {
+                "name": "others",
+                "label": "Other Annual Deductions (₹)",
+                "type": "number",
+                "placeholder": "e.g. 12000"
+            }
+        ],
+        "type": "net-income",
+        "faqs": [
+            {
+                "q": "What is net income?",
+                "a": "Net income is the amount remaining after all taxes, PF, and deductions are subtracted from gross income. It is your actual take-home pay."
+            },
+            {
+                "q": "How can I increase my net income in India?",
+                "a": "Claim all eligible deductions under Section 80C (up to ₹1.5L), HRA, NPS (80CCD), and medical insurance (80D) to reduce tax liability."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "overtime-pay",
+        "slug": "overtime-pay-calculator",
+        "title": "Overtime Pay Calculator",
+        "category": "Work & Salary",
+        "metaTitle": "Overtime Pay Calculator – Calculate Extra Pay Instantly (2026)",
+        "metaDescription": "Calculate your overtime pay precisely. Free online overtime pay calculator for India. Supports 1.5x and 2x multipliers with instant accurate results.",
+        "inputs": [
+            {
+                "name": "hourlyRate",
+                "label": "Regular Hourly Rate (₹)",
+                "type": "number",
+                "placeholder": "e.g. 500"
+            },
+            {
+                "name": "regularHours",
+                "label": "Regular Hours Worked",
+                "type": "number",
+                "placeholder": "e.g. 40"
+            },
+            {
+                "name": "overtimeHours",
+                "label": "Overtime Hours Worked",
+                "type": "number",
+                "placeholder": "e.g. 8"
+            },
+            {
+                "name": "overtimeMultiplier",
+                "label": "Overtime Rate",
+                "type": "select",
+                "options": [
+                    {
+                        "value": "1.5",
+                        "text": "1.5x (Time-and-a-Half)"
+                    },
+                    {
+                        "value": "2",
+                        "text": "2x (Double Time)"
+                    }
+                ]
+            }
+        ],
+        "type": "overtime-pay",
+        "faqs": [
+            {
+                "q": "What is the overtime rate in India?",
+                "a": "Under the Factories Act, overtime must be paid at twice (2x) the ordinary rate. Private companies may use 1.5x as per contracts."
+            },
+            {
+                "q": "How is overtime pay different from regular pay?",
+                "a": "Overtime pay = Overtime Hours × Hourly Rate × Multiplier. Total pay = Regular pay + Overtime pay."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "work-shift-hours",
+        "slug": "work-shift-hours-calculator",
+        "title": "Work Shift Hours Calculator",
+        "category": "Work & Salary",
+        "metaTitle": "Work Shift Hours Calculator – Total Shift Duration Online (2026)",
+        "metaDescription": "Calculate total work shift hours accurately including breaks. Free online shift hours calculator for employees, nurses, and shift workers. Instant results.",
+        "inputs": [
+            {
+                "name": "shiftStart",
+                "label": "Shift Start Time",
+                "type": "text",
+                "placeholder": "e.g. 08:00"
+            },
+            {
+                "name": "shiftEnd",
+                "label": "Shift End Time",
+                "type": "text",
+                "placeholder": "e.g. 20:00"
+            },
+            {
+                "name": "breakMinutes",
+                "label": "Total Break Duration (mins)",
+                "type": "number",
+                "placeholder": "e.g. 60"
+            }
+        ],
+        "type": "work-shift-hours",
+        "faqs": [
+            {
+                "q": "How do I calculate my shift hours?",
+                "a": "Shift Hours = (End Time - Start Time) - Break Duration. For overnight shifts, add 24 hours to the end time."
+            },
+            {
+                "q": "What is a standard shift length in India?",
+                "a": "Standard shifts are 8-9 hours. The Factories Act mandates a maximum of 9 hours per day and 48 hours per week for factory workers."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "productivity",
+        "slug": "productivity-calculator",
+        "title": "Productivity Calculator",
+        "category": "Work & Salary",
+        "metaTitle": "Productivity Calculator – Measure Work Efficiency Online (2026)",
+        "metaDescription": "Measure and track your work productivity. Free online productivity calculator based on output vs input. Improve efficiency with accurate productivity scores.",
+        "inputs": [
+            {
+                "name": "output",
+                "label": "Total Output / Tasks Completed",
+                "type": "number",
+                "placeholder": "e.g. 80"
+            },
+            {
+                "name": "input",
+                "label": "Total Hours / Resources Used",
+                "type": "number",
+                "placeholder": "e.g. 8"
+            }
+        ],
+        "type": "productivity",
+        "faqs": [
+            {
+                "q": "How is productivity calculated?",
+                "a": "Productivity = Output / Input. A productivity rate of 10 means 10 units of output per unit of input."
+            },
+            {
+                "q": "What factors affect workplace productivity?",
+                "a": "Focus time, meeting overload, tool quality, physical environment, mental health, and sleep all significantly affect productivity."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
+    },
+    {
+        "id": "hourly-cost",
+        "slug": "hourly-cost-calculator",
+        "title": "Hourly Cost Calculator",
+        "category": "Work & Salary",
+        "metaTitle": "Hourly Cost Calculator – True Cost of Employee Per Hour (2026)",
+        "metaDescription": "Calculate the true hourly cost of an employee or contractor. Free online hourly cost calculator. Includes salary, benefits, and overhead for accurate budgeting.",
+        "inputs": [
+            {
+                "name": "annualSalary",
+                "label": "Annual Salary (₹)",
+                "type": "number",
+                "placeholder": "e.g. 600000"
+            },
+            {
+                "name": "benefits",
+                "label": "Annual Benefits & PF (₹)",
+                "type": "number",
+                "placeholder": "e.g. 90000"
+            },
+            {
+                "name": "overhead",
+                "label": "Annual Overhead per Employee (₹)",
+                "type": "number",
+                "placeholder": "e.g. 60000"
+            },
+            {
+                "name": "hoursPerYear",
+                "label": "Working Hours per Year",
+                "type": "number",
+                "placeholder": "e.g. 2080"
+            }
+        ],
+        "type": "hourly-cost",
+        "faqs": [
+            {
+                "q": "What is the true cost of hiring an employee?",
+                "a": "True hourly cost includes salary, employer PF (12%), gratuity provision, office space, equipment, HR overhead, and training costs."
+            },
+            {
+                "q": "How does this help businesses?",
+                "a": "Knowing the true hourly cost helps businesses price projects accurately, decide between full-time hires and contractors, and budget workforce costs."
+            },
+            {
+                "q": "Is this calculator free?",
+                "a": "Yes, completely free with no login required."
+            }
+        ]
     }
 ]

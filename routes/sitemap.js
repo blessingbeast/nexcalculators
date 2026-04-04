@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const calculatorsPath = path.join(__dirname, '../calculators/calculators.json');
+const blogsPath = path.join(__dirname, '../data/blogs.json');
 
 // Helper to get Base URL
 const getBaseUrl = () => {
@@ -74,6 +75,31 @@ router.get('/sitemap.xml', (req, res) => {
         <priority>0.8</priority>
     </url>`;
         });
+
+        // Blog Index
+        sitemap += `
+    <url>
+        <loc>${getBaseUrl()}/blog</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>`;
+
+        // Blog Posts
+        try {
+            const blogs = JSON.parse(fs.readFileSync(blogsPath, 'utf8'));
+            blogs.forEach(blog => {
+                sitemap += `
+    <url>
+        <loc>${getBaseUrl()}/blog/${blog.slug}</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>`;
+            });
+        } catch(e) {
+            console.error('Could not read blogs.json for sitemap', e);
+        }
 
         sitemap += '\n</urlset>';
 

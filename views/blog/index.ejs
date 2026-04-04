@@ -1,0 +1,35 @@
+<%- include('../partials/header') %>
+
+<div class="blog-index-page">
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Calculator Guides & How-To Articles</h1>
+            <p>Step-by-step tutorials, formula explanations, and practical examples for EMI, GST, percentages, salary, and more — written by experts, free to read.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="blog-grid">
+            <% blogs.forEach(function(blog) { %>
+            <article class="blog-card">
+                <div class="blog-card-meta">
+                    <span class="blog-category"><%= blog.category %></span>
+                    <span class="blog-date"><%= new Date(blog.datePublished).toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' }) %></span>
+                </div>
+                <h2 class="blog-card-title">
+                    <a href="/blog/<%= blog.slug %>"><%= blog.title %></a>
+                </h2>
+                <p class="blog-card-desc"><%= blog.metaDescription %></p>
+                <div class="blog-card-footer">
+                    <a href="/blog/<%= blog.slug %>" class="btn blog-read-btn">Read Guide →</a>
+                    <% if (blog.relatedCalculator) { %>
+                    <a href="/calculator/<%= blog.relatedCalculator.slug %>" class="blog-calc-link">🔢 Use <%= blog.relatedCalculator.title %></a>
+                    <% } %>
+                </div>
+            </article>
+            <% }); %>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>
