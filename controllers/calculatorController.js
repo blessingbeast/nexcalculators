@@ -24,8 +24,17 @@ exports.getCalculator = (req, res) => {
                 });
             }
 
-            // Get Related Calculators from same category
-            const relatedCalculators = calculators.filter(c => c.category === calculator.category && c.slug !== calculator.slug);
+            // Get Related Calculators: up to 5 from same category, padded with random if needed
+            let sameCat = calculators.filter(c => c.category === calculator.category && c.slug !== calculator.slug);
+            // Shuffle for variety
+            sameCat = sameCat.sort(() => Math.random() - 0.5);
+            let relatedCalculators = sameCat.slice(0, 5);
+            if (relatedCalculators.length < 5) {
+                const others = calculators
+                    .filter(c => c.slug !== calculator.slug && !relatedCalculators.find(r => r.slug === c.slug))
+                    .sort(() => Math.random() - 0.5);
+                relatedCalculators = relatedCalculators.concat(others.slice(0, 5 - relatedCalculators.length));
+            }
 
             // Try to read content file
             const contentPath = path.join(__dirname, `../calculators/content/${slug}.html`);

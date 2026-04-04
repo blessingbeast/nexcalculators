@@ -1024,3 +1024,230 @@ footer {
 .breadcrumb-sep { margin: 0 6px; }
 .breadcrumb-current { color: #374151; }
 
+/* =============================================
+   INTERNAL LINKING – INLINE SECTIONS (Step 1-5)
+   ============================================= */
+
+/* Related Calculators – inline below article */
+.related-calcs-inline {
+    margin: 40px 0 24px;
+    padding: 28px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border: 1px solid #f0f0f0;
+}
+
+.related-calcs-inline h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 18px;
+}
+
+.related-calcs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.related-calc-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #1a1a2e;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.related-calc-card:hover {
+    background: #ede9fe;
+    border-color: #4f46e5;
+    color: #4f46e5;
+    transform: translateY(-2px);
+}
+
+.related-calc-arrow {
+    color: #4f46e5;
+    font-size: 1rem;
+    margin-left: 8px;
+    flex-shrink: 0;
+}
+
+/* Popular Calculators strip */
+.popular-calcs-strip {
+    margin: 16px 0 40px;
+    padding: 28px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 16px;
+    color: white;
+}
+
+.popular-calcs-strip h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.popular-calcs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.popular-calcs-list a {
+    color: #a5b4fc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.popular-calcs-list a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.browse-all-link {
+    margin-top: 0;
+}
+
+.browse-all-link a,
+p .browse-all-link {
+    color: #c4b5fd;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.browse-all-link a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Most Used Section – Homepage */
+.most-used-section {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    margin: 16px 0 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid #f0f0f0;
+}
+
+.most-used-subtitle {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin-top: -8px;
+}
+
+.most-used-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.most-used-list li {
+    font-size: 0.95rem;
+    color: #374151;
+    padding: 6px 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.most-used-list a {
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.most-used-list a:hover {
+    text-decoration: underline;
+}
+
+.most-used-section > p > a {
+    color: #4f46e5;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.most-used-section > p > a:hover {
+    text-decoration: underline;
+}
+
+/* Category Jump Navigation – Directory Page */
+.category-jump-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0 36px;
+}
+
+.category-jump-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 99px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4f46e5;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.category-jump-btn:hover {
+    background: #4f46e5;
+    color: white;
+    border-color: #4f46e5;
+}
+
+.jump-count {
+    background: #ede9fe;
+    color: #5b21b6;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 99px;
+}
+
+.category-jump-btn:hover .jump-count {
+    background: rgba(255,255,255,0.25);
+    color: white;
+}
+
+/* Footer – 4-column grid */
+.footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .related-calcs-grid,
+    .popular-calcs-list,
+    .most-used-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}

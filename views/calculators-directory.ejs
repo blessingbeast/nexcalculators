@@ -39,16 +39,45 @@
         <% 
             const grouped = {};
             calculators.forEach(calc => {
-                if (!grouped[calc.category]) grouped[calc.category] = [];
-                grouped[calc.category].push(calc);
+                const cat = calc.category || 'Other';
+                if (!grouped[cat]) grouped[cat] = [];
+                grouped[cat].push(calc);
             });
-            const categoryOrder = ['Financial', 'Health', 'Math'];
-            const categoryIcons = { Financial: '💰', Health: '🏥', Math: '🔢' };
+            const categoryOrder = ['Financial', 'Math', 'Health', 'Work & Salary', 'Daily Utilities'];
+            const categoryIcons = {
+                'Financial':      '💰',
+                'Health':         '🏥',
+                'Math':           '🔢',
+                'Work & Salary':  '💼',
+                'Daily Utilities':'🚗',
+                'Other':          '📊'
+            };
         %>
 
+        <!-- Quick Jump Category Nav -->
+        <nav class="category-jump-nav" aria-label="Jump to category">
+            <% categoryOrder.forEach(function(cat) { %>
+                <% if (grouped[cat] && grouped[cat].length > 0) { %>
+                <a href="#<%= cat.replace(/\s+/g, '-') %>" class="category-jump-btn">
+                    <%= categoryIcons[cat] || '📊' %> <%= cat %>
+                    <span class="jump-count"><%= grouped[cat].length %></span>
+                </a>
+                <% } %>
+            <% }); %>
+            <% Object.keys(grouped).sort().forEach(function(cat) { %>
+                <% if (!categoryOrder.includes(cat)) { %>
+                <a href="#<%= cat.replace(/\s+/g, '-') %>" class="category-jump-btn">
+                    <%= categoryIcons[cat] || '📊' %> <%= cat %>
+                    <span class="jump-count"><%= grouped[cat].length %></span>
+                </a>
+                <% } %>
+            <% }); %>
+        </nav>
+
+        <!-- Render all categories in order -->
         <% categoryOrder.forEach(function(cat) { %>
-            <% if (grouped[cat]) { %>
-            <section class="calc-dir-section" id="<%= cat %>">
+            <% if (grouped[cat] && grouped[cat].length > 0) { %>
+            <section class="calc-dir-section" id="<%= cat.replace(/\s+/g, '-') %>">
                 <h2 class="calc-dir-heading">
                     <%= categoryIcons[cat] || '📊' %> <%= cat %> Calculators
                     <span class="category-count">(<%= grouped[cat].length %>)</span>
@@ -57,7 +86,7 @@
                     <% grouped[cat].forEach(function(calc) { %>
                     <a href="/calculator/<%= calc.slug %>" class="calc-dir-card">
                         <span class="calc-dir-name"><%= calc.title %></span>
-                        <span class="calc-dir-desc"><%= calc.metaDescription ? calc.metaDescription.substring(0, 80) + '...' : 'Free online calculator.' %></span>
+                        <span class="calc-dir-desc"><%= calc.metaDescription ? calc.metaDescription.substring(0, 90) + '...' : 'Free online calculator.' %></span>
                     </a>
                     <% }); %>
                 </div>
@@ -65,18 +94,19 @@
             <% } %>
         <% }); %>
 
-        <!-- Other categories not in order -->
-        <% Object.keys(grouped).forEach(function(cat) { %>
-            <% if (!categoryOrder.includes(cat)) { %>
-            <section class="calc-dir-section" id="<%= cat %>">
-                <h2 class="calc-dir-heading">📊 <%= cat %> Calculators
+        <!-- Render any remaining categories not in the ordered list -->
+        <% Object.keys(grouped).sort().forEach(function(cat) { %>
+            <% if (!categoryOrder.includes(cat) && grouped[cat].length > 0) { %>
+            <section class="calc-dir-section" id="<%= cat.replace(/\s+/g, '-') %>">
+                <h2 class="calc-dir-heading">
+                    <%= categoryIcons[cat] || '📊' %> <%= cat %> Calculators
                     <span class="category-count">(<%= grouped[cat].length %>)</span>
                 </h2>
                 <div class="calc-dir-grid">
                     <% grouped[cat].forEach(function(calc) { %>
                     <a href="/calculator/<%= calc.slug %>" class="calc-dir-card">
                         <span class="calc-dir-name"><%= calc.title %></span>
-                        <span class="calc-dir-desc"><%= calc.metaDescription ? calc.metaDescription.substring(0, 80) + '...' : 'Free online calculator.' %></span>
+                        <span class="calc-dir-desc"><%= calc.metaDescription ? calc.metaDescription.substring(0, 90) + '...' : 'Free online calculator.' %></span>
                     </a>
                     <% }); %>
                 </div>

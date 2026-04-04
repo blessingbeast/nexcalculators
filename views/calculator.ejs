@@ -81,6 +81,48 @@
                         </ul>
                     </section>
                 </article>
+
+                <!-- ======================================
+                     RELATED CALCULATORS (inline, below article)
+                     ====================================== -->
+                <section class="related-calcs-inline">
+                    <h2>Related Calculators</h2>
+                    <div class="related-calcs-grid">
+                        <% if (typeof relatedCalculators !== 'undefined' && relatedCalculators.length > 0) { %>
+                            <% relatedCalculators.slice(0, 5).forEach(function(rel) { %>
+                            <a href="/calculator/<%= rel.slug %>" class="related-calc-card">
+                                <span class="related-calc-name"><%= rel.title %></span>
+                                <span class="related-calc-arrow">→</span>
+                            </a>
+                            <% }); %>
+                        <% } else { %>
+                            <a href="/calculator/emi-calculator" class="related-calc-card"><span class="related-calc-name">EMI Calculator</span><span class="related-calc-arrow">→</span></a>
+                            <a href="/calculator/bmi-calculator" class="related-calc-card"><span class="related-calc-name">BMI Calculator</span><span class="related-calc-arrow">→</span></a>
+                            <a href="/calculator/percentage-calculator" class="related-calc-card"><span class="related-calc-name">Percentage Calculator</span><span class="related-calc-arrow">→</span></a>
+                            <a href="/calculator/gst-calculator" class="related-calc-card"><span class="related-calc-name">GST Calculator</span><span class="related-calc-arrow">→</span></a>
+                            <a href="/calculator/sip-calculator" class="related-calc-card"><span class="related-calc-name">SIP Calculator</span><span class="related-calc-arrow">→</span></a>
+                        <% } %>
+                    </div>
+                </section>
+
+                <!-- ======================================
+                     POPULAR CALCULATORS (inline strip)
+                     ====================================== -->
+                <section class="popular-calcs-strip">
+                    <h2>Most Used Calculators</h2>
+                    <ul class="popular-calcs-list">
+                        <li><a href="/calculator/emi-calculator">💳 EMI Calculator</a></li>
+                        <li><a href="/calculator/bmi-calculator">⚖️ BMI Calculator</a></li>
+                        <li><a href="/calculator/percentage-calculator">% Percentage Calculator</a></li>
+                        <li><a href="/calculator/gst-calculator">🧾 GST Calculator</a></li>
+                        <li><a href="/calculator/compound-interest-calculator">📈 Compound Interest</a></li>
+                        <li><a href="/calculator/age-calculator">🎂 Age Calculator</a></li>
+                        <li><a href="/calculator/sip-calculator">💰 SIP Calculator</a></li>
+                        <li><a href="/calculator/salary-to-hourly-calculator">💼 Salary Calculator</a></li>
+                    </ul>
+                    <p class="browse-all-link"><a href="/calculators">Browse all <%= typeof calculators !== 'undefined' ? calculators.length : '100+' %> free calculators →</a></p>
+                </section>
+
             </main>
 
             <aside class="sidebar">
