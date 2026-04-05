@@ -53,12 +53,14 @@ const calculatorRouter = require('./routes/calculators');
 const blogRouter     = require('./routes/blog');
 const clusterRouter  = require('./routes/clusters');
 const hourlyRouter   = require('./routes/hourly');
+const percentRouter  = require('./routes/percent');
 const sitemapRouter  = require('./routes/sitemap');
 
 app.use('/', indexRouter);
 app.use('/', sitemapRouter);   // /sitemap.xml and /robots.txt
 app.use('/', clusterRouter);   // /percentage-calculators etc.
 app.use('/', hourlyRouter);    // /20-an-hour-is-how-much-a-year etc.
+app.use('/', percentRouter);   // /20-percent-of-100 etc.
 app.use('/calculator', calculatorRouter);
 app.use('/blog', blogRouter);
 

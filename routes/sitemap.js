@@ -154,6 +154,21 @@ router.get('/sitemap.xml', (req, res) => {
     </url>`;
         });
 
+        // Programmatic Percent Pages
+        const validPercents = [5, 10, 12, 15, 18, 20, 25, 30, 35, 40, 50];
+        const validBases = [50, 100, 200, 250, 500, 1000];
+        validPercents.forEach(p => {
+            validBases.forEach(b => {
+                sitemap += `
+    <url>
+        <loc>${getBaseUrl()}/${p}-percent-of-${b}</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>`;
+            });
+        });
+
         sitemap += '\n</urlset>';
 
         res.header('Content-Type', 'application/xml');

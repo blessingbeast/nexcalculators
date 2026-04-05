@@ -1,0 +1,152 @@
+<%- include('partials/header') %>
+
+<div class="percent-page">
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">›</span>
+            <a href="/percentage-calculators">Percentage Calculators</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">What is <%= x %>% of <%= y %>?</span>
+        </nav>
+
+        <div class="percent-layout">
+            <!-- MAIN -->
+            <main class="percent-main">
+
+                <!-- 1. H1 + Quick Answer -->
+                <h1>What is <%= x %>% of <%= y %>?</h1>
+
+                <div class="quick-answer">
+                    <div class="quick-answer-label">📌 Quick Answer</div>
+                    <div class="quick-answer-value"><%= x %>% of <%= y %> is <span><%= fmt(result) %></span></div>
+                </div>
+
+                <!-- 2. Calculation Formula -->
+                <section class="calc-section">
+                    <h2>Calculation Formula</h2>
+                    <p>To calculate <%= x %> percent of <%= y %>, we can use the standard percentage formula:</p>
+                    <div class="formula-box">
+                        <strong>Percentage Result = ( Percentage / 100 ) × Base Number</strong>
+                    </div>
+                </section>
+
+                <!-- 3. Step-by-step Example -->
+                <section class="step-by-step-section">
+                    <h2>Step-by-step Example</h2>
+                    <p>Let's plug our numbers into the formula to find the result:</p>
+                    <div class="example-calc">
+                        <ol>
+                            <li>The given percentage is <strong><%= x %>%</strong>.</li>
+                            <li>The base number is <strong><%= fmt(y) %></strong>.</li>
+                            <li>First, we convert <%= x %>% to a decimal by dividing it by 100: <br> <strong><%= x %> ÷ 100 = <%= decimalX %></strong></li>
+                            <li>Then, we multiply this decimal by our base number: <br> <strong><%= decimalX %> × <%= fmt(y) %> = <%= fmt(result) %></strong></li>
+                        </ol>
+                    </div>
+                    <p>So, the final answer is that <%= x %>% of <%= fmt(y) %> is <strong><%= fmt(result) %></strong>.</p>
+                </section>
+
+                <!-- 4. Percentage Calculator Tool -->
+                <section class="calc-embed-cta">
+                    <div class="calc-embed-box">
+                        <h2>Compute Your Own Percentages</h2>
+                        <p>Need to calculate a different percentage? Use our free interactive percentage calculator to find the exact percentage of any number quickly and easily.</p>
+                        <div class="calc-cta-grid">
+                            <a href="/calculator/percentage-calculator" class="calc-cta-btn primary">
+                                📊 Interactive Percentage Calculator
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. Related Percentage Calculators -->
+                <section class="related-calculators-section">
+                    <h2>Related Calculators</h2>
+                    <div class="calc-cta-grid">
+                        <a href="/calculator/percentage-increase-calculator" class="calc-cta-btn secondary">
+                            📈 Percentage Increase Calculator
+                        </a>
+                        <a href="/calculator/percentage-decrease-calculator" class="calc-cta-btn secondary">
+                            📉 Percentage Decrease Calculator
+                        </a>
+                        <a href="/calculator/percentage-change-calculator" class="calc-cta-btn secondary">
+                            🔄 Percentage Change Calculator
+                        </a>
+                    </div>
+                </section>
+
+                <!-- 6. FAQs -->
+                <section class="faq-section percent-faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <% faqs.forEach(function(faq) { %>
+                    <div class="faq-item">
+                        <h3><%= faq.question %></h3>
+                        <p><%= faq.answer %></p>
+                    </div>
+                    <% }); %>
+                </section>
+
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside class="percent-sidebar">
+                <div class="sidebar-box">
+                    <h3>Popular Variations</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/10-percent-of-<%= y %>">10% of <%= y %></a></li>
+                        <li><a href="/20-percent-of-<%= y %>">20% of <%= y %></a></li>
+                        <li><a href="/25-percent-of-<%= y %>">25% of <%= y %></a></li>
+                        <li><a href="/50-percent-of-<%= y %>">50% of <%= y %></a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>More Percentage Tools</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/calculator/percentage-calculator">Percentage Calculator</a></li>
+                        <li><a href="/calculator/percentage-increase-calculator">Percentage Increase</a></li>
+                        <li><a href="/calculator/percentage-decrease-calculator">Percentage Decrease</a></li>
+                        <li><a href="/percentage-calculators">All Percentage Tools →</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ JSON-LD Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        <% faqs.forEach(function(faq, i) { %>
+        {
+            "@type": "Question",
+            "name": <%- JSON.stringify(faq.question) %>,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": <%- JSON.stringify(faq.answer) %>
+            }
+        }<%= i < faqs.length - 1 ? ',' : '' %>
+        <% }); %>
+    ]
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "<%= typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com' %>/" },
+        { "@type": "ListItem", "position": 2, "name": "Percentage Calculators", "item": "<%= typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com' %>/percentage-calculators" },
+        { "@type": "ListItem", "position": 3, "name": "What is <%= x %>% of <%= y %>?", "item": "<%= canonicalUrl %>" }
+    ]
+}
+</script>
+
+<%- include('partials/footer') %>
