@@ -55,6 +55,7 @@ const clusterRouter  = require('./routes/clusters');
 const hourlyRouter   = require('./routes/hourly');
 const percentRouter  = require('./routes/percent');
 const fuelRouter     = require('./routes/fuel');
+const salaryRouter   = require('./routes/salary');
 const sitemapRouter  = require('./routes/sitemap');
 
 app.use('/', indexRouter);
@@ -63,6 +64,7 @@ app.use('/', clusterRouter);   // /percentage-calculators etc.
 app.use('/', hourlyRouter);    // /20-an-hour-is-how-much-a-year etc.
 app.use('/', percentRouter);   // /20-percent-of-100 etc.
 app.use('/', fuelRouter);      // /fuel-cost-for-100-miles etc.
+app.use('/', salaryRouter);    // /50k-salary-after-tax etc.
 app.use('/calculator', calculatorRouter);
 app.use('/blog', blogRouter);
 

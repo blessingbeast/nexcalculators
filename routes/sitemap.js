@@ -181,6 +181,18 @@ router.get('/sitemap.xml', (req, res) => {
     </url>`;
         });
 
+        // Programmatic Salary Pages
+        const kSalaries = [30, 40, 50, 60, 70, 80, 90, 100, 120, 150];
+        kSalaries.forEach(k => {
+            sitemap += `
+    <url>
+        <loc>${getBaseUrl()}/${k}k-salary-after-tax</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>`;
+        });
+
         sitemap += '\n</urlset>';
 
         res.header('Content-Type', 'application/xml');

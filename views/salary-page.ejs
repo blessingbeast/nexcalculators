@@ -1,0 +1,192 @@
+<%- include('partials/header') %>
+
+<div class="salary-page">
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">›</span>
+            <a href="/salary-calculators">Salary Calculators</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">$<%= kValue %>k Salary After Tax</span>
+        </nav>
+
+        <div class="salary-layout">
+            <!-- MAIN -->
+            <main class="salary-main">
+
+                <!-- 1. H1 + Quick Answer -->
+                <h1>$<%= kValue %>k Salary After Tax</h1>
+
+                <div class="quick-answer">
+                    <div class="quick-answer-label">📌 Estimated Yearly Take-Home</div>
+                    <div class="quick-answer-value">$<span><%= fmt(Math.round(netYearly)) %></span></div>
+                    <p>Based on a $<%= fmt(grossYearly) %> gross salary and an estimated <%= Math.round(taxRate*100) %>% tax rate.</p>
+                </div>
+
+                <!-- 2. Calculation Formula / Salary Breakdown -->
+                <section class="calc-section">
+                    <h2>Salary Breakdown</h2>
+                    <p>Here is how a $<%= kValue %>k annual salary breaks down before and after estimated taxes:</p>
+                    <div class="breakdown-table-wrap">
+                        <table class="breakdown-table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Gross (Before Tax)</th>
+                                    <th>Net (After Tax)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight-row">
+                                    <td><strong>🗓️ Yearly</strong></td>
+                                    <td><strong>$<%= fmt(grossYearly) %></strong></td>
+                                    <td><strong>$<%= fmt(Math.round(netYearly)) %></strong></td>
+                                </tr>
+                                <tr>
+                                    <td>📅 Monthly</td>
+                                    <td>$<%= fmt(Math.round(monthlyGross)) %></td>
+                                    <td class="net-val">$<%= fmt(Math.round(monthlyNet)) %></td>
+                                </tr>
+                                <tr>
+                                    <td>📆 Weekly</td>
+                                    <td>$<%= fmt(Math.round(weeklyGross)) %></td>
+                                    <td class="net-val">$<%= fmt(Math.round(weeklyNet)) %></td>
+                                </tr>
+                                <tr class="parttime-row">
+                                    <td>⏱️ Hourly (40 hrs/wk)</td>
+                                    <td>$<%= fmt(hourlyGross) %></td>
+                                    <td class="net-val">$<%= fmt(hourlyNet) %></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- 3. Example Calculation -->
+                <section class="step-by-step-section">
+                    <h2>Example Tax Calculation</h2>
+                    <p>If you earn $<%= kValue %>,000 a year, your estimated tax footprint (including federal, state, and FICA) is roughly <%= Math.round(taxRate*100) %>% depending on your location and filing status.</p>
+                    <div class="example-calc">
+                        <ol>
+                            <li><strong>Gross Pay:</strong> $<%= fmt(grossYearly) %></li>
+                            <li><strong>Estimated Taxes (<%= Math.round(taxRate*100) %>%):</strong> $<%= fmt(grossYearly) %> × <%= taxRate %> = <strong>$<%= fmt(taxAmount) %></strong>.</li>
+                            <li><strong>Net Pay (Take-Home):</strong> $<%= fmt(grossYearly) %> - $<%= fmt(taxAmount) %> = <strong>$<%= fmt(Math.round(netYearly)) %></strong>.</li>
+                        </ol>
+                    </div>
+                    <p>This leaves you with roughly <strong>$<%= fmt(Math.round(monthlyNet)) %></strong> per month in your pocket.</p>
+                </section>
+
+                <!-- 4. Calculator Embed CTA -->
+                <section class="calc-embed-cta">
+                    <div class="calc-embed-box">
+                        <h2>Calculate Your Exact Take-Home Salary</h2>
+                        <p>Need a more precise number? Use our interactive salary calculator to input your exact state, deductions, and filing status to see a perfect summary of your take-home pay.</p>
+                        <div class="calc-cta-grid">
+                            <a href="/calculator/take-home-salary-calculator" class="calc-cta-btn primary">
+                                💼 Open Salary Calculator
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. Related Calculators -->
+                <section class="related-calculators-section">
+                    <h2>Related Wage Calculators</h2>
+                    <div class="calc-cta-grid">
+                        <a href="/calculator/hourly-to-salary-calculator" class="calc-cta-btn secondary">
+                            🕐 Hourly to Salary Calculator
+                        </a>
+                        <a href="/calculator/salary-to-hourly-calculator" class="calc-cta-btn secondary">
+                            📈 Salary to Hourly Calculator
+                        </a>
+                        <a href="/hourly-salary-calculator" class="calc-cta-btn secondary">
+                            ⚡ Hourly Hub Matrix
+                        </a>
+                    </div>
+                </section>
+
+                <!-- 6. FAQs -->
+                <section class="faq-section salary-faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <% faqs.forEach(function(faq) { %>
+                    <div class="faq-item">
+                        <h3><%= faq.question %></h3>
+                        <p><%= faq.answer %></p>
+                    </div>
+                    <% }); %>
+                </section>
+
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside class="salary-sidebar">
+                <div class="sidebar-box">
+                    <h3>Popular Salaries</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/50k-salary-after-tax">$50k After Tax</a></li>
+                        <li><a href="/60k-salary-after-tax">$60k After Tax</a></li>
+                        <li><a href="/70k-salary-after-tax">$70k After Tax</a></li>
+                        <li><a href="/80k-salary-after-tax">$80k After Tax</a></li>
+                        <li><a href="/100k-salary-after-tax">$100k After Tax</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>At a Glance ($<%= kValue %>k)</h3>
+                    <ul class="sidebar-links">
+                        <li><strong>Monthly Net:</strong> $<%= fmt(Math.round(monthlyNet)) %></li>
+                        <li><strong>Weekly Net:</strong> $<%= fmt(Math.round(weeklyNet)) %></li>
+                        <li><strong>Est. Tax Rate:</strong> <%= Math.round(taxRate*100) %>%</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Salary Tools</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/calculator/take-home-salary-calculator">Salary Calculator</a></li>
+                        <li><a href="/calculator/hourly-to-salary-calculator">Hourly to Salary</a></li>
+                        <li><a href="/calculator/salary-to-hourly-calculator">Salary to Hourly</a></li>
+                        <li><a href="/salary-calculators">All Salary Tools →</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ JSON-LD Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        <% faqs.forEach(function(faq, i) { %>
+        {
+            "@type": "Question",
+            "name": <%- JSON.stringify(faq.question) %>,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": <%- JSON.stringify(faq.answer) %>
+            }
+        }<%= i < faqs.length - 1 ? ',' : '' %>
+        <% }); %>
+    ]
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "<%= typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com' %>/" },
+        { "@type": "ListItem", "position": 2, "name": "Salary Calculators", "item": "<%= typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com' %>/salary-calculators" },
+        { "@type": "ListItem", "position": 3, "name": "$<%= kValue %>k Salary After Tax", "item": "<%= canonicalUrl %>" }
+    ]
+}
+</script>
+
+<%- include('partials/footer') %>
