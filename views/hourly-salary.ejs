@@ -1,0 +1,235 @@
+<%- include('partials/header') %>
+
+<div class="hourly-page">
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">›</span>
+            <a href="/salary-calculators">Salary Calculators</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">₹<%= rate %> an Hour is How Much a Year?</span>
+        </nav>
+
+        <div class="hourly-layout">
+            <!-- MAIN -->
+            <main class="hourly-main">
+
+                <!-- H1 + Quick Answer -->
+                <h1>₹<%= rate %> an Hour is How Much a Year?</h1>
+
+                <div class="quick-answer">
+                    <div class="quick-answer-label">📌 Quick Answer</div>
+                    <div class="quick-answer-value">₹<%= fmt(yearlyGross) %> <span>per year</span></div>
+                    <p>Based on 40 hours/week × 52 weeks/year (full-time)</p>
+                </div>
+
+                <!-- Breakdown Table -->
+                <section class="breakdown-section">
+                    <h2>₹<%= rate %>/Hour Salary Breakdown</h2>
+                    <div class="breakdown-table-wrap">
+                        <table class="breakdown-table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Hours</th>
+                                    <th>Gross Salary (₹)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="highlight-row">
+                                    <td><strong>🗓️ Per Year (Full-Time)</strong></td>
+                                    <td>2,080</td>
+                                    <td><strong>₹<%= fmt(yearlyGross) %></strong></td>
+                                </tr>
+                                <tr>
+                                    <td>📅 Per Month</td>
+                                    <td>~173</td>
+                                    <td>₹<%= fmt(monthlyGross) %></td>
+                                </tr>
+                                <tr>
+                                    <td>📆 Per Week</td>
+                                    <td>40</td>
+                                    <td>₹<%= fmt(weeklyGross) %></td>
+                                </tr>
+                                <tr>
+                                    <td>📆 Per Day (8 hrs)</td>
+                                    <td>8</td>
+                                    <td>₹<%= fmt(dailyGross) %></td>
+                                </tr>
+                                <tr class="parttime-row">
+                                    <td>⏱️ Part-Time (30 hrs/wk/yr)</td>
+                                    <td>1,560</td>
+                                    <td>₹<%= fmt(partTime30) %></td>
+                                </tr>
+                                <tr class="parttime-row">
+                                    <td>⏱️ Part-Time (20 hrs/wk/yr)</td>
+                                    <td>1,040</td>
+                                    <td>₹<%= fmt(partTime20) %></td>
+                                </tr>
+                                <tr class="takehome-row">
+                                    <td>💰 Est. Monthly Take-Home*</td>
+                                    <td>~173</td>
+                                    <td>≈ ₹<%= fmt(estimatedMonthlyTakeHome) %></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="table-note">*Estimated after ~22% combined deductions (income tax + PF). Actual take-home varies by tax slab, deductions, and employer. Use our <a href="/calculator/take-home-salary-calculator">Take Home Salary Calculator</a> for a precise figure.</p>
+                    </div>
+                </section>
+
+                <!-- How the Calculation Works -->
+                <section class="how-calc-section">
+                    <h2>How the Calculation Works</h2>
+                    <p>Converting an hourly wage to an annual salary is straightforward. The standard full-time schedule is <strong>40 hours per week</strong> across <strong>52 weeks per year</strong>:</p>
+                    <div class="formula-box">
+                        <strong>Annual Salary = Hourly Rate × 40 hours/week × 52 weeks/year</strong>
+                    </div>
+                    <div class="example-calc">
+                        <h3>Example Calculation for ₹<%= rate %>/hour</h3>
+                        <ol>
+                            <li>Hours per week: <strong>40</strong></li>
+                            <li>Weeks per year: <strong>52</strong></li>
+                            <li>Total annual hours: 40 × 52 = <strong>2,080 hours</strong></li>
+                            <li>Annual gross salary: ₹<%= rate %> × 2,080 = <strong>₹<%= fmt(yearlyGross) %></strong></li>
+                            <li>Monthly gross: ₹<%= fmt(yearlyGross) %> ÷ 12 = <strong>₹<%= fmt(monthlyGross) %></strong></li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Embedded Salary Calculator CTA -->
+                <section class="calc-embed-cta">
+                    <div class="calc-embed-box">
+                        <h2>Calculate Your Exact Take-Home Pay</h2>
+                        <p>The gross salary above doesn't account for tax, PF, professional tax, or HRA. Use our free salary calculators for an accurate net figure.</p>
+                        <div class="calc-cta-grid">
+                            <a href="/calculator/take-home-salary-calculator" class="calc-cta-btn primary">
+                                💼 Take Home Salary Calculator
+                            </a>
+                            <a href="/calculator/salary-to-hourly-calculator" class="calc-cta-btn secondary">
+                                🕐 Salary to Hourly Calculator
+                            </a>
+                            <a href="/calculator/hourly-to-salary-calculator" class="calc-cta-btn secondary">
+                                📈 Hourly to Salary Calculator
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section class="faq-section hourly-faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <% faqs.forEach(function(faq) { %>
+                    <div class="faq-item">
+                        <h3><%= faq.question %></h3>
+                        <p><%= faq.answer %></p>
+                    </div>
+                    <% }); %>
+                </section>
+
+                <!-- Neighbour Rate Navigation -->
+                <section class="rate-nav-section">
+                    <h2>Other Hourly Rate Conversions</h2>
+                    <div class="rate-nav-grid">
+                        <% if (prev) { %>
+                        <a href="/<%= prev %>-an-hour-is-how-much-a-year" class="rate-nav-card">
+                            <span class="rate-nav-rate">₹<%= prev %>/hr</span>
+                            <span class="rate-nav-label">← Lower rate</span>
+                        </a>
+                        <% } %>
+                        <% if (next) { %>
+                        <a href="/<%= next %>-an-hour-is-how-much-a-year" class="rate-nav-card">
+                            <span class="rate-nav-rate">₹<%= next %>/hr</span>
+                            <span class="rate-nav-label">Higher rate →</span>
+                        </a>
+                        <% } %>
+                    </div>
+                    <div class="all-rates-grid">
+                        <% const allRates = [10,12,15,18,20,22,25,30,35,40,45,50,60,75,100]; %>
+                        <% allRates.forEach(function(r) { %>
+                        <a href="/<%= r %>-an-hour-is-how-much-a-year" class="rate-pill <%= r === rate ? 'active' : '' %>">
+                            ₹<%= r %>/hr
+                        </a>
+                        <% }); %>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside class="hourly-sidebar">
+                <div class="sidebar-box">
+                    <h3>At a Glance</h3>
+                    <ul class="sidebar-links">
+                        <li>Per Year: <strong>₹<%= fmt(yearlyGross) %></strong></li>
+                        <li>Per Month: <strong>₹<%= fmt(monthlyGross) %></strong></li>
+                        <li>Per Week: <strong>₹<%= fmt(weeklyGross) %></strong></li>
+                        <li>Per Day: <strong>₹<%= fmt(dailyGross) %></strong></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Salary Calculators</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/calculator/take-home-salary-calculator">Take Home Salary</a></li>
+                        <li><a href="/calculator/hourly-to-salary-calculator">Hourly to Salary</a></li>
+                        <li><a href="/calculator/salary-to-hourly-calculator">Salary to Hourly</a></li>
+                        <li><a href="/calculator/overtime-pay-calculator">Overtime Pay</a></li>
+                        <li><a href="/calculator/salary-increment-calculator">Salary Increment</a></li>
+                        <li><a href="/salary-calculators">All Salary Tools →</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Browse Hourly Rates</h3>
+                    <ul class="sidebar-links">
+                        <% [10,15,20,25,30,40,50,75,100].forEach(function(r) { %>
+                        <li>
+                            <a href="/<%= r %>-an-hour-is-how-much-a-year"
+                               <%- r === rate ? 'class="active-link"' : '' %>>
+                                ₹<%= r %>/hr → ₹<%= fmt(r * 40 * 52) %>/yr
+                            </a>
+                        </li>
+                        <% }); %>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ JSON-LD Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        <% faqs.forEach(function(faq, i) { %>
+        {
+            "@type": "Question",
+            "name": <%- JSON.stringify(faq.question) %>,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": <%- JSON.stringify(faq.answer) %>
+            }
+        }<%= i < faqs.length - 1 ? ',' : '' %>
+        <% }); %>
+    ]
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "<%= typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com' %>/" },
+        { "@type": "ListItem", "position": 2, "name": "Salary Calculators", "item": "<%= typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com' %>/salary-calculators" },
+        { "@type": "ListItem", "position": 3, "name": "₹<%= rate %> an Hour is How Much a Year?", "item": "<%= canonicalUrl %>" }
+    ]
+}
+</script>
+
+<%- include('partials/footer') %>

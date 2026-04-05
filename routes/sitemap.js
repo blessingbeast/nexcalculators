@@ -127,6 +127,18 @@ router.get('/sitemap.xml', (req, res) => {
             console.error('Could not read clusters.json for sitemap', e);
         }
 
+        // Programmatic Hourly Salary Pages
+        const hourlyRates = [10, 12, 15, 18, 20, 22, 25, 30, 35, 40, 45, 50, 60, 75, 100];
+        hourlyRates.forEach(rate => {
+            sitemap += `
+    <url>
+        <loc>${getBaseUrl()}/${rate}-an-hour-is-how-much-a-year</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>`;
+        });
+
         sitemap += '\n</urlset>';
 
         res.header('Content-Type', 'application/xml');
