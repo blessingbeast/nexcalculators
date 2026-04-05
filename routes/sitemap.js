@@ -169,6 +169,18 @@ router.get('/sitemap.xml', (req, res) => {
             });
         });
 
+        // Programmatic Fuel Cost Pages
+        const fuelDistances = [50, 100, 150, 200, 250, 300, 400, 500, 750, 1000];
+        fuelDistances.forEach(distance => {
+            sitemap += `
+    <url>
+        <loc>${getBaseUrl()}/fuel-cost-for-${distance}-miles</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>`;
+        });
+
         sitemap += '\n</urlset>';
 
         res.header('Content-Type', 'application/xml');

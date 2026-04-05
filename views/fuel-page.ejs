@@ -1,0 +1,176 @@
+<%- include('partials/header') %>
+
+<div class="fuel-page">
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">›</span>
+            <a href="/travel-cost-calculators">Travel Cost Calculators</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Fuel Cost for <%= distance %> Miles</span>
+        </nav>
+
+        <div class="fuel-layout">
+            <!-- MAIN -->
+            <main class="fuel-main">
+
+                <!-- 1. H1 + Quick Answer -->
+                <h1>Fuel Cost for <%= distance %> Miles</h1>
+
+                <div class="quick-answer">
+                    <div class="quick-answer-label">📌 Estimated Gas Cost</div>
+                    <div class="quick-answer-value">$<span><%= fmt(estimatedCost) %></span></div>
+                    <p>Based on <%= avgMpg %> MPG and gas at $<%= fmt(avgPricePerGallon) %>/gallon.</p>
+                </div>
+
+                <!-- 2. Calculation Formula (How it is calculated) -->
+                <section class="calc-section">
+                    <h2>How is Fuel Cost Calculated?</h2>
+                    <p>To calculate the cost of gas for a <%= distance %> mile trip, you need to know your distance (in miles), your car's fuel efficiency (MPG), and the current price of gas per gallon.</p>
+                    <div class="formula-box">
+                        <strong>Fuel Cost = ( Distance ÷ MPG ) × Price Per Gallon</strong>
+                    </div>
+                </section>
+
+                <!-- 3. Example Calculation -->
+                <section class="step-by-step-section">
+                    <h2>Example Calculation</h2>
+                    <p>Using the national averages to plug numbers into our formula:</p>
+                    <div class="example-calc">
+                        <ol>
+                            <li><strong>Distance:</strong> <%= distance %> miles.</li>
+                            <li><strong>Vehicle Efficiency:</strong> <%= avgMpg %> Miles Per Gallon (MPG).</li>
+                            <li><strong>Gas Price:</strong> $<%= fmt(avgPricePerGallon) %> per gallon.</li>
+                            <li>First, find how many gallons are needed: <br><strong><%= distance %> miles ÷ <%= avgMpg %> MPG = <%= fmt(gallonsNeeded) %> gallons</strong>.</li>
+                            <li>Then, multiply gallons by the gas price: <br><strong><%= fmt(gallonsNeeded) %> gallons × $<%= fmt(avgPricePerGallon) %> = $<%= fmt(estimatedCost) %></strong>.</li>
+                        </ol>
+                    </div>
+                    <p>So, driving <%= distance %> miles costs approximately <strong>$<%= fmt(estimatedCost) %></strong> in gas.</p>
+                </section>
+
+                <!-- Fuel Efficiency Explanation -->
+                <section class="info-section">
+                    <h2>What Affects Fuel Efficiency?</h2>
+                    <p>The estimate above assumes an average of <%= avgMpg %> MPG, but your actual fuel cost for <%= distance %> miles will vary based on:</p>
+                    <ul>
+                        <li><strong>Your Vehicle:</strong> A hybrid car might get 50 MPG, cutting the fuel cost in half, while a large SUV might get 15 MPG.</li>
+                        <li><strong>Driving Conditions:</strong> Highway driving is usually more fuel-efficient than stop-and-go city traffic.</li>
+                        <li><strong>Driving Habits:</strong> Speeding, rapid acceleration, and heavy braking lower gas mileage.</li>
+                        <li><strong>Maintenance:</strong> Under-inflated tires and old engine oil will increase your trip cost.</li>
+                    </ul>
+                </section>
+
+                <!-- 4. Calculator Embed CTA -->
+                <section class="calc-embed-cta">
+                    <div class="calc-embed-box">
+                        <h2>Calculate Your Exact Cost</h2>
+                        <p>Want a personalized estimate? Enter your specific car's MPG and your local gas station's price per gallon using our free interactive calculator below.</p>
+                        <div class="calc-cta-grid">
+                            <a href="/calculator/fuel-cost-calculator" class="calc-cta-btn primary">
+                                🚗 Open Fuel Cost Calculator
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. Related Calculators -->
+                <section class="related-calculators-section">
+                    <h2>Related Travel Calculators</h2>
+                    <div class="calc-cta-grid">
+                        <a href="/calculator/fuel-consumption-calculator" class="calc-cta-btn secondary">
+                            ⛽ Fuel Consumption Calculator
+                        </a>
+                        <a href="/calculator/trip-cost-calculator" class="calc-cta-btn secondary">
+                            🗺️ Complete Trip Cost Calculator
+                        </a>
+                        <a href="/calculator/mileage-calculator" class="calc-cta-btn secondary">
+                            ⏱️ Mileage Calculator
+                        </a>
+                    </div>
+                </section>
+
+                <!-- 6. FAQs -->
+                <section class="faq-section fuel-faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <% faqs.forEach(function(faq) { %>
+                    <div class="faq-item">
+                        <h3><%= faq.question %></h3>
+                        <p><%= faq.answer %></p>
+                    </div>
+                    <% }); %>
+                </section>
+
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside class="fuel-sidebar">
+                <div class="sidebar-box">
+                    <h3>Popular Distances</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/fuel-cost-for-100-miles">Cost for 100 miles</a></li>
+                        <li><a href="/fuel-cost-for-200-miles">Cost for 200 miles</a></li>
+                        <li><a href="/fuel-cost-for-300-miles">Cost for 300 miles</a></li>
+                        <li><a href="/fuel-cost-for-500-miles">Cost for 500 miles</a></li>
+                        <li><a href="/fuel-cost-for-1000-miles">Cost for 1000 miles</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>At a Glance (Averages)</h3>
+                    <ul class="sidebar-links">
+                        <li><strong>Distance:</strong> <%= distance %> miles</li>
+                        <li><strong>Gallons:</strong> <%= fmt(gallonsNeeded) %></li>
+                        <li><strong>Gas Price:</strong> $<%= fmt(avgPricePerGallon) %></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Travel Calculators</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/calculator/fuel-cost-calculator">Fuel Cost Calculator</a></li>
+                        <li><a href="/calculator/fuel-consumption-calculator">Fuel Consumption</a></li>
+                        <li><a href="/calculator/trip-cost-calculator">Trip Cost Calculator</a></li>
+                        <li><a href="/travel-cost-calculators">All Travel Tools →</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ JSON-LD Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        <% faqs.forEach(function(faq, i) { %>
+        {
+            "@type": "Question",
+            "name": <%- JSON.stringify(faq.question) %>,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": <%- JSON.stringify(faq.answer) %>
+            }
+        }<%= i < faqs.length - 1 ? ',' : '' %>
+        <% }); %>
+    ]
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "<%= typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com' %>/" },
+        { "@type": "ListItem", "position": 2, "name": "Travel Cost Calculators", "item": "<%= typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com' %>/travel-cost-calculators" },
+        { "@type": "ListItem", "position": 3, "name": "Fuel Cost for <%= distance %> Miles", "item": "<%= canonicalUrl %>" }
+    ]
+}
+</script>
+
+<%- include('partials/footer') %>
