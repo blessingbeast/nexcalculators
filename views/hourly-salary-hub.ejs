@@ -1,0 +1,304 @@
+<%- include('partials/header') %>
+
+<div class="hourly-hub-page">
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">›</span>
+            <a href="/salary-calculators">Salary Calculators</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Hourly to Salary Calculator</span>
+        </nav>
+
+        <div class="hourly-hub-layout">
+
+            <!-- MAIN CONTENT -->
+            <main class="hourly-hub-main">
+
+                <h1>Hourly to Salary Calculator</h1>
+                <p class="hub-intro">
+                    Wondering how much you make in a year based on your hourly pay? This free hourly to annual salary calculator gives you an instant answer. Enter your hourly rate below to see your yearly, monthly, weekly, and daily earnings — then explore our full breakdown pages for every common rate from $10 to $150 per hour.
+                </p>
+
+                <!-- ── INTERACTIVE CALCULATOR ── -->
+                <section class="hub-calc-section">
+                    <h2>Calculate Your Annual Salary</h2>
+                    <div class="hub-calculator">
+                        <div class="hub-calc-inputs">
+                            <div class="hub-input-group">
+                                <label for="hub-hourly-rate">Hourly Rate ($)</label>
+                                <input type="number" id="hub-hourly-rate" placeholder="e.g. 25" min="1" max="999" step="0.01">
+                            </div>
+                            <div class="hub-input-group">
+                                <label for="hub-hours-week">Hours per Week</label>
+                                <input type="number" id="hub-hours-week" value="40" min="1" max="168">
+                            </div>
+                            <div class="hub-input-group">
+                                <label for="hub-weeks-year">Weeks per Year</label>
+                                <input type="number" id="hub-weeks-year" value="52" min="1" max="52">
+                            </div>
+                        </div>
+                        <button id="hub-calc-btn" onclick="calculateHourlySalary()">Calculate Annual Salary</button>
+
+                        <div id="hub-result" class="hub-result hidden">
+                            <div class="hub-result-grid">
+                                <div class="hub-result-card primary">
+                                    <span class="hub-result-label">Per Year</span>
+                                    <span class="hub-result-value" id="res-yearly"></span>
+                                </div>
+                                <div class="hub-result-card">
+                                    <span class="hub-result-label">Per Month</span>
+                                    <span class="hub-result-value" id="res-monthly"></span>
+                                </div>
+                                <div class="hub-result-card">
+                                    <span class="hub-result-label">Per Week</span>
+                                    <span class="hub-result-value" id="res-weekly"></span>
+                                </div>
+                                <div class="hub-result-card">
+                                    <span class="hub-result-label">Per Day (8 hrs)</span>
+                                    <span class="hub-result-value" id="res-daily"></span>
+                                </div>
+                            </div>
+                            <div id="hub-breakdown-link" class="hub-breakdown-link"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ── HOW IT WORKS ── -->
+                <section class="hub-how-section">
+                    <h2>How Hourly to Annual Salary Conversion Works</h2>
+                    <p>The formula for converting an hourly wage to an annual salary assumes a standard full-time schedule:</p>
+                    <div class="formula-box">
+                        <strong>Annual Salary = Hourly Rate × Hours per Week × Weeks per Year</strong>
+                    </div>
+                    <p>For a standard full-time employee working <strong>40 hours/week for 52 weeks</strong> (2,080 hours/year), the math is simple:</p>
+                    <div class="hub-examples-inline">
+                        <div class="hub-example-pill">$20/hr → <strong>$41,600/yr</strong></div>
+                        <div class="hub-example-pill">$25/hr → <strong>$52,000/yr</strong></div>
+                        <div class="hub-example-pill">$30/hr → <strong>$62,400/yr</strong></div>
+                        <div class="hub-example-pill">$50/hr → <strong>$104,000/yr</strong></div>
+                    </div>
+                    <p>If you work part-time or fewer weeks (e.g. contract work), change the hours/week and weeks/year inputs above for an accurate result.</p>
+                </section>
+
+                <!-- ── ALL HOURLY PAGES ── -->
+                <section class="hub-pages-section">
+                    <h2>All Hourly Salary Breakdown Pages</h2>
+                    <p>Click any rate below for a full breakdown including monthly, weekly, daily, part-time estimates, tax approximation, and FAQs.</p>
+
+                    <%
+                    const allRates = [
+                        10,11,12,13,14,15,16,17,18,19,
+                        20,21,22,23,24,25,26,27,28,29,
+                        30,31,32,33,34,35,36,37,38,39,
+                        40,45,50,55,60,65,70,75,80,90,
+                        100,120,150
+                    ];
+                    %>
+
+                    <div class="hub-rates-grid">
+                        <% allRates.forEach(function(r) { %>
+                        <a href="/<%= r %>-an-hour-is-how-much-a-year" class="hub-rate-card">
+                            <span class="hub-rate-amount">$<%= r %>/hr</span>
+                            <span class="hub-rate-annual">$<%= (r * 40 * 52).toLocaleString('en-US') %>/yr</span>
+                            <span class="hub-rate-cta">See breakdown →</span>
+                        </a>
+                        <% }); %>
+                    </div>
+                </section>
+
+                <!-- ── PLAIN LINK LIST (SEO) ── -->
+                <section class="hub-link-list-section">
+                    <h2>Quick Links – Hourly to Annual Salary</h2>
+                    <ul class="hub-link-list">
+                        <% allRates.forEach(function(r) { %>
+                        <li>
+                            <a href="/<%= r %>-an-hour-is-how-much-a-year">$<%= r %> an hour is how much a year</a>
+                            — <span>$<%= (r * 40 * 52).toLocaleString('en-US') %> per year</span>
+                        </li>
+                        <% }); %>
+                    </ul>
+                </section>
+
+                <!-- ── FAQ ── -->
+                <section class="faq-section hub-faq">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <div class="faq-item">
+                        <h3>How do I convert hourly wage to annual salary?</h3>
+                        <p>Multiply your hourly rate by the number of hours you work per week, then multiply by 52 (weeks per year). For full-time workers: <strong>Hourly Rate × 40 × 52</strong>. For example, $25/hour × 40 × 52 = <strong>$52,000 per year</strong>.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How many hours are in a full-time work year?</h3>
+                        <p>A standard full-time schedule is 40 hours/week × 52 weeks = <strong>2,080 hours per year</strong>. This is the standard used by the US Bureau of Labor Statistics and most employers.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Does this calculator account for taxes?</h3>
+                        <p>The results shown are <strong>gross (before tax)</strong> figures. Your actual take-home pay will be lower after federal income tax, state tax, Social Security (6.2%), and Medicare (1.45%) deductions. Use our <a href="/calculator/take-home-salary-calculator">Take Home Salary Calculator</a> for an after-tax estimate.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How much is $20 an hour annually?</h3>
+                        <p>$20 per hour × 40 hours/week × 52 weeks = <strong>$41,600 per year</strong> before taxes. That's approximately $3,467/month or $800/week.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How much is $25 an hour annually?</h3>
+                        <p>$25 per hour × 40 hours/week × 52 weeks = <strong>$52,000 per year</strong> before taxes. That's approximately $4,333/month or $1,000/week.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What is the difference between gross and net salary?</h3>
+                        <p>Gross salary is your pay before any deductions. Net (take-home) salary is what you receive after taxes and deductions. For a $25/hour earner making $52,000/year, estimated take-home is roughly $39,000–$43,000 depending on state and filing status.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How do I calculate part-time hourly to annual?</h3>
+                        <p>Use the same formula but with your actual hours. For example, 20 hours/week: $25 × 20 × 52 = <strong>$26,000 per year</strong>. Use the calculator above — just change the "Hours per Week" field.</p>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside class="hourly-hub-sidebar">
+                <div class="sidebar-box">
+                    <h3>Popular Rates</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/15-an-hour-is-how-much-a-year">$15/hr → $31,200/yr</a></li>
+                        <li><a href="/18-an-hour-is-how-much-a-year">$18/hr → $37,440/yr</a></li>
+                        <li><a href="/20-an-hour-is-how-much-a-year">$20/hr → $41,600/yr</a></li>
+                        <li><a href="/25-an-hour-is-how-much-a-year">$25/hr → $52,000/yr</a></li>
+                        <li><a href="/30-an-hour-is-how-much-a-year">$30/hr → $62,400/yr</a></li>
+                        <li><a href="/35-an-hour-is-how-much-a-year">$35/hr → $72,800/yr</a></li>
+                        <li><a href="/40-an-hour-is-how-much-a-year">$40/hr → $83,200/yr</a></li>
+                        <li><a href="/50-an-hour-is-how-much-a-year">$50/hr → $104,000/yr</a></li>
+                        <li><a href="/75-an-hour-is-how-much-a-year">$75/hr → $156,000/yr</a></li>
+                        <li><a href="/100-an-hour-is-how-much-a-year">$100/hr → $208,000/yr</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Salary Calculators</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/calculator/take-home-salary-calculator">Take Home Salary</a></li>
+                        <li><a href="/calculator/hourly-to-salary-calculator">Hourly to Salary</a></li>
+                        <li><a href="/calculator/salary-to-hourly-calculator">Salary to Hourly</a></li>
+                        <li><a href="/calculator/overtime-pay-calculator">Overtime Pay</a></li>
+                        <li><a href="/calculator/salary-increment-calculator">Salary Increment</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Related Topics</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/salary-calculators">All Salary Calculators</a></li>
+                        <li><a href="/percentage-calculators">Percentage Calculators</a></li>
+                        <li><a href="/topic-calculators">All Calculator Topics</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ JSON-LD Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How do I convert hourly wage to annual salary?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Multiply your hourly rate by the number of hours you work per week, then multiply by 52. For full-time workers: Hourly Rate × 40 × 52. For example, $25/hour × 40 × 52 = $52,000 per year." }
+        },
+        {
+            "@type": "Question",
+            "name": "How many hours are in a full-time work year?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A standard full-time schedule is 40 hours/week × 52 weeks = 2,080 hours per year." }
+        },
+        {
+            "@type": "Question",
+            "name": "How much is $20 an hour annually?",
+            "acceptedAnswer": { "@type": "Answer", "text": "$20 per hour × 40 hours/week × 52 weeks = $41,600 per year before taxes. That is approximately $3,467/month or $800/week." }
+        },
+        {
+            "@type": "Question",
+            "name": "How much is $25 an hour annually?",
+            "acceptedAnswer": { "@type": "Answer", "text": "$25 per hour × 40 hours/week × 52 weeks = $52,000 per year before taxes. That is approximately $4,333/month or $1,000/week." }
+        },
+        {
+            "@type": "Question",
+            "name": "Does this calculator account for taxes?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No, the results shown are gross (before tax) figures. Your actual take-home pay will be lower after federal income tax, state tax, Social Security (6.2%), and Medicare (1.45%) deductions." }
+        },
+        {
+            "@type": "Question",
+            "name": "How do I calculate part-time hourly to annual salary?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Use the same formula with your actual hours. For example, 20 hours/week at $25/hr: $25 × 20 × 52 = $26,000 per year." }
+        }
+    ]
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "<%= baseUrl %>/" },
+        { "@type": "ListItem", "position": 2, "name": "Salary Calculators", "item": "<%= baseUrl %>/salary-calculators" },
+        { "@type": "ListItem", "position": 3, "name": "Hourly to Salary Calculator", "item": "<%= baseUrl %>/hourly-salary-calculator" }
+    ]
+}
+</script>
+
+<script>
+function calculateHourlySalary() {
+    const rate    = parseFloat(document.getElementById('hub-hourly-rate').value);
+    const hours   = parseFloat(document.getElementById('hub-hours-week').value) || 40;
+    const weeks   = parseFloat(document.getElementById('hub-weeks-year').value) || 52;
+
+    if (!rate || rate <= 0) {
+        document.getElementById('hub-hourly-rate').focus();
+        return;
+    }
+
+    const yearly  = rate * hours * weeks;
+    const monthly = yearly / 12;
+    const weekly  = rate * hours;
+    const daily   = rate * 8;
+
+    const fmt = (n) => '$' + Math.round(n).toLocaleString('en-US');
+
+    document.getElementById('res-yearly').textContent  = fmt(yearly);
+    document.getElementById('res-monthly').textContent = fmt(monthly);
+    document.getElementById('res-weekly').textContent  = fmt(weekly);
+    document.getElementById('res-daily').textContent   = fmt(daily);
+
+    // Show link to programmatic page if this rate has one
+    const validRates = [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,45,50,55,60,65,70,75,80,90,100,120,150];
+    const linkDiv = document.getElementById('hub-breakdown-link');
+    const intRate = Math.round(rate);
+    if (validRates.includes(intRate) && intRate === rate) {
+        linkDiv.innerHTML = `<a href="/${intRate}-an-hour-is-how-much-a-year" class="hub-breakdown-btn">See full breakdown for $${intRate}/hr →</a>`;
+    } else {
+        linkDiv.innerHTML = '';
+    }
+
+    document.getElementById('hub-result').classList.remove('hidden');
+}
+
+// Allow Enter key to trigger calculation
+document.getElementById('hub-hourly-rate').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') calculateHourlySalary();
+});
+</script>
+
+<%- include('partials/footer') %>

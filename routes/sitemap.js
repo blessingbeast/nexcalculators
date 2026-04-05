@@ -127,6 +127,15 @@ router.get('/sitemap.xml', (req, res) => {
             console.error('Could not read clusters.json for sitemap', e);
         }
 
+        // Hourly Salary Hub Page
+        sitemap += `
+    <url>
+        <loc>${getBaseUrl()}/hourly-salary-calculator</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>`;
+
         // Programmatic Hourly Salary Pages
         const hourlyRates = [
             10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
