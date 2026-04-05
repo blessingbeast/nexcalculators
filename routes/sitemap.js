@@ -101,6 +101,32 @@ router.get('/sitemap.xml', (req, res) => {
             console.error('Could not read blogs.json for sitemap', e);
         }
 
+        // Topic Cluster Hub
+        sitemap += `
+    <url>
+        <loc>${getBaseUrl()}/topic-calculators</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>`;
+
+        // Individual Topic Cluster Pages
+        try {
+            const clustersPath = path.join(__dirname, '../data/clusters.json');
+            const clusters = JSON.parse(fs.readFileSync(clustersPath, 'utf8'));
+            clusters.forEach(cluster => {
+                sitemap += `
+    <url>
+        <loc>${getBaseUrl()}/${cluster.slug}</loc>
+        <lastmod>${currentDate}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>`;
+            });
+        } catch(e) {
+            console.error('Could not read clusters.json for sitemap', e);
+        }
+
         sitemap += '\n</urlset>';
 
         res.header('Content-Type', 'application/xml');

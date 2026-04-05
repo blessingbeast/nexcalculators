@@ -1,0 +1,138 @@
+<%- include('partials/header') %>
+
+<div class="cluster-page">
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">›</span>
+            <a href="/topic-calculators">Calculator Topics</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current"><%= cluster.title %></span>
+        </nav>
+
+        <div class="cluster-layout">
+            <!-- MAIN CONTENT -->
+            <main class="cluster-main">
+
+                <h1><%= cluster.h1 %></h1>
+
+                <p class="cluster-intro"><%= cluster.intro %></p>
+
+                <!-- Calculator List -->
+                <section class="cluster-calc-section">
+                    <h2>All <%= cluster.title %></h2>
+                    <div class="cluster-calc-grid">
+                        <% clusterCalculators.forEach(function(calc) { %>
+                        <a href="/calculator/<%= calc.slug %>" class="cluster-calc-card">
+                            <div class="cluster-calc-info">
+                                <span class="cluster-calc-name"><%= calc.title %></span>
+                                <span class="cluster-calc-desc"><%= calc.metaDescription ? calc.metaDescription.substring(0, 100) + '...' : 'Free online calculator — instant results.' %></span>
+                            </div>
+                            <span class="cluster-calc-cta">Use Free →</span>
+                        </a>
+                        <% }); %>
+                    </div>
+                </section>
+
+                <!-- Internal Links to Related Calculators -->
+                <section class="cluster-internal-links">
+                    <h2>Quick Calculator Links</h2>
+                    <ul class="cluster-link-list">
+                        <% clusterCalculators.forEach(function(calc) { %>
+                        <li>
+                            <a href="/calculator/<%= calc.slug %>"><%= calc.title %></a>
+                            <% if (calc.metaDescription) { %>
+                            — <span><%= calc.metaDescription.substring(0, 70) %>...</span>
+                            <% } %>
+                        </li>
+                        <% }); %>
+                    </ul>
+                </section>
+
+                <!-- Blog Articles -->
+                <% if (cluster.relatedBlogs && cluster.relatedBlogs.length > 0) { %>
+                <section class="cluster-blog-section">
+                    <h2>Related Guides & Articles</h2>
+                    <div class="cluster-blog-list">
+                        <% cluster.relatedBlogs.forEach(function(blog) { %>
+                        <a href="/blog/<%= blog.slug %>" class="cluster-blog-link">
+                            <span class="blog-link-icon">📖</span>
+                            <span><%= blog.title %></span>
+                            <span class="cluster-calc-cta">Read →</span>
+                        </a>
+                        <% }); %>
+                    </div>
+                </section>
+                <% } %>
+
+                <!-- JSON-LD: ItemList Schema for this cluster -->
+                <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ItemList",
+                    "name": "<%- cluster.title.replace(/"/g, '&quot;') %>",
+                    "description": "<%- cluster.metaDescription.replace(/"/g, '&quot;') %>",
+                    "url": "<%= canonicalUrl %>",
+                    "numberOfItems": <%= clusterCalculators.length %>,
+                    "itemListElement": [
+                        <% clusterCalculators.forEach(function(calc, i) { %>
+                        {
+                            "@type": "ListItem",
+                            "position": <%= i + 1 %>,
+                            "name": <%- JSON.stringify(calc.title) %>,
+                            "url": "<%= (typeof baseUrl !== 'undefined' ? baseUrl : 'https://www.nexcalculators.com') %>/calculator/<%= calc.slug %>"
+                        }<%= i < clusterCalculators.length - 1 ? ',' : '' %>
+                        <% }); %>
+                    ]
+                }
+                </script>
+
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside class="cluster-sidebar">
+                <!-- Related Topic Clusters -->
+                <% if (cluster.relatedClusters && cluster.relatedClusters.length > 0) { %>
+                <div class="sidebar-box">
+                    <h3>Related Topics</h3>
+                    <ul class="sidebar-links">
+                        <% cluster.relatedClusters.forEach(function(rel) { %>
+                        <li><a href="/<%= rel.slug %>"><%= rel.title %></a></li>
+                        <% }); %>
+                        <li><a href="/topic-calculators">All Calculator Topics →</a></li>
+                    </ul>
+                </div>
+                <% } %>
+
+                <!-- Popular Calculators -->
+                <div class="sidebar-box">
+                    <h3>Popular Calculators</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/calculator/emi-calculator">EMI Calculator</a></li>
+                        <li><a href="/calculator/bmi-calculator">BMI Calculator</a></li>
+                        <li><a href="/calculator/gst-calculator">GST Calculator</a></li>
+                        <li><a href="/calculator/percentage-calculator">Percentage Calculator</a></li>
+                        <li><a href="/calculator/age-calculator">Age Calculator</a></li>
+                        <li><a href="/calculator/sip-calculator">SIP Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Browse All -->
+                <div class="sidebar-box">
+                    <h3>Browse All Topics</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/percentage-calculators">% Percentage Calculators</a></li>
+                        <li><a href="/salary-calculators">💼 Salary Calculators</a></li>
+                        <li><a href="/travel-cost-calculators">🚗 Travel Cost Calculators</a></li>
+                        <li><a href="/statistics-calculators">📊 Statistics Calculators</a></li>
+                        <li><a href="/calculators">All Calculators →</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

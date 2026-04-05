@@ -1,0 +1,47 @@
+<%- include('partials/header') %>
+
+<div class="cluster-index-page">
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Calculator Topics</span>
+        </nav>
+
+        <h1>Calculator Topics – Browse by Subject</h1>
+        <p class="cluster-index-subtitle">
+            Explore our free calculators organised by topic. Each collection covers all calculators related to a subject, with guides and step-by-step explanations.
+        </p>
+
+        <div class="cluster-index-grid">
+            <% clusters.forEach(function(cluster) { %>
+            <a href="/<%= cluster.slug %>" class="cluster-index-card">
+                <div class="cluster-index-icon">
+                    <% if (cluster.slug === 'percentage-calculators') { %><span>%</span>
+                    <% } else if (cluster.slug === 'salary-calculators') { %><span>💼</span>
+                    <% } else if (cluster.slug === 'travel-cost-calculators') { %><span>🚗</span>
+                    <% } else if (cluster.slug === 'statistics-calculators') { %><span>📊</span>
+                    <% } else { %><span>🔢</span><% } %>
+                </div>
+                <div class="cluster-index-info">
+                    <h2><%= cluster.title %></h2>
+                    <p><%= cluster.metaDescription %></p>
+                    <span class="cluster-count"><%= cluster.calculatorSlugs.length %> calculators</span>
+                </div>
+                <span class="cluster-arrow">→</span>
+            </a>
+            <% }); %>
+        </div>
+
+        <!-- All Calculators CTA -->
+        <div class="cluster-all-cta">
+            <h2>Looking for a specific calculator?</h2>
+            <p>Browse our full directory of <%= calculators.length %>+ free online calculators.</p>
+            <a href="/calculators" class="btn btn-large">Browse All Calculators →</a>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

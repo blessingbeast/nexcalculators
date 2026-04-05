@@ -1,0 +1,113 @@
+[
+  {
+    "slug": "percentage-calculators",
+    "title": "Percentage Calculators",
+    "metaTitle": "Free Percentage Calculators – Calculate % Increase, Decrease & Change (2026)",
+    "metaDescription": "Free online percentage calculators for increase, decrease, change, fraction conversion, and more. Instant results with step-by-step formula explanations.",
+    "h1": "Percentage Calculators – Free Online Tools",
+    "intro": "Percentages are used everywhere — from GST bills and salary hikes to exam marks and investment returns. These free percentage calculators cover every scenario you need: finding what percentage one number is of another, calculating the percentage increase or decrease between two values, converting fractions and decimals to percentages, and working out percentage change over time. Whether you are a student preparing for board exams, a business owner analysing profit margins, or a shopper evaluating discount offers, this collection of tools gives you instant, accurate answers. Each calculator includes a formula breakdown and worked examples so you understand the mathematics behind every result. Bookmark this page for fast access to all percentage tools — no app required, no login needed, 100% free.",
+    "calculatorSlugs": [
+      "percentage-calculator",
+      "percentage-increase-calculator",
+      "percentage-decrease-calculator",
+      "percentage-change-calculator",
+      "percentage-of-number-calculator",
+      "fraction-to-percentage-calculator",
+      "markup-calculator",
+      "discount-calculator",
+      "profit-margin-calculator"
+    ],
+    "relatedClusters": [
+      { "slug": "statistics-calculators", "title": "Statistics Calculators" },
+      { "slug": "salary-calculators", "title": "Salary Calculators" }
+    ],
+    "relatedBlogs": [
+      { "slug": "percentage-formula-explained", "title": "Percentage Formula Explained" },
+      { "slug": "how-to-calculate-percentage-increase", "title": "How to Calculate Percentage Increase" }
+    ]
+  },
+  {
+    "slug": "salary-calculators",
+    "title": "Salary Calculators",
+    "metaTitle": "Free Salary Calculators India – Take Home, Hourly, Overtime & More (2026)",
+    "metaDescription": "Calculate your take-home salary, hourly rate, overtime pay, and annual income with our free India-specific salary calculators. Includes PF, tax, and deduction breakdowns.",
+    "h1": "Salary Calculators – India Free Online Tools",
+    "intro": "Understanding your real income is the first step to smart financial planning. These salary calculators are built for Indian employees, freelancers, and business owners. Find your exact take-home pay after deductions for PF, ESI, professional tax, and income tax. Convert your annual CTC to a monthly and hourly figure, calculate your overtime entitlement under the Factories Act, plan your next salary increment, and benchmark your freelance hourly rate against the market. Whether you are negotiating a new job offer, reviewing a payslip, or comparing a full-time role against a contract gig, this toolkit gives you clear numbers instantly. All calculations follow Indian payroll norms including the 12% PF deduction, standard deduction, and HRA exemption rules. No signup required — just enter your figures and get instant results.",
+    "calculatorSlugs": [
+      "take-home-salary-calculator",
+      "salary-to-hourly-calculator",
+      "hourly-to-salary-calculator",
+      "overtime-calculator",
+      "overtime-pay-calculator",
+      "salary-increment-calculator",
+      "freelance-hourly-rate-calculator",
+      "contractor-rate-calculator",
+      "annual-income-calculator",
+      "net-income-calculator",
+      "work-hours-calculator",
+      "work-shift-hours-calculator",
+      "hourly-cost-calculator"
+    ],
+    "relatedClusters": [
+      { "slug": "percentage-calculators", "title": "Percentage Calculators" },
+      { "slug": "travel-cost-calculators", "title": "Travel Cost Calculators" }
+    ],
+    "relatedBlogs": [
+      { "slug": "how-to-calculate-salary-per-hour", "title": "How to Calculate Salary Per Hour" },
+      { "slug": "how-to-calculate-overtime-pay", "title": "How to Calculate Overtime Pay" },
+      { "slug": "how-to-calculate-work-hours", "title": "How to Calculate Work Hours" }
+    ]
+  },
+  {
+    "slug": "travel-cost-calculators",
+    "title": "Travel Cost Calculators",
+    "metaTitle": "Free Travel Cost Calculators India – Fuel, Trip Budget & Time (2026)",
+    "metaDescription": "Calculate fuel cost per km, total trip budget, travel time, and cost per person for any road trip in India. Free online travel calculators for petrol, diesel & CNG vehicles.",
+    "h1": "Travel Cost Calculators – Free India Road Trip Tools",
+    "intro": "Planning a road trip in India? These travel cost calculators help you budget every rupee before you leave home. Calculate your exact fuel cost per kilometre based on your vehicle's mileage and current petrol or diesel prices. Estimate the total fuel expense for any trip — Mumbai to Goa, Delhi to Jaipur, or your daily office commute. Split costs fairly among carpool partners, factor in toll charges and parking, and compare the running cost of petrol versus diesel versus CNG vehicles. The distance, speed, and time calculator helps you plan arrival times and pit stops. Whether you are a daily commuter tracking monthly fuel spend or an adventurer planning a 2000 km cross-country road trip, these calculators give you accurate budgets instantly. All examples use current Indian fuel prices and real Indian highway conditions.",
+    "calculatorSlugs": [
+      "fuel-cost-calculator",
+      "fuel-cost-per-trip-calculator",
+      "fuel-consumption-calculator",
+      "trip-cost-calculator",
+      "travel-time-calculator",
+      "distance-speed-time-calculator",
+      "cost-per-mile-calculator"
+    ],
+    "relatedClusters": [
+      { "slug": "salary-calculators", "title": "Salary Calculators" },
+      { "slug": "percentage-calculators", "title": "Percentage Calculators" }
+    ],
+    "relatedBlogs": [
+      { "slug": "how-to-calculate-fuel-cost-per-km", "title": "How to Calculate Fuel Cost Per KM" },
+      { "slug": "how-to-calculate-trip-fuel-cost", "title": "How to Calculate Trip Fuel Cost" }
+    ]
+  },
+  {
+    "slug": "statistics-calculators",
+    "title": "Statistics Calculators",
+    "metaTitle": "Free Statistics Calculators – Mean, Median, Mode, SD & More (2026)",
+    "metaDescription": "Free online statistics calculators for mean, median, mode, variance, standard deviation, weighted average, and probability. Perfect for students and data analysts.",
+    "h1": "Statistics Calculators – Free Online Tools",
+    "intro": "Statistics underpin every data-driven decision — from academic research and business analytics to exam preparation and quality control. These free statistics calculators cover all the essential measures of central tendency and spread that students and professionals need daily. Find the mean (average), median, and mode of any data set. Calculate variance and standard deviation to understand how spread out your data is. Use the weighted average calculator for graded assignments and CGPA computation. The probability calculator handles basic probability events including complementary, union, and intersection probabilities. All calculators accept multiple numbers, work instantly in your browser, and show the step-by-step working so you can learn while you calculate. Ideal for Class 10, 11, 12 students, undergraduates, MBA aspirants, and data science learners.",
+    "calculatorSlugs": [
+      "average-calculator",
+      "weighted-average-calculator",
+      "median-calculator",
+      "mode-calculator",
+      "variance-calculator",
+      "standard-deviation-calculator",
+      "probability-calculator",
+      "weighted-score-calculator",
+      "ratio-calculator",
+      "ratio-simplifier-calculator"
+    ],
+    "relatedClusters": [
+      { "slug": "percentage-calculators", "title": "Percentage Calculators" }
+    ],
+    "relatedBlogs": [
+      { "slug": "how-to-calculate-average-marks", "title": "How to Calculate Average Marks" },
+      { "slug": "how-to-calculate-ratio-easily", "title": "How to Calculate Ratio" }
+    ]
+  }
+]

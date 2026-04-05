@@ -51,10 +51,12 @@ app.use((req, res, next) => {
 const indexRouter = require('./routes/index');
 const calculatorRouter = require('./routes/calculators');
 const blogRouter = require('./routes/blog');
+const clusterRouter = require('./routes/clusters');
 const sitemapRouter = require('./routes/sitemap');
 
 app.use('/', indexRouter);
 app.use('/', sitemapRouter); // Handle /sitemap.xml and /robots.txt at root
+app.use('/', clusterRouter); // /percentage-calculators, /salary-calculators etc.
 app.use('/calculator', calculatorRouter);
 app.use('/blog', blogRouter);
 
