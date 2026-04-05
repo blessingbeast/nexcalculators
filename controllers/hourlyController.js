@@ -4,7 +4,13 @@ const path = require('path');
 const calculatorsPath = path.join(__dirname, '../calculators/calculators.json');
 
 // All valid hourly rates this system handles
-const VALID_RATES = [10, 12, 15, 18, 20, 22, 25, 30, 35, 40, 45, 50, 60, 75, 100];
+const VALID_RATES = [
+    10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+    20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+    30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+    40, 45, 50, 55, 60, 65, 70, 75, 80, 90,
+    100, 120, 150
+];
 
 // Helper: format number with commas (US style)
 const fmt = (n) => n.toLocaleString('en-US');
