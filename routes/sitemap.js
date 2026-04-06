@@ -8,9 +8,7 @@ const blogsPath = path.join(__dirname, '../data/blogs.json');
 
 // Helper to get Base URL
 const getBaseUrl = () => {
-    if (process.env.BASE_URL) return process.env.BASE_URL;
-    if (process.env.NODE_ENV === 'production') return 'https://www.nexcalculators.com';
-    return 'http://localhost:3000';
+    return 'https://www.nexcalculators.com';
 };
 
 // Sitemap Route
@@ -37,31 +35,31 @@ router.get('/sitemap.xml', (req, res) => {
         <loc>${getBaseUrl()}/about</loc>
         <lastmod>${currentDate}</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>${getBaseUrl()}/contact</loc>
         <lastmod>${currentDate}</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>${getBaseUrl()}/privacy</loc>
         <lastmod>${currentDate}</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>${getBaseUrl()}/terms</loc>
         <lastmod>${currentDate}</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>${getBaseUrl()}/calculators</loc>
         <lastmod>${currentDate}</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
+        <priority>1.0</priority>
     </url>
         `;
 
@@ -82,23 +80,27 @@ router.get('/sitemap.xml', (req, res) => {
         <loc>${getBaseUrl()}/blog</loc>
         <lastmod>${currentDate}</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>1.0</priority>
     </url>`;
 
         // Blog Posts
         try {
-            const blogs = JSON.parse(fs.readFileSync(blogsPath, 'utf8'));
-            blogs.forEach(blog => {
-                sitemap += `
+            const blogDir = path.join(__dirname, '../views/blog/posts');
+            const files = fs.readdirSync(blogDir);
+            files.forEach(file => {
+                if(file.endsWith('.ejs')) {
+                    const slug = file.replace('.ejs', '');
+                    sitemap += `
     <url>
-        <loc>${getBaseUrl()}/blog/${blog.slug}</loc>
+        <loc>${getBaseUrl()}/blog/${slug}</loc>
         <lastmod>${currentDate}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>`;
+                }
             });
         } catch(e) {
-            console.error('Could not read blogs.json for sitemap', e);
+            console.error('Could not read blog directory for sitemap', e);
         }
 
         // Topic Cluster Hub
