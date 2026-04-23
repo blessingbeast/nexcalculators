@@ -5,8 +5,15 @@
     "metaTitle": "How to Calculate Percentage Increase – Formula & Examples (2026)",
     "metaDescription": "Learn how to calculate percentage increase step by step. Includes formula, examples, and common mistakes. Use our free online calculator for instant results.",
     "datePublished": "2026-04-01",
-    "keywords": ["percentage increase formula", "how to calculate percentage increase", "percent increase calculator"],
-    "relatedCalculator": { "slug": "percentage-increase-calculator", "title": "Percentage Increase Calculator" },
+    "keywords": [
+      "percentage increase formula",
+      "how to calculate percentage increase",
+      "percent increase calculator"
+    ],
+    "relatedCalculator": {
+      "slug": "percentage-increase-calculator",
+      "title": "Percentage Increase Calculator"
+    },
     "category": "Math"
   },
   {
@@ -15,8 +22,15 @@
     "metaTitle": "Percentage Formula Explained – Complete Guide with Examples (2026)",
     "metaDescription": "Understand the percentage formula completely. Covers what is percentage, how to find X% of a number, and real-life examples. Free guide with calculator link.",
     "datePublished": "2026-04-01",
-    "keywords": ["percentage formula", "what is percentage", "how to calculate percentage"],
-    "relatedCalculator": { "slug": "percentage-calculator", "title": "Percentage Calculator" },
+    "keywords": [
+      "percentage formula",
+      "what is percentage",
+      "how to calculate percentage"
+    ],
+    "relatedCalculator": {
+      "slug": "percentage-calculator",
+      "title": "Percentage Calculator"
+    },
     "category": "Math"
   },
   {
@@ -25,8 +39,15 @@
     "metaTitle": "How to Calculate EMI Manually – Step-by-Step with Formula (2026)",
     "metaDescription": "Calculate EMI manually using the reducing balance formula. Step-by-step example, formula breakdown, and common mistakes explained. Use our free EMI calculator.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate emi", "emi formula", "emi calculation manually"],
-    "relatedCalculator": { "slug": "emi-calculator", "title": "EMI Calculator" },
+    "keywords": [
+      "how to calculate emi",
+      "emi formula",
+      "emi calculation manually"
+    ],
+    "relatedCalculator": {
+      "slug": "emi-calculator",
+      "title": "EMI Calculator"
+    },
     "category": "Finance"
   },
   {
@@ -35,8 +56,15 @@
     "metaTitle": "Compound Interest Formula – Calculate & Understand Compounding (2026)",
     "metaDescription": "Master the compound interest formula with step-by-step examples. Understand how compounding builds wealth. Includes comparison with simple interest.",
     "datePublished": "2026-04-01",
-    "keywords": ["compound interest formula", "compound interest explained", "how does compound interest work"],
-    "relatedCalculator": { "slug": "compound-growth-calculator", "title": "Compound Growth Calculator" },
+    "keywords": [
+      "compound interest formula",
+      "compound interest explained",
+      "how does compound interest work"
+    ],
+    "relatedCalculator": {
+      "slug": "compound-growth-calculator",
+      "title": "Compound Growth Calculator"
+    },
     "category": "Finance"
   },
   {
@@ -45,8 +73,15 @@
     "metaTitle": "How to Calculate GST in India – Complete Guide (2026)",
     "metaDescription": "Learn how to calculate GST in India. Covers all slabs (5%, 12%, 18%, 28%), CGST vs SGST, inclusive vs exclusive pricing with step-by-step examples.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate gst in india", "gst calculation formula", "gst inclusive exclusive"],
-    "relatedCalculator": { "slug": "gst-calculator", "title": "GST Calculator" },
+    "keywords": [
+      "how to calculate gst in india",
+      "gst calculation formula",
+      "gst inclusive exclusive"
+    ],
+    "relatedCalculator": {
+      "slug": "gst-calculator",
+      "title": "GST Calculator"
+    },
     "category": "Finance"
   },
   {
@@ -55,8 +90,15 @@
     "metaTitle": "How to Calculate Profit Margin – Formula & Examples for Business (2026)",
     "metaDescription": "Learn gross profit margin, net margin, and operating margin formulas with real business examples. Ideal for entrepreneurs and small business owners in India.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate profit margin", "profit margin formula", "net profit margin india"],
-    "relatedCalculator": { "slug": "profit-margin-calculator", "title": "Profit Margin Calculator" },
+    "keywords": [
+      "how to calculate profit margin",
+      "profit margin formula",
+      "net profit margin india"
+    ],
+    "relatedCalculator": {
+      "slug": "profit-margin-calculator",
+      "title": "Profit Margin Calculator"
+    },
     "category": "Finance"
   },
   {
@@ -65,8 +107,15 @@
     "metaTitle": "How to Calculate Discount Price – Percentage Off Formula (2026)",
     "metaDescription": "Calculate the discounted price of any item instantly. Step-by-step formula, examples (flat and percentage discounts), and shopping tips for Indian buyers.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate discount", "discount price formula", "percentage off calculator"],
-    "relatedCalculator": { "slug": "discount-calculator", "title": "Discount Calculator" },
+    "keywords": [
+      "how to calculate discount",
+      "discount price formula",
+      "percentage off calculator"
+    ],
+    "relatedCalculator": {
+      "slug": "discount-calculator",
+      "title": "Discount Calculator"
+    },
     "category": "Finance"
   },
   {
@@ -75,8 +124,15 @@
     "metaTitle": "How to Calculate Loan Interest – Formulas & Examples (2026)",
     "metaDescription": "Understand how banks calculate loan interest using simple and reducing balance methods. Step-by-step examples for personal, home, and car loans in India.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate loan interest", "loan interest formula india", "reducing balance interest"],
-    "relatedCalculator": { "slug": "loan-interest-calculator", "title": "Loan Interest Calculator" },
+    "keywords": [
+      "how to calculate loan interest",
+      "loan interest formula india",
+      "reducing balance interest"
+    ],
+    "relatedCalculator": {
+      "slug": "loan-interest-calculator",
+      "title": "Loan Interest Calculator"
+    },
     "category": "Finance"
   },
   {
@@ -85,8 +141,15 @@
     "metaTitle": "How to Calculate Fuel Cost Per KM – Formula & Tips (2026)",
     "metaDescription": "Calculate exact fuel cost per km for petrol, diesel, and CNG vehicles. Step-by-step formula, examples, and tips to reduce fuel expenses in India.",
     "datePublished": "2026-04-01",
-    "keywords": ["fuel cost per km india", "how to calculate fuel cost", "petrol cost per km"],
-    "relatedCalculator": { "slug": "fuel-cost-calculator", "title": "Fuel Cost Calculator" },
+    "keywords": [
+      "fuel cost per km india",
+      "how to calculate fuel cost",
+      "petrol cost per km"
+    ],
+    "relatedCalculator": {
+      "slug": "fuel-cost-calculator",
+      "title": "Fuel Cost Calculator"
+    },
     "category": "Daily Utilities"
   },
   {
@@ -95,8 +158,15 @@
     "metaTitle": "How to Calculate Work Hours – Weekly & Monthly Tutorial (2026)",
     "metaDescription": "Learn how to calculate total work hours for the week and month, including shift work, overtime, and break deductions. Easy guide with examples.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate work hours", "work hours calculator weekly", "total hours worked"],
-    "relatedCalculator": { "slug": "work-hours-calculator", "title": "Work Hours Calculator" },
+    "keywords": [
+      "how to calculate work hours",
+      "work hours calculator weekly",
+      "total hours worked"
+    ],
+    "relatedCalculator": {
+      "slug": "work-hours-calculator",
+      "title": "Work Hours Calculator"
+    },
     "category": "Work & Salary"
   },
   {
@@ -105,8 +175,15 @@
     "metaTitle": "How to Calculate Overtime Pay in India – Formula & Rules (2026)",
     "metaDescription": "Understand how overtime pay is calculated under India's Factories Act. Covers 1.5x and 2x rates, examples, and payslip verification tips.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate overtime pay india", "overtime formula india", "factories act overtime"],
-    "relatedCalculator": { "slug": "overtime-pay-calculator", "title": "Overtime Pay Calculator" },
+    "keywords": [
+      "how to calculate overtime pay india",
+      "overtime formula india",
+      "factories act overtime"
+    ],
+    "relatedCalculator": {
+      "slug": "overtime-pay-calculator",
+      "title": "Overtime Pay Calculator"
+    },
     "category": "Work & Salary"
   },
   {
@@ -115,8 +192,15 @@
     "metaTitle": "How to Calculate Average Marks – Formula & Examples for Students (2026)",
     "metaDescription": "Calculate average marks for report cards, exams, and assessments. Covers simple average, weighted average, and percentage score methods with examples.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate average marks", "average percentage calculator", "weighted average marks"],
-    "relatedCalculator": { "slug": "average-calculator", "title": "Average Calculator" },
+    "keywords": [
+      "how to calculate average marks",
+      "average percentage calculator",
+      "weighted average marks"
+    ],
+    "relatedCalculator": {
+      "slug": "average-calculator",
+      "title": "Average Calculator"
+    },
     "category": "Math"
   },
   {
@@ -125,8 +209,15 @@
     "metaTitle": "How to Calculate Ratio – Simple Method with Examples (2026)",
     "metaDescription": "Learn how to calculate, simplify, and compare ratios easily. Includes step-by-step examples for students, cooking, business, and everyday use.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate ratio", "ratio formula", "simplify ratio"],
-    "relatedCalculator": { "slug": "ratio-calculator", "title": "Ratio Calculator" },
+    "keywords": [
+      "how to calculate ratio",
+      "ratio formula",
+      "simplify ratio"
+    ],
+    "relatedCalculator": {
+      "slug": "ratio-calculator",
+      "title": "Ratio Calculator"
+    },
     "category": "Math"
   },
   {
@@ -135,8 +226,15 @@
     "metaTitle": "How to Calculate Salary Per Hour – Annual Salary to Hourly (2026)",
     "metaDescription": "Convert annual or monthly salary to hourly rate in India. Includes formula, examples, and comparisons for salaried vs hourly workers. Free calculator.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate salary per hour india", "salary to hourly rate", "annual salary to hourly"],
-    "relatedCalculator": { "slug": "salary-to-hourly-calculator", "title": "Salary to Hourly Calculator" },
+    "keywords": [
+      "how to calculate salary per hour india",
+      "salary to hourly rate",
+      "annual salary to hourly"
+    ],
+    "relatedCalculator": {
+      "slug": "salary-to-hourly-calculator",
+      "title": "Salary to Hourly Calculator"
+    },
     "category": "Work & Salary"
   },
   {
@@ -145,8 +243,287 @@
     "metaTitle": "How to Calculate Trip Fuel Cost – Road Trip Budget Guide (2026)",
     "metaDescription": "Calculate fuel cost for your next road trip in India. Step-by-step formula, per-person cost splitting, and tips to reduce travel fuel expenses.",
     "datePublished": "2026-04-01",
-    "keywords": ["how to calculate trip fuel cost", "road trip fuel budget india", "petrol cost road trip"],
-    "relatedCalculator": { "slug": "fuel-cost-per-trip-calculator", "title": "Fuel Cost Per Trip Calculator" },
+    "keywords": [
+      "how to calculate trip fuel cost",
+      "road trip fuel budget india",
+      "petrol cost road trip"
+    ],
+    "relatedCalculator": {
+      "slug": "fuel-cost-per-trip-calculator",
+      "title": "Fuel Cost Per Trip Calculator"
+    },
     "category": "Daily Utilities"
+  },
+  {
+    "slug": "how-to-calculate-roi-for-investments",
+    "title": "How to Calculate ROI for Investments – Formula & Examples",
+    "metaTitle": "How to Calculate ROI for Investments (2026)",
+    "metaDescription": "Learn how to calculate ROI using the standard return on investment formula. Calculate net profit safely and compare historical investments using our free tools.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate roi",
+      "roi formula",
+      "return on investment calculator"
+    ],
+    "relatedCalculator": {
+      "slug": "roi-calculator",
+      "title": "ROI Calculator"
+    },
+    "category": "Finance"
+  },
+  {
+    "slug": "how-to-calculate-age-from-dob",
+    "title": "How to Calculate Age from Date of Birth Correctly",
+    "metaTitle": "How to Calculate Age from DOB – Month & Year Rules (2026)",
+    "metaDescription": "Find your exact chronological age in years, months, and days manually without errors. Understand calendar mechanics and use our free exact age digital tool.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate age",
+      "age from dob manual",
+      "exact chronological age"
+    ],
+    "relatedCalculator": {
+      "slug": "age-calculator",
+      "title": "Age Calculator"
+    },
+    "category": "Math"
+  },
+  {
+    "slug": "how-to-calculate-bmi",
+    "title": "How to Calculate Body Mass Index (BMI)",
+    "metaTitle": "How to Calculate BMI – Standard Math & Ratios (2026)",
+    "metaDescription": "Calculate BMI accurately with the global height-to-weight mathematical ratio. Fully explained imperial/metric formulas mapped against healthy body brackets.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate bmi mathematically",
+      "bmi calculation formula weight",
+      "imperial metric bmi"
+    ],
+    "relatedCalculator": {
+      "slug": "bmi-calculator",
+      "title": "BMI Calculator"
+    },
+    "category": "Health"
+  },
+  {
+    "slug": "how-to-calculate-percentage-decrease",
+    "title": "How to Calculate Percentage Decrease Simply",
+    "metaTitle": "How to Calculate Percentage Decrease – Easy Formula (2026)",
+    "metaDescription": "Calculate the exact percentage decrease between two data points. Perfect for tracking sales, depreciation, and stock drops. Uses absolute mathematical formulas.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate percentage decrease",
+      "percent difference formula",
+      "math decrease calculation"
+    ],
+    "relatedCalculator": {
+      "slug": "percentage-calculator",
+      "title": "Percentage Calculator"
+    },
+    "category": "Math"
+  },
+  {
+    "slug": "how-to-calculate-sales-tax",
+    "title": "How to Calculate Sales Tax Like a Pro",
+    "metaTitle": "How to Calculate Sales Tax – Final Total Math (2026)",
+    "metaDescription": "Avoid receipt shock. Calculate sales tax dynamically before checking out. Map multiple percentages instantly and convert sales inclusive taxation into true base rates.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate sales tax rate",
+      "tax percentage multiplier math",
+      "inclusive tax extract"
+    ],
+    "relatedCalculator": {
+      "slug": "discount-calculator",
+      "title": "Discount Calculator"
+    },
+    "category": "Finance"
+  },
+  {
+    "slug": "how-to-calculate-inflation-rate",
+    "title": "How to Calculate Inflation Rate – Formula & CPI Index Maps",
+    "metaTitle": "How to Calculate Inflation Rate using CPI Historicals (2026)",
+    "metaDescription": "Inflation erases wealth if unmeasured. Calculate historical inflation rate percentages reliably against CPI standards and protect long-term financial purchasing parity.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate inflation rate",
+      "cpi inflation calculation",
+      "inflation vs returns"
+    ],
+    "relatedCalculator": {
+      "slug": "inflation-calculator",
+      "title": "Inflation Calculator"
+    },
+    "category": "Finance"
+  },
+  {
+    "slug": "how-to-calculate-variance",
+    "title": "How to Calculate Variance in Statistics",
+    "metaTitle": "How to Calculate Variance – Mathematics Guide (2026)",
+    "metaDescription": "A complete statistical guide detailing exactly how to calculate variance natively. Understand data spread, Bessel's correction, and how to automate array mapping.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate geometric variance",
+      "sample vs population variance",
+      "statistics spread calculation"
+    ],
+    "relatedCalculator": {
+      "slug": "average-calculator",
+      "title": "Average Calculator"
+    },
+    "category": "Math"
+  },
+  {
+    "slug": "how-to-calculate-standard-deviation",
+    "title": "How to Calculate Standard Deviation – Math Made Easy",
+    "metaTitle": "How to Calculate Standard Deviation Manually (2026)",
+    "metaDescription": "Master the absolute core of statistics. Calculate standard deviation accurately to find true volatility metrics mathematically mapped against empirical 68-rule structures.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate standard deviation mathematically",
+      "sigma standard dev formula",
+      "volatility bell curve"
+    ],
+    "relatedCalculator": {
+      "slug": "average-calculator",
+      "title": "Average Calculator"
+    },
+    "category": "Math"
+  },
+  {
+    "slug": "how-to-calculate-tip-amount",
+    "title": "How to Calculate Tip Amount Without a Calculator",
+    "metaTitle": "How to Calculate Tip Amount – Mental Math Shortcuts (2026)",
+    "metaDescription": "Figure out the correct tip for servers and drivers dynamically. Use 10% movement shortcuts to instantly solve percentage logic or seamlessly split total group bills.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate tip mentally",
+      "fast tip percentage rule",
+      "15 percent 20 percent logic"
+    ],
+    "relatedCalculator": {
+      "slug": "percentage-calculator",
+      "title": "Percentage Calculator"
+    },
+    "category": "Math"
+  },
+  {
+    "slug": "how-to-calculate-mortgage-payment",
+    "title": "How to Calculate Mortgage Payment Formulas",
+    "metaTitle": "How to Calculate Mortgage Payment Amortization (2026)",
+    "metaDescription": "Decipher bank real estate loans easily. Calculate mortgage payments utilizing exact structural formulas predicting frontend compounding interest timelines.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate mortgage rates",
+      "amortization loan calculator formula",
+      "house loan math"
+    ],
+    "relatedCalculator": {
+      "slug": "emi-calculator",
+      "title": "EMI Calculator"
+    },
+    "category": "Finance"
+  },
+  {
+    "slug": "how-to-calculate-investment-growth",
+    "title": "How to Calculate Investment Growth Effectively",
+    "metaTitle": "How to Calculate Investment Growth Rates (2026)",
+    "metaDescription": "Map pure exponential compounding safely. Calculate investment growth over multiple decades combining base capital variables heavily reliant on compound return yields.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate compound investment growth",
+      "exponential timeline formulas",
+      "wall street standard calculation"
+    ],
+    "relatedCalculator": {
+      "slug": "compound-interest-calculator",
+      "title": "Compound Interest Calculator"
+    },
+    "category": "Finance"
+  },
+  {
+    "slug": "how-to-calculate-calorie-needs",
+    "title": "How to Calculate Calorie Needs Mathematically",
+    "metaTitle": "How to Calculate Calorie Needs – Custom TDEE formulas (2026)",
+    "metaDescription": "Lock down biological numbers safely. Calculate calorie needs properly adjusting structural BMR logic heavily utilizing activity multipliers to secure macro limits reliably.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate calorie maintenance diet",
+      "tdee mathematical execution",
+      "bmr logic parameters"
+    ],
+    "relatedCalculator": {
+      "slug": "bmi-calculator",
+      "title": "BMI Calculator"
+    },
+    "category": "Health"
+  },
+  {
+    "slug": "how-to-calculate-body-fat-percentage",
+    "title": "How to Calculate Body Fat Percentage Successfully",
+    "metaTitle": "How to Calculate Body Fat Percentage – Tape Metrics (2026)",
+    "metaDescription": "Skip broken BMI math if heavily muscled. Calculate body fat percentage precisely via US Navy logarithm algorithms targeting waist neck metrics accurately.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate body fat via tape",
+      "us navy logarithm health",
+      "fat percent calculation scale"
+    ],
+    "relatedCalculator": {
+      "slug": "bmi-calculator",
+      "title": "BMI Calculator"
+    },
+    "category": "Health"
+  },
+  {
+    "slug": "how-to-calculate-ideal-weight",
+    "title": "How to Calculate Ideal Weight Ranges Medical",
+    "metaTitle": "How to Calculate Ideal Weight via Medical Devine Math (2026)",
+    "metaDescription": "Aim toward medically endorsed mathematical constraints cleanly. Calculate ideal weight using the established Devine algorithm securing robust chronological structural safety.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate ideal body weight medically",
+      "devine formula kg convert",
+      "healthy scale mathematical map"
+    ],
+    "relatedCalculator": {
+      "slug": "bmi-calculator",
+      "title": "BMI Calculator"
+    },
+    "category": "Health"
+  },
+  {
+    "slug": "how-to-calculate-time-duration",
+    "title": "How to Calculate Time Duration Manually",
+    "metaTitle": "How to Calculate Time Duration – Skip Base60 Trap (2026)",
+    "metaDescription": "Fix structural timesheet errors automatically completely. Calculate time duration flawlessly crossing PM borders manipulating fraction variables preventing logic collisions.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate strict elapsed time",
+      "base 60 math conversion logic",
+      "subtracting pm clock borders"
+    ],
+    "relatedCalculator": {
+      "slug": "average-calculator",
+      "title": "Average Calculator"
+    },
+    "category": "Math"
+  },
+  {
+    "slug": "how-to-calculate-distance-using-speed",
+    "title": "How to Calculate Distance Using Speed Variables",
+    "metaTitle": "How to Calculate Distance Using Speed Velocity Math (2026)",
+    "metaDescription": "Plot complex kinetic logistics optimally. Calculate true absolute distance securely locking speed multiplier timesheets utilizing accurate decimal mapping parameters locally.",
+    "datePublished": "2026-04-23",
+    "keywords": [
+      "how to calculate kinematic distance rate",
+      "speed multiplying dynamic formulas",
+      "distance equals speed times time"
+    ],
+    "relatedCalculator": {
+      "slug": "ratio-calculator",
+      "title": "Ratio Calculator"
+    },
+    "category": "Math"
   }
 ]
