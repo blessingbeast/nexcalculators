@@ -59,8 +59,8 @@ exports.getFuelCostPage = (req, res) => {
     const slug = `fuel-cost-for-${distance}-miles`;
 
     res.render('fuel-page', {
-        title: `Fuel Cost for ${distance} Miles – Estimate Gas Cost Instantly (2026) | NexCalculators`,
-        metaDescription: `Calculate the exact fuel cost for a ${distance} mile trip. See estimated gas prices, gallons needed, and the mathematical formula for a ${distance} mile drive.`,
+        title: `Fuel Cost for ${distance} Miles – Estimate Gas Cost (Free Online Tool)`,
+        metaDescription: `Use this free fuel cost calculator to quickly calculate the exact gas cost for a ${distance} mile trip. Instant results with simple input.`,
         canonicalUrl: `${baseUrl}/${slug}`,
         distance,
         avgMpg,

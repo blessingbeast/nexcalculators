@@ -53,8 +53,8 @@ exports.getPercentPage = (req, res) => {
     const slug = `${x}-percent-of-${y}`;
 
     res.render('percent-page', {
-        title: `What is ${x}% of ${y}? – Calculate Percentages Instantly (2026) | NexCalculators`,
-        metaDescription: `Find out exactly what ${x}% of ${fmt(y)} is. Use our free percentage calculator to see that ${x}% of ${fmt(y)} equals ${fmt(result)}. Includes step-by-step formula.`,
+        title: `What is ${x}% of ${y}? – Calculate Instantly (Free Online Tool)`,
+        metaDescription: `Use this free percentage calculator to quickly calculate exactly what ${x}% of ${fmt(y)} is. Instant results with simple input.`,
         canonicalUrl: `${baseUrl}/${slug}`,
         x,
         y,

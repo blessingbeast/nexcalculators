@@ -78,8 +78,8 @@ exports.getHourlySalaryPage = (req, res) => {
     const slug    = `${rate}-an-hour-is-how-much-a-year`;
 
     res.render('hourly-salary', {
-        title:       `$${rate} an Hour is How Much a Year? – Convert Instantly (2026) | NexCalculators`,
-        metaDescription: `Easily calculate how much $${rate} an hour is per year. Our free tool shows $${rate}/hr equals $${fmt(yearlyGross)} annually. Get instant monthly and weekly salary breakdowns.`,
+        title:       `$${rate} an Hour to Salary – Convert Instantly (Free Online Tool)`,
+        metaDescription: `Use this free hourly to salary calculator to quickly calculate how much $${rate} an hour is per year. Instant results with simple input.`,
         canonicalUrl: `${baseUrl}/${slug}`,
         rate,
         yearlyGross,

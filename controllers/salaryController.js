@@ -74,8 +74,8 @@ exports.getSalaryPage = (req, res) => {
     const slug = `${kValue}k-salary-after-tax`;
 
     res.render('salary-page', {
-        title: `$${kValue}k Salary After Tax – Calculate Take Home Pay (2026) | NexCalculators`,
-        metaDescription: `Find out exactly what a $${kValue}k salary looks like after taxes. See your estimated monthly and weekly take-home pay, hourly breakdowns, and tax estimates.`,
+        title: `$${kValue}k Salary After Tax – Calculate Take Home Pay (Free Online Tool)`,
+        metaDescription: `Use this free salary calculator to quickly calculate what a $${kValue}k salary looks like after taxes. Instant results with simple input.`,
         canonicalUrl: `${baseUrl}/${slug}`,
         kValue,
         grossYearly,
